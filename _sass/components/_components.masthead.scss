@@ -8,24 +8,23 @@
   width: 100%;
 }
 .c-masthead {
-  background-color: #1b1b1b;
+  background-color: $color-grey-dark;
 }
-.c-masthead__bg {
-  z-index: 0;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+.c-masthead__background {
   background-attachment: fixed;
-  background-color: #000;
   background-image: url("../images/placeholder.jpg");
   background-position: center center;
   background-size: cover;
+  height: 100%;
   left: 0;
-  top: 0;
   opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
 }
 
-.c-masthead__main {
+.c-masthead__content {
   z-index: 1;
 }
 

@@ -532,6 +532,16 @@ h3 {
   .o-layout-flex > .o-layout-flex__item {
     flex: 1 1 auto; }
 
+.o-layout-flex--gutters {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -2vw;
+  margin-right: -2vw; }
+  .o-layout-flex--gutters > .o-layout-flex__item {
+    flex: 1 1 auto;
+    padding-left: 2vw;
+    padding-right: 2vw; }
+
 .o-layout-flex--space-between {
   justify-content: space-between; }
   .o-layout-flex--space-between > .o-layout-flex__item {
@@ -574,9 +584,6 @@ h3 {
 .c-band--red {
   background-color: #ff0024;
   color: #fff; }
-
-.c-band--black {
-  background-color: #fff; }
 
 /*------------------------------------* # BUTTONS
 \*------------------------------------*/
@@ -628,21 +635,20 @@ h3 {
 .c-masthead {
   background-color: #1b1b1b; }
 
-.c-masthead__bg {
-  z-index: 0;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+.c-masthead__background {
   background-attachment: fixed;
-  background-color: #000;
   background-image: url("../images/placeholder.jpg");
   background-position: center center;
   background-size: cover;
+  height: 100%;
   left: 0;
+  opacity: 0.2;
+  position: absolute;
   top: 0;
-  opacity: 0.2; }
+  width: 100%;
+  z-index: 0; }
 
-.c-masthead__main {
+.c-masthead__content {
   z-index: 1; }
 
 .c-masthead__button {
@@ -720,34 +726,37 @@ h3 {
 /*------------------------------------* # PAGE-HEAD
 \*------------------------------------*/
 .c-page-head {
-  height: 6rem;
+  height: 6em;
   padding-left: 2vw;
   padding-right: 2vw;
   width: 100%; }
+  .c-page-head.is-fixed {
+    left: 0;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    z-index: 1; }
 
 .c-page-head {
   background-color: #ff0024;
-  /* background-color: rgba(241, 241, 241, 0.7); */
-  color: #000 !important; }
+  color: #000; }
 
-.c-page-head a {
-  color: #000 !important; }
+.c-page-head__logo {
+  height: 1.5rem;
+  width: 1.5rem; }
 
-.c-page-head.is-fixed {
-  left: 0;
-  position: fixed;
-  text-align: left;
-  top: 0;
-  z-index: 1; }
+.c-page-head__logo {
+  fill: #000; }
 
 /*------------------------------------* # PAGE-FOOT
 \*------------------------------------*/
 .c-page-foot__title {
-  margin-bottom: 2em; }
+  padding-bottom: 1vw; }
 
-.c-page-foot__item {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem; }
+.c-page-foot__link {
+  display: block;
+  padding-top: 1vw;
+  padding-bottom: 1vw; }
 
 /*------------------------------------* # PAGE
 \*------------------------------------*/
@@ -860,16 +869,8 @@ h3 {
 
 /*------------------------------------* # STORIES
 \*------------------------------------*/
-.c-stories {
-  margin-left: -2vw;
-  margin-right: -2vw; }
-
 /*------------------------------------* # STORY
 \*------------------------------------*/
-.c-story {
-  padding-left: 2vw;
-  padding-right: 2vw; }
-
 .c-story__masthead {
   padding-bottom: 1vw;
   width: 100%; }
@@ -883,38 +884,6 @@ h3 {
 
 .c-story__author {
   text-decoration: underline; }
-
-/*------------------------------------* # SCROLL
-\*------------------------------------*/
-.c-scroll:before {
-  bottom: 30px;
-  content: '';
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #ff0024;
-  border-radius: 100%;
-  animation: c-scroll 2s infinite; }
-
-.c-scroll {
-  top: 85%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #ff0024;
-  border-radius: 50px; }
-
-@keyframes c-scroll {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0; }
-  40% {
-    opacity: 1; }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
 
 /*------------------------------------* # SPONSORS
 \*------------------------------------*/
@@ -994,8 +963,6 @@ h3 {
 .c-subscribe__text {
   line-height: 1.75em; }
 
-/*------------------------------------* # LEARN
-\*------------------------------------*/
 html {
   font-family: 'Lato', sans-serif;
   font-size: 16px;

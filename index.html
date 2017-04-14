@@ -38,8 +38,10 @@
   </svg>
 
   <header class="c-page-head [ o-layout-flex o-layout-flex--space-between o-layout-flex--center ] is-fixed">
-    <a class="c-page-head__logo o-layout-flex__item" href="/">
-      <span class="c-logo">Logo</span>
+    <a class="o-layout-flex__item" href="/">
+      <svg aria-hidden="true" class="c-page-head__logo" role="img">
+        <use xlink:href="#icon-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+      </svg>
     </a>
 
     <div class="o-layout-flex__item">
@@ -67,8 +69,8 @@
   </header>
 
   <div class="c-masthead [ o-layout-flex o-layout-flex--center ]">
-    <div class="c-masthead__bg"></div>
-    <div class="c-masthead__main o-wrapper">
+    <div class="c-masthead__background"></div>
+    <div class="c-masthead__content o-wrapper">
       <h1>Open
         <br>Call
         <br>2017
@@ -85,7 +87,7 @@
         <span class="c-news__meta">News</span>
         <h2 class="c-news__title">The latest and greatest from around the festival</h2>
       </div>
-      <div class="c-stories [ o-layout-flex o-layout-flex--large ]">
+      <div class="c-stories [ o-layout-flex o-layout-flex--gutters ]">
         <article class="c-story o-layout-flex__item u-flex-1/3">
           <a class="c-story__masthead" href="/">
             <img class="c-story__media" src="images/placeholder.jpg" alt="">
@@ -237,11 +239,11 @@
 
   <div class="c-band c-band--red" data-section="Subscribe">
     <div class=" o-wrapper">
-      <div class="o-layout-flex">
-        <div class="c-subscribe__item o-layout-flex__item u-flex-1/4">
-          <h2 class="[ o-headline o-headline--inverse ]">Subscribe</h2>
+      <div class="[ o-layout-flex o-layout-flex--gutters o-layout-flex--center ]">
+        <div class="o-layout-flex__item u-flex-1/4">
+          <h2>Subscribe</h2>
         </div>
-        <div class="c-subscribe__item o-layout-flex__item u-flex-2/4">
+        <div class="o-layout-flex__item u-flex-2/4">
           <form class="c-subscribe__form" method="post" action="/" name="subscribe">
             <div class="c-subscribe__group">
               <label class="c-label c-subscribe__label">Email&ast;</label>
@@ -250,10 +252,8 @@
             <input class="c-subscribe__submit [ c-button c-button--inverse ]" type="submit" value="Subscribe">
           </form>
         </div>
-        <div class="c-subscribe__item o-layout-flex__item u-flex-1/4">
-          <div class="c-subscribe__body">
-            <p class="c-subscribe__text">Sign up to receive the latest announcements, tips, networking invitations and more.</p>
-          </div>
+        <div class="o-layout-flex__item u-flex-1/4">
+          <p>Sign up to receive the latest announcements, tips, networking invitations and more.</p>
         </div>
       </div>
     </div>
@@ -261,37 +261,28 @@
 
   <footer class="c-page-foot c-band">
     <div class="o-wrapper">
-      <div class="o-layout-flex">
+      <div class="[ o-layout-flex o-layout-flex--gutters ]">
         <div class="o-layout-flex__item u-flex-1/4">
           <h4 class="c-page-foot__title">Contact</h4>
-          <ul class="c-page-foot__list c-page-foot__list o-list-bare">
-            <li class="c-page-foot__item"><a href="mailto:info@carlislephoto.org.uk">info@carlislephoto.org.uk</a></li>
-            <li class="c-page-foot__item"><a href="/" target="_blank">Be a Sponsor</a></li>
-          </ul>
+          <a class="c-page-foot__link" href="mailto:info@carlislephoto.org.uk">info@carlislephoto.org.uk</a>
+          <a class="c-page-foot__link" href="/" target="_blank">Be a Sponsor</a>
         </div>
         <div class="o-layout-flex__item u-flex-1/4">
           <h4 class="c-page-foot__title">Past Events</h4>
-          <ul class="c-page-foot__list o-list-bare">
-            <li class="c-page-foot__item"><a href="/">2015</a></li>
-            <li class="c-page-foot__item"><a href="/">2013</a></li>
-            <li class="c-page-foot__item"><a href="/">2012</a></li>
-          </ul>
+          <a class="c-page-foot__link" href="/">2015</a>
+          <a class="c-page-foot__link" href="/">2013</a>
+          <a class="c-page-foot__link" href="/">2012</a>
         </div>
         <div class="o-layout-flex__item u-flex-1/4">
           <h4 class="c-page-foot__title">Legal Terms</h4>
-          <ul class="c-page-foot__list o-list-bare">
-            <li class="c-page-foot__item"><a href="/">Privacy Policy</a></li>
-            <li class="c-page-foot__item"><a href="/">Code of Conduct</a></li>
-          </ul>
+          <a class="c-page-foot__link" href="/">Privacy Policy</a>
+          <a class="c-page-foot__link" href="/">Code of Conduct</a>
         </div>
         <div class="o-layout-flex__item u-flex-1/4">
           <h4 class="c-page-foot__title">Follow Us</h4>
-          <ul class="c-page-foot__list o-list-bare">
-            <li class="c-page-foot__item"><a href="/" target="_blank">Facebook</a></li>
-            <li class="c-page-foot__item"><a href="/" target="_blank">Twitter</a></li>
-            <li class="c-page-foot__item"><a href="/" target="_blank">Instagram</a></li>
-          </ul>
-        </div>
+          <a class="c-page-foot__link" href="/" target="_blank">Facebook</a>
+          <a class="c-page-foot__link" href="/" target="_blank">Twitter</a>
+          <a class="c-page-foot__link" href="/" target="_blank">Instagram</a>
       </div>
     </div>
   </footer>

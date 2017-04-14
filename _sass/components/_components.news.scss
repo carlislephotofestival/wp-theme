@@ -1,0 +1,29 @@
+/*------------------------------------*\
+ # NEWS
+\*------------------------------------*/
+
+.c-news {}
+
+.c-news__header {
+  padding-left: 4rem;
+  position: relative;
+  padding-bottom: 8vw;
+}
+
+.c-news__meta {
+  font-size: 0.875rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.c-news__title {
+  margin-top: 2vw;
+  max-width: 40rem;
+}
+
+.c-news__more {
+  display: block;
+  margin-top: 8vw;
+}
+
+.c-news__footer { }

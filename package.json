@@ -1,0 +1,28 @@
+{
+  "name": "carlislephotofestival.co.uk",
+  "version": "1.0.0",
+  "description": "Wordpress theme",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "jekyll serve --host=0.0.0.0",
+    "serve:proto": "jekyll serve -s ./_prototype --host=0.0.0.0",
+    "css": "node-sass _sass/main.scss style.css --output-style compressed",
+    "css:dev": "node-sass _sass/main.scss style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlislephotofestival/carlislephotofestival.co.uk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlislephotofestival/carlislephotofestival.co.uk/issues"
+  },
+  "homepage": "https://github.com/carlislephotofestival/carlislephotofestival.co.uk#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jekyll": "^3.0.0-beta1",
+    "node-sass": "^4.5.0"
+  }
+}

@@ -1,0 +1,40 @@
+/*------------------------------------*\
+ # NAV-PRIMARY
+\*------------------------------------*/
+
+.c-nav-primary {
+  flex: 0 0 auto;
+  height: 100%;
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+  .c-nav-primary {
+    display: none;
+  }
+}
+
+@media all and (max-width: 599px) and (min-width: 50px) {
+  .c-nav-primary {
+    display: none;
+  }
+}
+
+.c-nav-primary__item {
+  align-items: center;
+  display: flex;
+  font-size: calc(100% + 0.25vw);
+  height: 100%;
+  padding-left: calc(1em + 0.5vw);
+  padding-right: calc(1em + 0.5vw);
+}
+.c-nav-primary__item, .c-nav-primary__item:visited {
+  color: #000;
+}
+.c-nav-primary__item:hover {
+  color: #ff0024;
+}
+
+.c-nav-primary__item--highlight {
+  font-weight: bold;
+  text-transform: uppercase;
+}

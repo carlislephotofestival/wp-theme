@@ -1,0 +1,22 @@
+/*------------------------------------*\
+ # SPOTLIGHT
+\*------------------------------------*/
+
+.c-spotlight { }
+
+.c-spotlight__content {}
+.c-spotlight__title {
+  margin-bottom: 2rem;
+}
+.c-spotlight__text {
+  font-size: 1.5em;
+  letter-spacing: 0.25rem;
+  line-height: 2em;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.c-spotlight__media {
+  width: 100%;
+  max-width: 100%;
+}

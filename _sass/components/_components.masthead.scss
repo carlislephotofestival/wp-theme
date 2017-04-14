@@ -1,0 +1,40 @@
+/*------------------------------------*\
+ # MASTHEAD
+\*------------------------------------*/
+
+.c-masthead {
+  height: calc(100vh - 6rem);
+  position: relative;
+  width: 100%;
+}
+.c-masthead {
+  background-color: #1b1b1b;
+}
+.c-masthead__bg {
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-color: #000;
+  background-image: url("../images/placeholder.jpg");
+  background-position: center center;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  opacity: 0.2;
+}
+
+.c-masthead__main {
+  z-index: 1;
+}
+
+.c-masthead__button {
+  margin-top: 2rem;
+}
+
+.c-masthead__scroll:before,
+.c-masthead__scroll {
+  left: 50%;
+  position: absolute;
+}

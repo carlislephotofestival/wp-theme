@@ -1,0 +1,37 @@
+/*------------------------------------*\
+ # SOCIAL
+\*------------------------------------*/
+
+.c-nav-social {
+  flex: 0 0 auto;
+  height: 100%;
+}
+
+.c-nav-social__item {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding-left: calc(1em + 0.25vw);
+  padding-right: calc(1em + 0.25vw);
+}
+.c-nav-social__item, .c-nav-social__item:visited {
+  color: #000;
+}
+.c-nav-social__item:hover {
+  color: #ff0024;
+}
+
+.c-nav-social__icon {
+  fill: #000;
+}
+.c-nav-social__icon:hover {
+  fill: #ff0024;
+}
+
+.c-social__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.c-social__icon {
+  fill: #000;
+}

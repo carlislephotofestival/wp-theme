@@ -1,0 +1,32 @@
+/*------------------------------------*\
+ # BUTTONS
+\*------------------------------------*/
+
+.c-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  padding: 1em 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.c-button,
+.c-button:visited {
+  background-color: #ff0024;
+  color: #fff;
+}
+.c-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.c-button--inverse,
+.c-button--inverse:visited {
+  background-color: #fff;
+  color: #ff0024;
+}

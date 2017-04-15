@@ -2,16 +2,28 @@
  # BAND
 \*------------------------------------*/
 
+// band
 .c-band {
-  padding-top: 8vw;
-  padding-bottom: 8vw;
+  padding-top: ($spacer * 1.5);
+  padding-bottom: ($spacer * 1.5);
 }
 
-.c-band--red {
-  padding-top: 4vw;
-  padding-bottom: 4vw;
-}
+// band--red
 .c-band--red {
   background-color: #ff0024;
   color: #fff;
+}
+
+// band--parallax
+.c-band--parallax {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 50vh;
+}
+.c-band--parallax {
+  background-color: $color-grey-dark;
+}
+.c-band--parallax {
+  background-image: url("../images/placeholder.jpg");
 }

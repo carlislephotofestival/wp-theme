@@ -6,12 +6,14 @@
 
 .c-news__header {
   padding-left: 4rem;
+  margin-bottom: $spacer;
   position: relative;
 }
 
 .c-news__meta {
   font-size: 0.875rem;
   font-weight: 900;
+  margin-bottom: ($spacer / 4);
   text-transform: uppercase;
 }
 
@@ -21,6 +23,7 @@
 
 .c-news__more {
   display: block;
+  margin-top: $spacer;
 }
 
 .c-news__footer { }

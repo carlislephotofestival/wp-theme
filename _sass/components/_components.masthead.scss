@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .c-masthead {
-  height: calc(100vh - 6rem);
+  height: calc(100vh - #{$page-head-height});
   position: relative;
   width: 100%;
 }
@@ -29,11 +29,4 @@
 }
 
 .c-masthead__button {
-  margin-top: 2rem;
-}
-
-.c-masthead__scroll:before,
-.c-masthead__scroll {
-  left: 50%;
-  position: absolute;
 }

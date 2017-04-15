@@ -3,19 +3,18 @@
 \*------------------------------------*/
 
 h1 {
-  font-size: $h1-size;
-  font-weight: $h1-weight;
-  margin-bottom: $h1-margin-bottom;
+  font-size: $font-h1-size;
+  font-weight: $font-h1-weight;
+  letter-spacing: 0.75rem;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: $h2-size;
-  font-weight: $h2-weight;
-  margin-bottom: $h2-margin-bottom;
+  font-size: $font-h2-size;
+  font-weight: $font-h2-weight;
 }
 
 h3 {
-  font-size: $h3-size;
-  font-weight: $h3-weight;
-  margin-bottom: $h3-margin-bottom;
+  font-size: $font-h3-size;
+  font-weight: $font-h3-weight;
 }

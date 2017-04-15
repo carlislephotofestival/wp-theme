@@ -14,13 +14,13 @@
 .o-layout-flex--gutters {
   display: flex;
   flex-flow: row wrap;
-  margin-left: -2vw;
-  margin-right: -2vw;
+  margin-left: -$spacer;
+  margin-right: -$spacer;
 
   > .o-layout-flex__item {
     flex: 1 1 auto;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: $spacer;
+    padding-right: $spacer;
   }
 }
 

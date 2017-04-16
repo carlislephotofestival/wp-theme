@@ -19,8 +19,8 @@
 
   > .o-layout-flex__item {
     flex: 1 1 auto;
-    padding-left: $spacer;
-    padding-right: $spacer;
+    padding-left: ($spacer / 2);
+    padding-right: ($spacer / 2);
   }
 }
 

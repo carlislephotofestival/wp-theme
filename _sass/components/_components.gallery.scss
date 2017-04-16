@@ -1,5 +1,7 @@
 /*------------------------------------*\
- # SPACING
+ # GALLERY
 \*------------------------------------*/
 
-$spacer:  1rem;
+.c-gallery__media {
+  margin-bottom: $spacer;
+}

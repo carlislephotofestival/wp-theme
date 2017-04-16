@@ -4,14 +4,19 @@
 
 // band
 .c-band {
-  padding-top: ($spacer * 1.5);
-  padding-bottom: ($spacer * 1.5);
+  padding: ($spacer * 6) ($spacer * 3);
 }
 
 // band--red
 .c-band--red {
-  background-color: #ff0024;
-  color: #fff;
+  background-color: $color-brand-primary;
+  color: $color-white;
+}
+
+// band--dark
+.c-band--dark {
+  background-color: $color-grey-dark;
+  color: $color-white;
 }
 
 // band--parallax

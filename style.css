@@ -474,6 +474,7 @@ hr {
 
 img {
   max-width: 100%;
+  width: 1600px;
   vertical-align: middle; }
 
 html {
@@ -503,18 +504,18 @@ h1 {
   text-transform: uppercase; }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3.75rem;
   font-weight: 900; }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.875rem;
   font-weight: 900; }
 
 /*------------------------------------* # WRAPPER
 \*------------------------------------*/
 .o-wrapper {
   margin: 0 auto;
-  width: 85%; }
+  max-width: 80rem; }
 
 /*
 @media (min-width: 64em) {
@@ -534,12 +535,12 @@ h3 {
 .o-layout-flex--gutters {
   display: flex;
   flex-flow: row wrap;
-  margin-left: -4vw;
-  margin-right: -4vw; }
+  margin-left: -1rem;
+  margin-right: -1rem; }
   .o-layout-flex--gutters > .o-layout-flex__item {
     flex: 1 1 auto;
-    padding-left: 4vw;
-    padding-right: 4vw; }
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
 
 .o-layout-flex--space-between {
   justify-content: space-between; }
@@ -573,11 +574,14 @@ h3 {
 /*------------------------------------* # BAND
 \*------------------------------------*/
 .c-band {
-  padding-top: 6vw;
-  padding-bottom: 6vw; }
+  padding: 6rem 3rem; }
 
 .c-band--red {
   background-color: #ff0024;
+  color: #fff; }
+
+.c-band--dark {
+  background-color: #1b1b1b;
   color: #fff; }
 
 .c-band--parallax {
@@ -667,7 +671,7 @@ h3 {
   z-index: 1; }
 
 .c-masthead__button {
-  margin-top: 2vw; }
+  margin-top: 0.5rem; }
 
 /*------------------------------------* # NAV-PRIMARY
 \*------------------------------------*/
@@ -737,8 +741,8 @@ h3 {
 \*------------------------------------*/
 .c-page-head {
   height: 6em;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 1rem;
+  padding-right: 1rem;
   width: 100%; }
   .c-page-head.is-fixed {
     left: 0;
@@ -773,100 +777,11 @@ h3 {
 .has-fixed-page-head {
   padding-top: 6em; }
 
-/*------------------------------------* # PANELS
+/*------------------------------------* # ABOUT
 \*------------------------------------*/
-.c-headline {
-  padding-left: 4rem;
-  position: relative;
-  padding-bottom: 8rem; }
-
-.c-learn {
-  position: relative;
-  height: 75vh; }
-
-.c-learn {
-  color: #fff; }
-
-.c-posts__headline {
-  max-width: 40rem;
-  margin-top: 3vw; }
-
-.c-panels-bg {
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%; }
-
-.c-panels-bg__item {
-  background-color: #1b1b1b;
-  position: relative; }
-
-.c-panels-bg__bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0; }
-
-.c-panels-bg__bg {
-  background-image: url("../images/placeholder.jpg");
-  background-position: center center;
-  background-size: cover;
-  opacity: 0.2; }
-
-.c-panels {
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%; }
-
-.c-panel {
-  height: 75vh;
-  position: relative; }
-
-.c-panel a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 4vw; }
-
-.c-panel a {
-  color: #fff !important; }
-
-.c-panel__number {
-  margin-bottom: 2vw; }
-
-.c-panel__body {
-  margin-top: 2vw;
-  opacity: 1; }
-  .c-panel__body p {
-    font-size: 16px;
-    line-height: 28px; }
-
-.c-panel__dash {
-  border-top: 0.1rem solid;
-  margin-bottom: 2vw;
-  width: 4.5rem; }
-
-.c-panel__button {
-  border: 1px solid #fff;
-  background: transparent; }
-
-.c-panel__icon {
-  height: 2rem;
-  width: 2rem; }
-
-.c-panel__icon {
-  fill: #c8a559;
-  stroke: #c8a559; }
-
-.c-panel__footer {
-  position: absolute;
-  bottom: 4vw; }
+.c-about__text {
+  margin-top: 6rem;
+  line-height: 2rem; }
 
 /*------------------------------------* # STORIES
 \*------------------------------------*/
@@ -954,13 +869,13 @@ h3 {
 \*------------------------------------*/
 .c-news__header {
   padding-left: 4rem;
-  margin-bottom: 4vw;
+  margin-bottom: 6rem;
   position: relative; }
 
 .c-news__meta {
   font-size: 0.875rem;
   font-weight: 900;
-  margin-bottom: 1vw;
+  margin-bottom: 3rem;
   text-transform: uppercase; }
 
 .c-news__title {
@@ -968,7 +883,12 @@ h3 {
 
 .c-news__more {
   display: block;
-  margin-top: 4vw; }
+  margin-top: 6rem; }
+
+/*------------------------------------* # GALLERY
+\*------------------------------------*/
+.c-gallery__media {
+  margin-bottom: 1rem; }
 
 /*------------------------------------* # WIDTHS-FLEX
 \*------------------------------------*/

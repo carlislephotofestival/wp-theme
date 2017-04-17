@@ -23,3 +23,24 @@
 .c-band--secondary-tertiary {
   background: linear-gradient(90deg, $color-brand-secondary 0%, $color-brand-secondary 50%, $color-brand-tertiary 50%, $color-brand-tertiary 100%);
 }
+
+
+.c-about {
+  margin-bottom: $spacer * 6;
+}
+
+.c-center {
+  position: relative;
+  padding-bottom: $spacer * 4;
+  padding-top: $spacer * 4;
+}
+.c-center:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100vw;
+  background: #fff;
+  z-index: -1;
+}

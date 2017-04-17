@@ -4,7 +4,7 @@
 
 // band
 .c-band {
-  padding: ($spacer * 6) ($spacer * 3);
+  padding: ($spacer) ($spacer * 3);
 }
 
 // band--red
@@ -19,16 +19,6 @@
   color: $color-white;
 }
 
-// band--parallax
-.c-band--parallax {
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  height: 50vh;
-}
-.c-band--parallax {
-  background-color: $color-grey-dark;
-}
-.c-band--parallax {
-  background-image: url("../images/placeholder.jpg");
+.c-band--multi {
+  background: linear-gradient(90deg, $color-brand-secondary 0%, $color-brand-secondary 50%, $color-brand-tertiary 50%, $color-brand-tertiary 100%);
 }

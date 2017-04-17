@@ -485,18 +485,26 @@ html {
 
 body {
   background-color: #f1f1f1;
-  color: #ff0024; }
+  color: #000; }
+
+p {
+  line-height: 1.5em;
+  margin: 0 0 1.5em; }
 
 a {
   color: #ff0024;
   text-decoration: none; }
 
 a:hover {
-  color: #000;
+  color: #b388ff;
   text-decoration: none; }
 
 /*------------------------------------* # HEADINGS
 \*------------------------------------*/
+h1, h2, h3 {
+  line-height: 1.5rem;
+  margin: 0 0 1.5rem; }
+
 h1 {
   font-size: 7.5rem;
   font-weight: 900;
@@ -574,7 +582,7 @@ h3 {
 /*------------------------------------* # BAND
 \*------------------------------------*/
 .c-band {
-  padding: 6rem 3rem; }
+  padding: 1rem 3rem; }
 
 .c-band--red {
   background-color: #ff0024;
@@ -584,17 +592,8 @@ h3 {
   background-color: #1b1b1b;
   color: #fff; }
 
-.c-band--parallax {
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  height: 50vh; }
-
-.c-band--parallax {
-  background-color: #1b1b1b; }
-
-.c-band--parallax {
-  background-image: url("../images/placeholder.jpg"); }
+.c-band--multi {
+  background: linear-gradient(90deg, #b388ff 0%, #b388ff 50%, #80d8ff 50%, #80d8ff 100%); }
 
 /*------------------------------------* # BUTTONS
 \*------------------------------------*/
@@ -749,18 +748,18 @@ h3 {
     position: fixed;
     text-align: left;
     top: 0;
-    z-index: 1; }
+    z-index: 10; }
 
 .c-page-head {
   background-color: #ff0024;
-  color: #000; }
+  color: #b388ff; }
 
 .c-page-head__logo {
   height: 1.5rem;
   width: 1.5rem; }
 
 .c-page-head__logo {
-  fill: #000; }
+  fill: #b388ff; }
 
 /*------------------------------------* # PAGE-FOOT
 \*------------------------------------*/
@@ -787,6 +786,10 @@ h3 {
 \*------------------------------------*/
 /*------------------------------------* # STORY
 \*------------------------------------*/
+.c-story {
+  position: relative;
+  margin-bottom: 1rem; }
+
 .c-story__masthead {
   display: block;
   padding-bottom: 1vw;
@@ -802,6 +805,44 @@ h3 {
 
 .c-story__author {
   text-decoration: underline; }
+
+.c-story__image-wrapper {
+  background-color: #1b1b1b;
+  position: relative;
+  z-index: 0; }
+
+.c-story__content {
+  left: 0;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  z-index: 1; }
+
+.c-story__date {
+  color: #80D8FF;
+  display: inline-block;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.c-story__category {
+  border-radius: 2px;
+  display: inline-block;
+  background-color: #80D8FF;
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 7px;
+  color: #000; }
+
+.c-story__headline {
+  margin-top: 0.5rem;
+  color: #fff;
+  font-size: 48px;
+  line-height: 48px;
+  max-width: 468px; }
+
+.c-story__media2 {
+  opacity: 0.75; }
 
 /*------------------------------------* # SPONSORS
 \*------------------------------------*/
@@ -821,49 +862,18 @@ h3 {
 
 /*------------------------------------* # SUBSCRIBE
 \*------------------------------------*/
-.c-subscribe__title {
-  align-items: center;
-  display: flex;
-  height: 100%; }
+.c-subscribe {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 2rem; }
 
-.c-subscribe__label {
-  flex: 0 0 auto; }
+.c-donate {
+  padding: 1rem 2rem;
+  position: relative; }
 
-.c-subscribe__email {
-  background: 0 0;
-  border: none;
-  border-bottom: 2px solid transparent;
-  flex: 0 0 auto;
-  padding: 0.85em 0;
-  width: 100%; }
-
-.c-subscribe__email {
-  border-color: #fff;
-  color: #fff; }
-
-.c-subscribe__form {
-  align-items: center;
-  display: flex;
-  height: 100%; }
-
-.c-subscribe__group {
-  display: flex;
-  flex: 1 1 auto;
-  flex-flow: column wrap;
-  height: 100%;
-  padding: 0 1em; }
-
-.c-subscribe__submit {
-  flex: 0 0 auto; }
-
-.c-subscribe__body {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  padding-left: 1em; }
-
-.c-subscribe__text {
-  line-height: 1.75em; }
+.c-donate__button {
+  float: right;
+  margin-right: -2rem; }
 
 /*------------------------------------* # NEWS
 \*------------------------------------*/
@@ -883,7 +893,8 @@ h3 {
 
 .c-news__more {
   display: block;
-  margin-top: 6rem; }
+  margin-top: 6rem;
+  margin-bottom: 6rem; }
 
 /*------------------------------------* # GALLERY
 \*------------------------------------*/

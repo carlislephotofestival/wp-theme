@@ -3,21 +3,24 @@
 \*------------------------------------*/
 
 // base colors
-$color-black:               #000 !default;
-$color-grey:                #f1f1f1 !default;
-$color-grey-dark:           #1b1b1b !default;
-$color-red:                 #ff0024 !default;
-$color-white:               #fff !default;
+$color-black:                 #000 !default;
+$color-blue:                  #80d8ff !default;
+$color-grey:                  #f1f1f1 !default;
+$color-grey-dark:             #1b1b1b !default;
+$color-purple:                #b388ff !default;
+$color-red:                   #ff0024 !default;
+$color-white:                 #fff !default;
+
 
 // semantic colors
 $color-brand-primary:         $color-red !default;
-
-$color-brand-secondary:       $color-black !default;
+$color-brand-secondary:       $color-purple !default;
+$color-brand-tertiary:        $color-blue !default;
 
 // links
 $color-links:                 $color-brand-primary !default;
 $color-links-hover:           $color-brand-secondary !default;
 
 // body
-$color-body:                  $color-brand-primary !default;
+$color-body:                  $color-black !default;
 $color-body-background:       $color-grey !default;

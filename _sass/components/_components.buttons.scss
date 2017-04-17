@@ -10,8 +10,9 @@
   display: inline-block;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  line-height: 1.5em;
-  padding: 1em 1.5em;
+  line-height: 1.5rem;
+  padding: 1rem 1.5rem;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.25s ease;
@@ -31,4 +32,27 @@
 .c-button--inverse:visited {
   background-color: #fff;
   color: #ff0024;
+}
+
+.c-button__text {
+  display: inline-block;
+  margin-right: $spacer;  
+}
+.c-button__icon {
+  display: inline-block;
+  height: 1rem;
+  overflow: hidden;
+  position: relative;
+  width: 2rem;
+}
+.c-button__arrow {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 100%;
+}
+.c-button__arrow {
+  fill: $color-white;
+  stroke: $color-white;  
 }

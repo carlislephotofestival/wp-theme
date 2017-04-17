@@ -12,6 +12,7 @@
 
   .c-story__image-wrapper {
     flex-basis: 100%;
+    max-width: 100%;
   }
 
   .c-story__content {
@@ -20,6 +21,7 @@
     top: 0;
     z-index: 1;
     flex-basis: 100%;
+    max-width: 100%;
   }
 
   .c-story__meta {
@@ -42,11 +44,13 @@
   position: relative;
   z-index: 0;
   overflow: hidden;
-  flex-basis: 48% !important;
+  flex-basis: 48%;
+  max-width: 48%;
 }
 
 .c-story__content {
-  flex-basis: 52% !important;
+  flex-basis: 52%;
+  max-width: 52%;
   padding: ($spacer * 2);
 }
 .c-story__text {

@@ -3,38 +3,36 @@
 \*------------------------------------*/
 
 .c-nav-primary {
-  flex: 0 0 auto;
-  height: 100%;
-}
+  height: 0;
+  opacity: 0;
 
-@media all and (max-width: 959px) and (min-width: 600px) {
-  .c-nav-primary {
-    display: none;
+  &.is-open {
+    height: 75vh;
+    opacity: 1;
   }
 }
-
-@media all and (max-width: 599px) and (min-width: 50px) {
-  .c-nav-primary {
-    display: none;
-  }
+.c-nav-primary {
+  background: linear-gradient(90deg, $color-brand-secondary 0%, $color-brand-secondary 50%, $color-brand-tertiary 50%, $color-brand-tertiary 100%);
 }
 
 .c-nav-primary__item {
-  align-items: center;
-  display: flex;
-  font-size: calc(100% + 0.25vw);
-  height: 100%;
-  padding-left: calc(1em + 0.5vw);
-  padding-right: calc(1em + 0.5vw);
-}
-.c-nav-primary__item, .c-nav-primary__item:visited {
-  color: #000;
-}
-.c-nav-primary__item:hover {
-  color: #ff0024;
+  margin-bottom: 1.11vw;
 }
 
-.c-nav-primary__item--highlight {
+.c-nav-primary__link {
+  color: $color-black;
+  font-size: 2.11vw;
   font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  transition: all 0.3s;  
+}
+
+.is-open .o-layout-flex__item {
+  padding: $spacer * 4;
+}
+
+.is-open h2 {
+  line-height: 64px;
 }

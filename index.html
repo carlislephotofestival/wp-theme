@@ -37,54 +37,71 @@
     </symbol>
   </svg>
 
-  <header class="c-page-head [ o-layout-flex o-layout-flex--space-between o-layout-flex--center ] is-fixed">
-    <a class="o-layout-flex__item" href="/">
-      <svg aria-hidden="true" class="c-page-head__logo" role="img">
-        <use xlink:href="#icon-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-      </svg>
-    </a>
-
-    <div class="o-layout-flex__item">
-      <!-- todo: remove style -->
-      <span style="font-size: 45px; font-weight: bold;">=</span>
+  <header class="c-page-head is-fixed">
+    <div class="c-nav-primary [ o-layout-flex o-layout-flex--center ]">
+      <div class="o-layout-flex__item u-flex-1/2">
+        <h2>We hope to challenge ideas about the way contemporary photography can interact with both its surroundings and audience</h2>
+      </div>
+      <div class="o-layout-flex__item u-flex-1/2">
+        <ul class="o-list-bare" style="width: 100%;">
+          <li class="c-nav-primary__item"><a class="c-nav-primary__link" href="/">Home</a></li>
+          <li class="c-nav-primary__item"><a class="c-nav-primary__link" href="/">News</a></li>
+          <li class="c-nav-primary__item"><a class="c-nav-primary__link" href="/">Festivals</a></li>
+          <li class="c-nav-primary__item"><a class="c-nav-primary__link" href="/">Exhibitions</a></li>
+          <li class="c-nav-primary__item"><a class="c-nav-primary__link" href="/">About</a></li>
+          <li class="c-nav-primary__item"><a class="c-nav-primary__link" href="/">Contact</a></li>
+        </ul>      
+      </div>
     </div>
-
-    <div class="o-list-inline o-layout-flex__item">
-      <a aria-label="Twitter" class="o-list-inline__item" href="/" target="_blank">
-        <svg aria-hidden="true" class="c-social__icon" role="img">
+    <div class="c-navbar [ o-layout-flex o-layout-flex--space-between o-layout-flex--center ]">
+      <a class="o-layout-flex__item" href="/">
+        <svg aria-hidden="true" class="c-navbar__logo" role="img">
           <use xlink:href="#icon-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
         </svg>
       </a>
-      <a aria-label="Facebook" class="o-list-inline__item" href="/" target="_blank">
-        <svg aria-hidden="true" class="c-social__icon" role="img">
-          <use xlink:href="#icon-facebook" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-        </svg>
-      </a>
-      <a aria-label="Instagram" class="o-list-inline__item" href="/" target="_blank">
-        <svg aria-hidden="true" class="c-social__icon" role="img">
-          <use xlink:href="#icon-instagram" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-        </svg>
-      </a>
+
+      <div class="o-layout-flex__item">
+        <!-- todo: remove style -->
+        <span style="font-size: 45px; font-weight: bold;">=</span>
+      </div>
+
+      <div class="c-social-inline o-list-inline o-layout-flex__item">
+        <a aria-label="Twitter" class="c-social-inline__item o-list-inline__item" href="/" target="_blank">
+          <svg aria-hidden="true" class="c-social-inline__icon" role="img">
+            <use xlink:href="#icon-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+        </a>
+        <a aria-label="Facebook" class="c-social-inline__item o-list-inline__item" href="/" target="_blank">
+          <svg aria-hidden="true" class="c-social-inline__icon" role="img">
+            <use xlink:href="#icon-facebook" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+        </a>
+        <a aria-label="Instagram" class="c-social-inline__item o-list-inline__item" href="/" target="_blank">
+          <svg aria-hidden="true" class="c-social-inline__icon" role="img">
+            <use xlink:href="#icon-instagram" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </header>
 
-  <div class="c-masthead [ o-layout-flex o-layout-flex--center ]">
-    <div class="c-masthead__background" style="background-image: url('images/placeholder.jpg');"></div>
-    <div class="c-masthead__content o-wrapper">
-      <h1>Open
-        <br>Call
-        <br>2017
-      </h1>
-      <a class="c-button c-masthead__button" href="/">Register</a>
+  <div class="c-masthead">
+    <div class="c-masthead__background" style="background-image: url('images/masthead.jpg');"></div>
+    <div class="c-masthead__content [ o-layout-flex o-layout-flex--center ]">
+      <div class="o-wrapper">
+        <article class="c-masthead__article">
+          <h1>Open Call 2017</h1>
+          <p class="c-masthead__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <a class="c-button c-masthead__button" href="/">Register</a>
+      </div>
     </div>
-    <span class="c-scroll c-masthead__scroll"></span>
+  </div>
   </div>
 
   <div class="c-band">
     <div class="o-wrapper">
       <div class="[ o-layout-flex o-layout-flex--gutters ]">
         <div class="o-layout-flex__item u-flex-1/2">
-
           <article class="c-story c-story--large">
             <a class="c-story__link" href="/">
               <div class="c-story__image-wrapper">
@@ -99,17 +116,15 @@
               </div>
             </a>
           </article>
-
         </div>
         <div class="o-layout-flex__item u-flex-1/2">
-
           <article class="c-story">
             <a class="c-story__link" href="/">
               <div class="o-layout-flex">
-                <div class="c-story__image-wrapper o-layout-flex__item u-flex-1/2">
+                <div class="c-story__image-wrapper o-layout-flex__item">
                   <img class="c-story__media2" src="images/placeholder-square.jpg">
                 </div>
-                <div class="c-story__content o-layout-flex__item u-flex-1/2">
+                <div class="c-story__content o-layout-flex__item">
                   <div class="c-story__meta">
                     <strong class="c-story__category">News</strong>
                     <time class="c-story__date">17 April 2017</time>
@@ -121,14 +136,13 @@
               </div>
             </a>
           </article>
-
           <article class="c-story">
             <a class="c-story__link" href="/">
               <div class="o-layout-flex">
-                <div class="c-story__image-wrapper o-layout-flex__item u-flex-1/2">
+                <div class="c-story__image-wrapper o-layout-flex__item">
                   <img class="c-story__media2" src="images/placeholder-square.jpg">
                 </div>
-                <div class="c-story__content o-layout-flex__item u-flex-1/2">
+                <div class="c-story__content o-layout-flex__item">
                   <div class="c-story__meta">
                     <strong class="c-story__category">News</strong>
                     <time class="c-story__date">17 April 2017</time>
@@ -139,36 +153,25 @@
                 </div>
               </div>
             </a>
-          </article>          
-
+          </article>
         </div>
       </div>
       <a class="c-button c-news__more" href="/">More News</a>
     </div>
   </div>
 
-  <section class="c-band c-band--dark" data-section="Images">
-    <div class="o-wrapper">
-      <div class="[ o-layout-flex o-layout-flex--gutters ]">
-        <div class="o-layout-flex__item u-flex-2/2">
-          <img class="c-gallery__media" src="images/placeholder.jpg">
-        </div>
-        <div class="o-layout-flex__item u-flex-1/2">
-          <img class="c-gallery__media" src="images/placeholder.jpg">
-        </div>
-        <div class="o-layout-flex__item u-flex-1/2">
-          <img class="c-gallery__media" src="images/placeholder.jpg">
-        </div>
-      </div>
-    </div>
-  </section>
-  
   <div class="c-band c-band--multi">
     <div class="o-wrapper">
       <div class="o-layout-flex">
         <div class="c-subscribe o-layout-flex__item u-flex-1/2">
           <h3>Subscribe</h3>
           <p>Stay up to date with the latest news.</p>
+          <form method="post" class="newsletter-form" data-error-message="Sorry there was an error while processing your data." data-success-update-message="Your subscription has been updated."
+            data-success-messag1e="You have successfully subscribed to our newsletter." data-error-message-user-exists="This e-mail address is already subscribed to this newsletter."
+            action="" novalidate="novalidate">
+            <input type="text" name="email" id="email" placeholder="email address" class="c-input c-subscribe__input" aria-required="true">
+            <button type="submit" class="c-button c-subscribe__button">Sign up</button>
+          </form>
         </div>
         <div class="c-donate o-layout-flex__item u-flex-1/2">
           <h3>Support Carlisle Photo</h3>

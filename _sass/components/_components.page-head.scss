@@ -4,8 +4,6 @@
 
 .c-page-head {
   height: $page-head-height;
-  padding-left: $page-head-padding-y;
-  padding-right: $page-head-padding-y;
   width: 100%;
 
   &.is-fixed {
@@ -17,15 +15,22 @@
   }
 }
 
-.c-page-head {
+.c-navbar {
   background-color: $color-brand-primary;
-  color: $color-brand-secondary;
+  color: $color-white;
+  padding-left: $page-head-padding-y;
+  padding-right: $page-head-padding-y;  
 }
 
-  .c-page-head__logo {
+  .c-navbar__logo {
     height: 1.5rem;
+    margin-left: $spacer;
     width: 1.5rem;
   }
-  .c-page-head__logo {
-    fill: $color-brand-secondary;
+  .c-navbar__logo {
+    fill: $color-white;
   }
+
+.c-navbar {
+  height: 100%;
+}

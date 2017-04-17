@@ -9,12 +9,17 @@
 }
 
 .c-story--large {
-  
+
+  .c-story__image-wrapper {
+    flex-basis: 100%;
+  }
+
   .c-story__content {
     left: 0;
     position: absolute;
     top: 0;
     z-index: 1;
+    flex-basis: 100%;
   }
 
   .c-story__meta {
@@ -37,9 +42,11 @@
   position: relative;
   z-index: 0;
   overflow: hidden;
+  flex-basis: 48% !important;
 }
 
 .c-story__content {
+  flex-basis: 52% !important;
   padding: ($spacer * 2);
 }
 .c-story__text {
@@ -73,7 +80,7 @@
 }
 
 .c-story__media2 {
-  opacity: 0.75;
+  opacity: 0.65;
   transition: 0.4s ease;
 }
 

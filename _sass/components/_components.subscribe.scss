@@ -8,6 +8,70 @@
   padding-right: ($spacer * 2);  
 }
 
+.c-input {
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  font-size: 15px;
+  height: 50px;
+  outline: none;
+  padding: 8px 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 100%;  
+}
+.c-input::-webkit-input-placeholder { /* Chrome */
+  color: #000;
+}
+.c-input:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+.c-input::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  opacity: 1;
+}
+.c-input:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #000;
+  opacity: 1;
+}
+
+.c-subscribe__input {
+  border: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  padding-right: 60px;
+  text-transform: initial;  
+}
+.c-subscribe__input {
+  padding-right: 15px;
+  width: 235px;
+  font-weight: 700;
+  float: left;
+  color: #000;
+}
+
+.c-subscribe__button {
+  background-color: #ff0a0a;
+  background-position: -49px 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 49px;
+  overflow: hidden;
+  padding: 0;
+  text-indent: -9999px;
+  -webkit-transition: background-position 0.3s ease 0.3s;
+  transition: background-position 0.3s ease 0.3s;
+  width: 49px;  
+}
+.c-subscribe__button {
+  height: 50px;
+  margin-left: -1px;
+  padding: 0;
+  text-indent: -9999px;
+  width: 48px;
+  float: left;
+}
+
 .c-donate {
   padding: $spacer ($spacer * 2);
   position: relative;

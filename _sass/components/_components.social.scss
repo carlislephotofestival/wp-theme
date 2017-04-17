@@ -1,0 +1,22 @@
+/*------------------------------------*\
+ # SOCIAL
+\*------------------------------------*/
+
+.c-social-inline { }
+
+.c-social-inline__item {
+  padding-left: $spacer;
+  padding-right: $spacer;
+}
+
+.c-social-inline__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.c-social-inline__icon {
+  fill: $color-white;
+  transition: all 0.25s ease;
+}
+.c-social-inline__icon:hover {
+  fill: $color-black;
+}

@@ -2,10 +2,9 @@
  # SPONSORS
 \*------------------------------------*/
 
-.c-sponsors {}
-
-.c-sponsors__headline {
-  margin-bottom: 2rem;
+.c-sponsors {
+  padding: ($spacer * 6) 0;
+  text-align: center;
 }
 
 .c-sponsors__list {
@@ -18,5 +17,7 @@
 }
 
 .c-sponsors__logo {
-  height: 5rem;
+  height: 4.5rem;
+  opacity: 0.5;
+  width: auto;
 }

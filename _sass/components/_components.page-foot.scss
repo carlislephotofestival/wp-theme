@@ -2,14 +2,9 @@
  # PAGE-FOOT
 \*------------------------------------*/
 
-.c-page-foot { }
-
-  .c-page-foot__title {
-    padding-bottom: 1vw;
-  }
-
-  .c-page-foot__link {
-    display: block;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-  }
+.c-page-foot {
+  text-align: center;
+}
+.c-page-foot {
+  background-color: $color-white;
+}

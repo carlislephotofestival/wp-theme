@@ -763,13 +763,11 @@ h3 {
 
 /*------------------------------------* # PAGE-FOOT
 \*------------------------------------*/
-.c-page-foot__title {
-  padding-bottom: 1vw; }
+.c-page-foot {
+  text-align: center; }
 
-.c-page-foot__link {
-  display: block;
-  padding-top: 1vw;
-  padding-bottom: 1vw; }
+.c-page-foot {
+  background-color: #fff; }
 
 /*------------------------------------* # PAGE
 \*------------------------------------*/
@@ -846,8 +844,9 @@ h3 {
 
 /*------------------------------------* # SPONSORS
 \*------------------------------------*/
-.c-sponsors__headline {
-  margin-bottom: 2rem; }
+.c-sponsors {
+  padding: 6rem 0;
+  text-align: center; }
 
 .c-sponsors__list {
   margin-left: -2em;
@@ -858,7 +857,9 @@ h3 {
   padding-right: 2em; }
 
 .c-sponsors__logo {
-  height: 5rem; }
+  height: 4.5rem;
+  opacity: 0.5;
+  width: auto; }
 
 /*------------------------------------* # SUBSCRIBE
 \*------------------------------------*/

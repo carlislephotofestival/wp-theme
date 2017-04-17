@@ -11,36 +11,37 @@
   background-color: $color-grey-dark;
   color: $color-white;
 }
-.c-masthead__background {
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  height: 100%;
-  left: 0;
-  opacity: 0.45;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
 
-.c-masthead__content {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
+  .c-masthead__background {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: 0.45;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
 
-.c-masthead__article {
-  text-align: left;
-  margin-right: 45%;
-}
+  .c-masthead__content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
 
-.c-masthead__text {
-  font-size: 32px;
-  font-weight: 900;
-}
+  .c-masthead__article {
+    text-align: left;
+    margin-right: 45%;
+  }
 
-.c-masthead__button { }
+  .c-masthead__text {
+    font-size: 32px;
+    font-weight: 900;
+  }
+
+  .c-masthead__button { }

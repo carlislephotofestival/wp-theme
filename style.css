@@ -589,7 +589,7 @@ h3 {
   background-color: #1b1b1b;
   color: #fff; }
 
-.c-band--multi {
+.c-band--secondary-tertiary {
   background: linear-gradient(90deg, #80d8ff 0%, #80d8ff 50%, #b388ff 50%, #b388ff 100%); }
 
 /*------------------------------------* # BUTTONS
@@ -618,11 +618,6 @@ h3 {
   background-color: #000;
   color: #fff; }
 
-.c-button--inverse,
-.c-button--inverse:visited {
-  background-color: #fff;
-  color: #ff0024; }
-
 .c-button__text {
   display: inline-block;
   margin-right: 1rem; }
@@ -638,11 +633,11 @@ h3 {
   height: 100%;
   left: 0;
   position: absolute;
-  top: 2px;
+  top: 0.125rem;
   width: 100%; }
 
 .c-button__arrow {
-  fill: #fff;
+  fill: transparent;
   stroke: #fff; }
 
 /*------------------------------------* # LOGO

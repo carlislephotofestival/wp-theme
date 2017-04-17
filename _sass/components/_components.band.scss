@@ -19,6 +19,7 @@
   color: $color-white;
 }
 
-.c-band--multi {
+// band--secondary-tertiary
+.c-band--secondary-tertiary {
   background: linear-gradient(90deg, $color-brand-secondary 0%, $color-brand-secondary 50%, $color-brand-tertiary 50%, $color-brand-tertiary 100%);
 }

@@ -20,39 +20,35 @@
 
 .c-button,
 .c-button:visited {
-  background-color: #ff0024;
-  color: #fff;
+  background-color: $color-brand-primary;
+  color: $color-white;
 }
 .c-button:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: $color-black;
+  color: $color-white;
 }
 
-.c-button--inverse,
-.c-button--inverse:visited {
-  background-color: #fff;
-  color: #ff0024;
-}
+  .c-button__text {
+    display: inline-block;
+    margin-right: $spacer;  
+  }
 
-.c-button__text {
-  display: inline-block;
-  margin-right: $spacer;  
-}
-.c-button__icon {
-  display: inline-block;
-  height: 1rem;
-  overflow: hidden;
-  position: relative;
-  width: 2rem;
-}
-.c-button__arrow {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 2px;
-  width: 100%;
-}
-.c-button__arrow {
-  fill: $color-white;
-  stroke: $color-white;  
-}
+  .c-button__icon {
+    display: inline-block;
+    height: 1rem;
+    overflow: hidden;
+    position: relative;
+    width: 2rem;
+  }
+
+  .c-button__arrow {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0.125rem;
+    width: 100%;
+  }
+  .c-button__arrow {
+    fill: transparent;
+    stroke: $color-white;
+  }

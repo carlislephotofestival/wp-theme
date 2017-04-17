@@ -5,14 +5,16 @@
 .c-button {
   background-color: transparent;
   border: none;
+  border-radius: 0.125rem;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   line-height: 1.5em;
   padding: 1em 1.5em;
   text-align: center;
   text-transform: uppercase;
+  transition: 0.4s ease;
 }
 
 .c-button,

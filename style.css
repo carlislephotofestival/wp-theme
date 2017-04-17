@@ -501,7 +501,7 @@ a:hover {
 
 /*------------------------------------* # HEADINGS
 \*------------------------------------*/
-h1, h2, h3 {
+h2, h3 {
   line-height: 1.5rem;
   margin: 0 0 1.5rem; }
 
@@ -541,8 +541,6 @@ h3 {
     flex: 1 1 auto; }
 
 .o-layout-flex--gutters {
-  display: flex;
-  flex-flow: row wrap;
   margin-left: -1rem;
   margin-right: -1rem; }
   .o-layout-flex--gutters > .o-layout-flex__item {
@@ -600,14 +598,16 @@ h3 {
 .c-button {
   background-color: transparent;
   border: none;
+  border-radius: 0.125rem;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   line-height: 1.5em;
   padding: 1em 1.5em;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: 0.4s ease; }
 
 .c-button,
 .c-button:visited {
@@ -786,35 +786,38 @@ h3 {
 \*------------------------------------*/
 .c-story {
   position: relative;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  background-color: #fff; }
 
-.c-story__masthead {
-  display: block;
-  padding-bottom: 1vw;
-  width: 100%; }
+.c-story--large .c-story__content {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1; }
 
-.c-story__media {
-  height: 100%;
-  max-width: 100%;
-  width: 100%; }
+.c-story--large .c-story__meta {
+  position: relative;
+  left: 0;
+  top: 0; }
 
-.c-story__title {
-  margin-bottom: 1vw; }
-
-.c-story__author {
-  text-decoration: underline; }
+.c-story--large .c-story__headline {
+  margin-top: 0.5rem;
+  color: #fff;
+  font-size: 48px;
+  line-height: 48px;
+  max-width: 468px; }
 
 .c-story__image-wrapper {
   background-color: #1b1b1b;
   position: relative;
-  z-index: 0; }
+  z-index: 0;
+  overflow: hidden; }
 
 .c-story__content {
-  left: 0;
-  padding: 2rem;
-  position: absolute;
-  top: 0;
-  z-index: 1; }
+  padding: 2rem; }
+
+.c-story__text {
+  color: #969696; }
 
 .c-story__date {
   color: #80D8FF;
@@ -830,17 +833,26 @@ h3 {
   height: 30px;
   line-height: 30px;
   margin-right: 7px;
-  color: #000; }
+  color: #000;
+  letter-spacing: 0.025em; }
 
 .c-story__headline {
   margin-top: 0.5rem;
   color: #fff;
-  font-size: 48px;
-  line-height: 48px;
-  max-width: 468px; }
+  font-size: 1.5rem;
+  color: #000; }
 
 .c-story__media2 {
-  opacity: 0.75; }
+  opacity: 0.75;
+  transition: 0.4s ease; }
+
+.c-story__link:hover .c-story__media2 {
+  transform: scale(1.1); }
+
+.c-story__meta {
+  position: absolute;
+  left: 2rem;
+  top: 2rem; }
 
 /*------------------------------------* # SPONSORS
 \*------------------------------------*/

@@ -4,8 +4,8 @@
 
 // page-foot
 .c-page-foot {
+  @include clearfix();
   padding: $spacer;
-  text-align: center;
 }
 .c-page-foot {
   background-color: $color-grey-dark;
@@ -35,9 +35,14 @@
 
   // page-foot__link
   .c-page-foot__link {
-    padding-left: $spacer / 2;
-    padding-right: $spacer / 2;
+    padding-left: $spacer / 4;
+    padding-right: $spacer / 4;
   }
   .c-page-foot__link {
     color: $color-white;
+  }
+
+  .c-page-foot__social {
+    float: right;
+    margin-right: -($spacer / 4);
   }

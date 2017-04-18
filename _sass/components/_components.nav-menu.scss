@@ -2,6 +2,31 @@
  # NAV-PRIMARY
 \*------------------------------------*/
 
+.c-page-head__nav {
+  text-align: center;
+}
+
+.c-page-head__social {
+  text-align: right;
+}
+
+.c-nav-primary__link {
+  color: $color-white;
+}
+
+.c-social-list {}
+.c-social-list__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.c-social-list__icon {
+  fill: $color-white;
+  transition: fill 0.25s ease;
+}
+.c-social-list__icon:hover {
+  fill: $color-black;
+}
+
 .c-sidebar {
   background-color: $color-black;
   height: 75vh;
@@ -19,6 +44,10 @@
     transition: opacity .5s;
     z-index: 10;
   }
+}
+
+.c-sidebar__social {
+
 }
 
 .c-nav-menu {

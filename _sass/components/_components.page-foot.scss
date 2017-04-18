@@ -10,3 +10,15 @@
   background-color: $color-grey-dark;
   color: $color-white;
 }
+
+.c-page-foot__heart {
+  height: 1rem;
+  width: 1rem;
+}
+.c-page-foot__heart {
+  fill: $color-red;
+}
+
+.c-page-foot__links {
+  display: inline-block;
+}

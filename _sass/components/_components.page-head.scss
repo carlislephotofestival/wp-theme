@@ -19,7 +19,11 @@
   background-color: $color-brand-primary;
   color: $color-white;
   padding-left: $page-head-padding-y;
-  padding-right: $page-head-padding-y;  
+  padding-right: $page-head-padding-y;
+
+  &.has-fixed-nav-menu {
+    margin-right: 25rem;
+  }
 }
 
   .c-navbar__logo {

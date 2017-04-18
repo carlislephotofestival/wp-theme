@@ -5,7 +5,19 @@
 // news
 .c-news {}
 
+  // news__item
+  .c-news__item {
+    display: block;
+    margin-bottom: $spacer;
+  }
+  
+  // news__media
+
+  .c-news__item:hover .c-news__media img {
+    transform: scale(1.1);
+  }
+
   // news__more
   .c-news__more {
     display: block;
-  }
+  }  

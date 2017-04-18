@@ -837,18 +837,18 @@ h3 {
 
 /*------------------------------------* # NEWS
 \*------------------------------------*/
-.c-news__more {
-  display: block; }
-
-/*------------------------------------* # STORY
-\*------------------------------------*/
 .c-news__item {
   display: block;
   margin-bottom: 2rem; }
 
-.c-news__item:hover .c-post__photo {
+.c-news__item:hover .c-news__media img {
   transform: scale(1.1); }
 
+.c-news__more {
+  display: block; }
+
+/*------------------------------------* # POST
+\*------------------------------------*/
 .c-post {
   display: flex;
   flex-flow: row wrap;

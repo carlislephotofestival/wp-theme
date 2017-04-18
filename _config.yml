@@ -24,8 +24,3 @@ exclude:
   - tsconfig.json
   - tslint.json
   - node_modules
-
-# Collections
-collections:
-  projects:
-    output: true

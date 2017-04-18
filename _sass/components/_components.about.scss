@@ -2,24 +2,29 @@
  # ABOUT
 \*------------------------------------*/
 
+// about
 .c-about {
   margin-bottom: $spacer * 3;
 }
 
-.c-about__content {
-  margin-bottom: $spacer;
-  margin-top: $spacer;
-}
+  // about__content
+  .c-about__content {
+    margin-bottom: $spacer;
+    margin-top: $spacer;
+  }
 
-.c-about__body {
-  position: relative;
-}
-.c-about__body:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: $spacer / 2;
-  height: 4px;
-  width: 8rem;
-  background: $color-brand-tertiary;
-}
+  // about__body (dash)
+  .c-about__body {
+    position: relative;
+  }
+  .c-about__body:before {
+    content: '';
+    height: 2px;
+    left: $spacer;
+    position: absolute;
+    top: 0;
+    width: 8rem;
+  }
+  .c-about__body:before {
+    background: $color-brand-tertiary;
+  }

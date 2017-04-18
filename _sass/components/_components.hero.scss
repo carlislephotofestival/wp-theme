@@ -1,18 +1,20 @@
 /*------------------------------------*\
- # MASTHEAD
+ # HERO
 \*------------------------------------*/
 
-.c-masthead {
+// hero
+.c-hero {
   height: calc(85vh - #{$page-head-height});
   position: relative;
   width: 100%;
 }
-.c-masthead {
+.c-hero {
   background-color: $color-grey-dark;
   color: $color-white;
 }
 
-  .c-masthead__background {
+  // hero__background
+  .c-hero__background {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -25,23 +27,26 @@
     z-index: 1;
   }
 
-  .c-masthead__content {
-    position: absolute;
+  // hero__content
+  .c-hero__content {
+    height: 100%;
     left: 0;
+    position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
     z-index: 2;
   }
 
-  .c-masthead__article {
+  // hero__article
+  .c-hero__article {
     text-align: left;
     margin-right: 45%;
   }
 
-  .c-masthead__text {
-    font-size: 32px;
+  // hero__text
+  .c-hero__text {
+    font-size: 2rem;
     font-weight: 900;
   }
 
-  .c-masthead__button { }
+  // hero__button

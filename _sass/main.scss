@@ -69,20 +69,28 @@
 // components
 @import "components/components.band";
 @import "components/components.buttons";
-@import "components/components.logo";
-@import "components/components.masthead";
-@import "components/components.nav-menu";
-@import "components/components.social";
-@import "components/components.page-head";
-@import "components/components.page-foot";
+
 @import "components/components.page";
-@import "components/components.stories";
-@import "components/components.story";
+
+@import "components/components.page-head";
+@import "components/components.logo";
+@import "components/components.social";
+
+@import "components/components.nav-menu";
+
+@import "components/components.hero";
+
+@import "components/components.news";
+@import "components/components.post";
+
+@import "components/components.about";
+
 @import "components/components.partners";
+
 @import "components/components.newsletter";
 @import "components/components.donate";
-@import "components/components.news";
-@import "components/components.about";
+
+@import "components/components.page-foot";
 
 // utilities
 @import "utilities/utilities.widths-flex";

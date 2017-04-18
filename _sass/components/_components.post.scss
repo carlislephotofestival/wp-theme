@@ -1,0 +1,131 @@
+/*------------------------------------*\
+ # STORY
+\*------------------------------------*/
+
+.c-news__item {
+  display: block;
+  margin-bottom: $spacer;
+}
+.c-news__item:hover .c-post__photo {
+  transform: scale(1.1);
+}
+
+// post
+.c-post {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+}
+.c-post {
+  background-color: $color-white;
+}
+
+  // post__media
+  .c-post__media {
+    flex: 1 1 auto; 
+    flex-basis: 47.5%;
+    max-width: 47.5%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  .c-post__media {
+    background-color: $color-black;
+  }
+
+  // post__photo
+  .c-post__photo {
+    opacity: 0.65;
+    transition: 0.4s ease;
+  }
+
+  // post__content
+  .c-post__content {
+    flex: 1 1 auto;
+    flex-basis: 52.5%;
+    max-width: 52.5%;
+    padding: $spacer;
+  }
+
+  // post__meta
+  .c-post__meta {
+    left: 2rem;
+    position: absolute;
+    top: 2rem;
+    z-index: 2;
+  }
+
+  // post__date
+  .c-post__date {
+    display: inline-block;
+    font-weight: 900;
+    line-height: 2rem;
+    text-transform: uppercase;
+  }
+  .c-post__date {
+    color: $color-brand-secondary;
+  }
+
+  // post__category
+  .c-post__category {
+    border-radius: 2px;
+    display: inline-block;
+    height: 2rem;
+    letter-spacing: 0.025em;
+    line-height: 2rem;
+    margin-right: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .c-post__category {
+    background-color: $color-brand-secondary;
+    color: $color-black;
+  }
+
+  // post__headline
+  .c-post__headline {
+    color: $color-black;
+    font-size: 1.5rem;
+    line-height: 1.5rem; // todo: find out why this needs setting
+  }
+
+  // post__text
+  .c-post__text {
+    color: $color-black;
+  }
+
+// post--featured
+.c-post--featured {
+
+  .c-post__media {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .c-post__content {
+    bottom: 0;
+    flex-basis: 100%;
+    left: 0;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+
+  .c-post__meta {
+    position: static;
+  }
+
+  .c-post__headline {
+    color: $color-white;
+    margin-top: ($spacer /2 );
+    font-size: 48px;
+    line-height: 48px;
+    max-width: 468px;    
+  }
+}
+
+// post--small
+.c-post--teaser {
+
+}

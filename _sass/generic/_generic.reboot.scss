@@ -58,17 +58,14 @@ a:hover {
 }
 
 // input
-$input-padding-x: $spacer / 4 !default;
-$input-padding-y: $spacer / 2 !default;
-
 .c-input {
   border: 0;
-  border-radius: 3px;
+  border-radius: 2px;
   font-size: 1rem;
   font-weight: 700;
   height: 3.5rem;
   outline: none;
-  padding: $input-padding-x $input-padding-y;
+  padding: #{$spacer / 4} #{$spacer / 2};
   width: 100%;
 }
 .c-input {

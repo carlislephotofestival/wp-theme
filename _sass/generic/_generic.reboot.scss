@@ -56,3 +56,35 @@ a:hover {
   color: $color-links-hover;
   text-decoration: none;
 }
+
+// input
+$input-padding-x: $spacer / 4 !default;
+$input-padding-y: $spacer / 2 !default;
+
+.c-input {
+  border: 0;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.5rem;
+  outline: none;
+  padding: $input-padding-x $input-padding-y;
+  width: 100%;
+}
+.c-input {
+  color: $color-black;
+}
+.c-input::-webkit-input-placeholder {
+  color: $color-black;
+}
+.c-input:-ms-input-placeholder {
+  color: $color-black;
+}
+.c-input::-moz-placeholder {
+  color: $color-black;
+  opacity: 1;
+}
+.c-input:-moz-placeholder {
+  color: $color-black;
+  opacity: 1;
+}

@@ -1,5 +1,6 @@
 # compiled output
 _site
+style.css
 
 # dependencies
 /node_modules

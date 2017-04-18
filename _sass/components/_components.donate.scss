@@ -1,0 +1,14 @@
+/*------------------------------------*\
+ # DONATE
+\*------------------------------------*/
+
+// donate
+.c-donate {
+  @include clearfix();
+  padding-left: $spacer !important; // todo: fix to remove !important
+}
+
+  // donate__button
+  .c-donate__button {
+    float: right;
+  }

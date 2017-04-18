@@ -2,23 +2,42 @@
  # PAGE-FOOT
 \*------------------------------------*/
 
+// page-foot
 .c-page-foot {
   padding: $spacer;
   text-align: center;
 }
 .c-page-foot {
   background-color: $color-grey-dark;
-  color: $color-white;
+  color: $color-grey;
 }
+  // page-foot__text
+  .c-page-foot__text {
+    display: inline-block;
+    margin-right: $spacer / 2;
+  }
 
-.c-page-foot__heart {
-  height: 1rem;
-  width: 1rem;
-}
-.c-page-foot__heart {
-  fill: $color-red;
-}
+  // page-foot__heart
+  .c-page-foot__heart {
+    height: 1rem;
+    width: 1rem;
+  }
+  .c-page-foot__heart {
+    fill: $color-red;
+  }
 
-.c-page-foot__links {
-  display: inline-block;
-}
+  // page-foot__list
+  .c-page-foot__list {
+    display: inline-block;
+  }
+
+  // page-foot__item
+
+  // page-foot__link
+  .c-page-foot__link {
+    padding-left: $spacer / 2;
+    padding-right: $spacer / 2;
+  }
+  .c-page-foot__link {
+    color: $color-white;
+  }

@@ -502,7 +502,7 @@ a:hover {
 /*------------------------------------* # HEADINGS
 \*------------------------------------*/
 h2, h3 {
-  line-height: 1.5rem;
+  line-height: 1.5em;
   margin: 0 0 1.5rem; }
 
 h1 {
@@ -544,8 +544,16 @@ h3 {
   margin-right: -1rem; }
   .o-layout-flex--gutters > .o-layout-flex__item {
     flex: 1 1 auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem; }
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+.o-layout-flex--gutters-wide {
+  margin-left: -2rem;
+  margin-right: -2rem; }
+  .o-layout-flex--gutters-wide > .o-layout-flex__item {
+    flex: 1 1 auto;
+    padding-left: 2rem;
+    padding-right: 2rem; }
 
 .o-layout-flex--space-between {
   justify-content: space-between; }
@@ -579,35 +587,33 @@ h3 {
 /*------------------------------------* # BAND
 \*------------------------------------*/
 .c-band {
-  padding: 1rem 3rem; }
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  padding: 2rem 2rem;
+  position: relative; }
 
 .c-band--red {
-  background-color: #ff0024;
+  background: #ff0024;
   color: #fff; }
 
+.c-band--light {
+  background: #fff; }
+
 .c-band--dark {
-  background-color: #1b1b1b;
+  background: #1b1b1b;
   color: #fff; }
 
 .c-band--secondary-tertiary {
   background: linear-gradient(90deg, #80d8ff 0%, #80d8ff 50%, #b388ff 50%, #b388ff 100%); }
 
-.c-about {
-  margin-bottom: 6rem; }
-
-.c-center {
-  position: relative;
-  padding-bottom: 4rem;
-  padding-top: 4rem; }
-
-.c-center:after {
+.c-band--left-1\/3:after {
+  background-color: #fff;
   content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
   height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 100vw;
-  background: #fff;
   z-index: -1; }
 
 /*------------------------------------* # BUTTONS
@@ -638,7 +644,7 @@ h3 {
 
 .c-button__text {
   display: inline-block;
-  margin-right: 1rem; }
+  margin-right: 2rem; }
 
 .c-button__icon {
   display: inline-block;
@@ -734,7 +740,7 @@ h3 {
   transition: all 0.3s; }
 
 .is-open .o-layout-flex__item {
-  padding: 4rem; }
+  padding: 8rem; }
 
 .is-open h2 {
   line-height: 64px; }
@@ -790,8 +796,8 @@ h3 {
 /*------------------------------------* # SOCIAL
 \*------------------------------------*/
 .c-social-inline__item {
-  padding-left: 1rem;
-  padding-right: 1rem; }
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
 .c-social-inline__icon {
   height: 1.5rem;
@@ -819,12 +825,12 @@ h3 {
 .c-navbar {
   background-color: #ff0024;
   color: #fff;
-  padding-left: 2rem;
-  padding-right: 2rem; }
+  padding-left: 4rem;
+  padding-right: 4rem; }
 
 .c-navbar__logo {
   height: 1.5rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
   width: 1.5rem; }
 
 .c-navbar__logo {
@@ -836,6 +842,7 @@ h3 {
 /*------------------------------------* # PAGE-FOOT
 \*------------------------------------*/
 .c-page-foot {
+  padding: 2rem;
   text-align: center; }
 
 .c-page-foot {
@@ -853,7 +860,7 @@ h3 {
 \*------------------------------------*/
 .c-story {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   background-color: #fff; }
 
 .c-story--large .c-story__image-wrapper {
@@ -874,7 +881,7 @@ h3 {
   top: 0; }
 
 .c-story--large .c-story__headline {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   color: #fff;
   font-size: 48px;
   line-height: 48px;
@@ -914,7 +921,6 @@ h3 {
   letter-spacing: 0.025em; }
 
 .c-story__headline {
-  margin-top: 0.5rem;
   color: #fff;
   font-size: 1.5rem;
   color: #000; }
@@ -934,7 +940,6 @@ h3 {
 /*------------------------------------* # SPONSORS
 \*------------------------------------*/
 .c-sponsors {
-  padding: 6rem 0;
   text-align: center; }
 
 .c-sponsors__list {
@@ -953,9 +958,7 @@ h3 {
 /*------------------------------------* # SUBSCRIBE
 \*------------------------------------*/
 .c-subscribe {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  padding-right: 2rem; }
+  padding-right: 1rem !important; }
 
 .c-input {
   border: 2px solid #ccc;
@@ -1012,33 +1015,38 @@ h3 {
     left: 3px; }
 
 .c-donate {
-  padding: 1rem 2rem;
+  padding-left: 2rem !important;
   position: relative; }
 
 .c-donate__button {
   float: right;
-  margin-right: -2rem; }
+  margin-right: -4rem; }
 
 /*------------------------------------* # NEWS
 \*------------------------------------*/
-.c-news__header {
-  padding-left: 4rem;
-  margin-bottom: 6rem;
+.c-news__more {
+  display: block; }
+
+/*------------------------------------* # ABOUT
+\*------------------------------------*/
+.c-about {
+  margin-bottom: 6rem; }
+
+.c-about__content {
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
+
+.c-about__body {
   position: relative; }
 
-.c-news__meta {
-  font-size: 0.875rem;
-  font-weight: 900;
-  margin-bottom: 3rem;
-  text-transform: uppercase; }
-
-.c-news__title {
-  max-width: 40rem; }
-
-.c-news__more {
-  display: block;
-  margin-top: 4rem;
-  margin-bottom: 4rem; }
+.c-about__body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  height: 4px;
+  width: 8rem;
+  background: #b388ff; }
 
 /*------------------------------------* # WIDTHS-FLEX
 \*------------------------------------*/

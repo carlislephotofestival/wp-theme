@@ -4,43 +4,48 @@
 
 // band
 .c-band {
-  padding: ($spacer) ($spacer * 3);
+  margin-bottom: $spacer * 2;
+  margin-top: $spacer * 2;
+  padding: $spacer $spacer;
+  position: relative;
 }
 
 // band--red
 .c-band--red {
-  background-color: $color-brand-primary;
+  background: $color-brand-primary;
   color: $color-white;
+}
+
+.c-band--light {
+  background: $color-white;
 }
 
 // band--dark
 .c-band--dark {
-  background-color: $color-grey-dark;
+  background: $color-grey-dark;
   color: $color-white;
 }
 
 // band--secondary-tertiary
 .c-band--secondary-tertiary {
-  background: linear-gradient(90deg, $color-brand-secondary 0%, $color-brand-secondary 50%, $color-brand-tertiary 50%, $color-brand-tertiary 100%);
+  background: linear-gradient(
+    90deg,
+    $color-brand-secondary 0%,
+    $color-brand-secondary 50%,
+    $color-brand-tertiary 50%,
+    $color-brand-tertiary 100%
+  );
 }
 
-
-.c-about {
-  margin-bottom: $spacer * 6;
-}
-
-.c-center {
-  position: relative;
-  padding-bottom: $spacer * 4;
-  padding-top: $spacer * 4;
-}
-.c-center:after {
+// band--absolute-1/3
+.c-band--left-1\/3 { }
+.c-band--left-1\/3:after {
+  background-color: $color-white;
   content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
   height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 100vw;
-  background: #fff;
   z-index: -1;
 }

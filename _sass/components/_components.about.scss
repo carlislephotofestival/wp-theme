@@ -15,6 +15,7 @@
 
   // about__body (dash)
   .c-about__body {
+    padding-top: $spacer; // 1
     position: relative;
   }
   .c-about__body:before {
@@ -28,3 +29,10 @@
   .c-about__body:before {
     background: $color-brand-tertiary;
   }
+
+// media
+@media (min-width: 64em) {
+  .c-about__body {
+    padding: 0; // 1
+  }
+}

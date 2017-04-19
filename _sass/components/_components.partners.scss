@@ -15,7 +15,15 @@
   .c-partners__logo {
     height: 4.5rem;
     opacity: 0.5;
+    margin-bottom: $spacer; // 1
     padding-left: $spacer;
     padding-right: $spacer;
     width: auto;
   }
+
+// media
+@media (min-width: 64em) {
+  .c-partners__logo {
+    margin-bottom: 0; // 1
+  }
+}  

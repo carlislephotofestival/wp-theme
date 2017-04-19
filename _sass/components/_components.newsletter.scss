@@ -5,14 +5,16 @@
 // newsletter
 .c-newsletter {
   @include clearfix();
-  padding-right: $spacer !important; // todo: fix to remove !important
+  background-color: $color-brand-secondary;
+  padding: $spacer !important; // todo: fix to remove !important
+  text-align: center;
 }
 
   // newsletter__input
   .c-newsletter__input {
-    float: left;  
+    float: left;
     min-height: 3.5rem;
-    width: 18rem;
+    width: calc(100% - 3.5rem);
   }
 
   // newsletter__button
@@ -29,3 +31,13 @@
     top: 4px;
     left: 3px;
   }
+
+//  media
+@media (min-width: 64em) {
+  .c-newsletter {
+    text-align: left;
+  }
+  .c-newsletter__input {
+    width: 14rem;
+  }
+}

@@ -5,9 +5,14 @@
 // nav-secondary
 .c-nav-secondary {
   display: inline-block;
+  margin-bottom: $spacer / 2; // 1
 }
 
   // nav-secondary__item
+  .c-nav-secondary__item {
+    display: block; // 2
+    margin-bottom: $spacer / 2; // 3
+  }
 
   // nav-secondary__link
   .c-nav-secondary__link {
@@ -18,3 +23,15 @@
   .c-nav-secondary__link {
     color: $color-white;
   }
+
+// media
+@media (min-width: 64em) {
+  .c-nav-secondary {
+    margin-bottom: 0; // 1
+  }
+
+  .c-nav-secondary__item {
+    display: inline-block; // 2
+    margin-bottom: 0; // 3
+  }
+}  

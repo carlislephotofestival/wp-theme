@@ -5,10 +5,20 @@
 // donate
 .c-donate {
   @include clearfix();
-  padding-left: $spacer !important; // todo: fix to remove !important
+  background-color: $color-brand-tertiary;
+  padding: $spacer !important; // todo: fix to remove !important
+  text-align: center;
 }
 
   // donate__button
+  .c-donate__button { }
+
+// media
+@media (min-width: 64em) {
+  .c-donate {
+    text-align: left;
+  }
   .c-donate__button {
     float: right;
   }
+}

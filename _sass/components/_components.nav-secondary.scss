@@ -1,0 +1,20 @@
+/*------------------------------------*\
+ # NAV-SECONDARY
+\*------------------------------------*/
+
+// nav-secondary
+.c-nav-secondary {
+  display: inline-block;
+}
+
+  // nav-secondary__item
+
+  // nav-secondary__link
+  .c-nav-secondary__link {
+    margin-left: $spacer / 4;
+    margin-right: $spacer / 4;
+    transition: color 0.5s;
+  }
+  .c-nav-secondary__link {
+    color: $color-white;
+  }

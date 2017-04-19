@@ -2,21 +2,21 @@
  # SOCIAL
 \*------------------------------------*/
 
-.c-social-inline { }
+// social
+.c-social {}
 
-.c-social-inline__item {
-  padding-left: $spacer;
-  padding-right: $spacer;
-}
+  // social__link
+  .c-social__link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
-.c-social-inline__icon {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-.c-social-inline__icon {
-  fill: $color-white;
-  transition: all 0.25s ease;
-}
-.c-social-inline__icon:hover {
-  fill: $color-black;
-}
+  // social__icon
+  .c-social__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .c-social__icon,
+  .c-social__icon:hover {
+    fill: $color-white;
+  }

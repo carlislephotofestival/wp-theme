@@ -3,12 +3,26 @@
 \*------------------------------------*/
 
 // social
-.c-social {}
+.c-social {
+  line-height: 2rem;
+}
 
   // social__link
   .c-social__link {
+    align-items: center;
+    display: flex;
+    height: 2rem;
+    justify-content: center;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .c-social__link--first {
+    margin-left: 0;
+  }
+
+  .c-social__link--last {
+    margin-right: 0;
   }
 
   // social__icon

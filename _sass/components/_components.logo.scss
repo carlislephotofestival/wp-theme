@@ -3,12 +3,10 @@
 \*------------------------------------*/
 
 .c-logo {
-  height: 2em;
-  width: auto;
+  height: 2rem;
+  width: 2rem;
 }
-.c-logo {
-  fill: #000;
-}
+.c-logo,
 .c-logo:hover {
-  fill: #ff0024;
+  fill: $color-white;
 }

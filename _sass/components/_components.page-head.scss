@@ -4,60 +4,31 @@
 
 // page-head
 .c-page-head {
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
-  height: $page-head-height;
-  justify-content: space-between;
-  padding-left: $spacer * 2;
-  padding-right: $spacer * 2;
+  display: block;
+  height: 4rem;
   width: 100%;
+
+  @media screen and (min-width: 64em) {
+    height: 6rem;
+    padding-bottom: ($spacer - 0.1875rem);
+    padding-top: $spacer;
+  }
 
   &.is-fixed {
     left: 0;
     position: fixed;
     text-align: left;
     top: 0;
-    z-index: 11;
+    z-index: 10;
   }
 }
-
 .c-page-head {
   background-color: $color-brand-primary;
   color: $color-white;
-
-  &.has-fixed-nav-menu {
-    background-color: $color-black;
-    transition: background-color .5s;
-
-    .c-page-head__link:hover {
-      color: $color-brand-primary;
-    }
-  }
 }
 
-  // page-head__logo
-  .c-page-head__logo {
-    height: 2rem;
-    left: $spacer * 2;
-    position: absolute;
-    top: $spacer;
-    width: 2rem;
-    z-index: 11;
-  }
-  .c-page-head__logo {
-    fill: $color-white;
-  }
-
-  // page-head__nav
-  .c-page-head__nav {
-    text-align: center;
-  }
-
-  // page-head__social
-  .c-page-head__social {
-    text-align: right;
-  }
+  // page-head__menu
+  .c-page-head__menu { }
 
   // page-head__link
   .c-page-head__link {

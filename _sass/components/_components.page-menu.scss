@@ -1,0 +1,135 @@
+/*------------------------------------*\
+ # PAGE-MENU
+\*------------------------------------*/
+
+.c-page-menu {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+
+  &.is-open {
+    padding-left: $spacer / 2;
+    padding-right: $spacer / 2;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity .5s;
+    z-index: 10;
+
+    .c-page-menu__nav {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .c-page-menu__trigger {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .c-nav-primary {
+      margin-top: 32%;;
+    }
+
+    .c-nav-primary__item {
+      display: block;
+      margin-bottom: $spacer;
+    }
+
+    .c-nav-primary__link {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-transform: none;
+    }
+    .c-nav-primary__link {
+      color: $color-white;
+      transition: border-color 0.5s;
+    }
+    .c-nav-primary__link:hover {
+      color: $color-white;
+    }
+
+    .c-nav-primary__link--selected {
+      color: $color-grey;
+    }
+
+    .c-page-menu__social {
+      bottom: $spacer;
+      left: $spacer;
+      opacity: 1;
+      right: auto;
+      top: auto;
+      visibility: visible;
+    }
+  }
+    
+  &.is-open {
+    background-color: $color-black;
+  }  
+}
+
+// page-menu__logo
+.c-page-menu__logo {
+  left: $spacer;
+  position: absolute;
+  top: $spacer / 2;
+  z-index: 11;
+
+  @media screen and (min-width: 64em) {
+    left: $spacer;
+    top: $spacer;
+  }
+}
+
+// page-menu__trigger
+.c-page-menu__trigger {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  position: absolute;
+  right: $spacer;
+  text-transform: uppercase;
+  top: $spacer / 2;
+  z-index: 11;
+
+  @media screen and (min-width: 64em) {
+    opacity: 0;
+    right: $spacer;
+    top: $spacer;
+    visibility: hidden;
+  }  
+}
+.c-page-menu__trigger {
+  color: $color-white;
+}
+
+// page-menu__nav
+.c-page-menu__nav {
+  opacity: 0;
+  visibility: hidden;
+
+  @media screen and (min-width: 64em) {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// page-menu__social
+.c-page-menu__social {
+  opacity: 0;
+  position: absolute;
+  right: $spacer;
+  top: $spacer / 2;
+  visibility: hidden;
+  z-index: 11;
+
+  @media screen and (min-width: 64em) {
+    opacity: 1;
+    right: $spacer;
+    top: $spacer;    
+    visibility: visible;
+  }  
+}

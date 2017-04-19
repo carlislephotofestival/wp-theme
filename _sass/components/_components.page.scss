@@ -5,7 +5,11 @@
 .c-page {
 
   &.has-fixed-page-head {
-    padding-top: $page-head-height;
+    padding-top: 4rem;
+
+    @media screen and (min-width: 64em) {
+      height: 6rem;
+    }    
   }
 }
 

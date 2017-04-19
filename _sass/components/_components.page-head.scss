@@ -10,14 +10,11 @@
 
   @media screen and (min-width: 64em) {
     height: 6rem;
-    padding-bottom: ($spacer - 0.1875rem);
-    padding-top: $spacer;
   }
 
   &.is-fixed {
     left: 0;
     position: fixed;
-    text-align: left;
     top: 0;
     z-index: 10;
   }
@@ -29,21 +26,3 @@
 
   // page-head__menu
   .c-page-head__menu { }
-
-  // page-head__link
-  .c-page-head__link {
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    line-height: 1rem;
-    position: absolute;
-    right: $spacer * 2;
-    top: 2.5rem;
-    text-transform: uppercase;
-  }
-  .c-page-head__link {
-    color: $color-white;
-  }
-  .c-page-head__link:hover {
-    color: $color-black;
-  }

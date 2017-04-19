@@ -3,30 +3,26 @@
 \*------------------------------------*/
 
 // nav-primary
-.c-nav-primary {
-  line-height: 2rem;
-}
+.c-nav-primary { }
+
+  // nav-primary__list
+  .c-nav-primary__list {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
 
   // nav-primary__item
   .c-nav-primary__item {
-    display: inline-block;
+    flex: 0 0 auto;
   }
 
   // nav-primary__link
   .c-nav-primary__link {
-    border-bottom: 3px solid transparent;
-    display: block;
     font-weight: 700;
     letter-spacing: 0.1rem;
-    margin-left: $spacer / 2;
-    margin-right: $spacer / 2;
     text-transform: uppercase;
-  }
-  .c-nav-primary__link {
-    color: $color-white;
-    transition: border-color 0.5s;
-  }
-  .c-nav-primary__link:hover {
-    border-color: $color-brand-secondary;
-    color: $color-white;
   }

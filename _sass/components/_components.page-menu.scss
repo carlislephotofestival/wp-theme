@@ -7,14 +7,14 @@
   width: 100%;
 
   &.is-open {
+    bottom: 0;
+    left: 0;
     padding-left: $spacer / 2;
     padding-right: $spacer / 2;
     position: fixed;
+    right: 0;
     text-align: left;
     top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     transition: opacity .5s;
     z-index: 10;
 
@@ -24,7 +24,7 @@
     }
 
     .c-page-menu__link {
-      height: 4.5rem;
+      height: 4rem;
     }
 
     .c-page-menu__trigger {
@@ -34,25 +34,33 @@
 
     .c-nav-primary {
       margin-top: $spacer * 2;
-    }
 
-    .c-nav-primary__list {
-      flex-direction: column;
-    }
+      .c-nav-primary__list {
+        flex-direction: column;
+      }
 
-    .c-nav-primary__link {
-      font-size: 1.5rem;
-      font-weight: 400;
-      text-transform: none;
+      .c-nav-primary__link {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: none;
+      }      
     }
 
     .c-page-menu__social {
-      bottom: $spacer;
-      left: $spacer;
+      bottom: 0;
+      height: 4rem;
+      left: 0;
       opacity: 1;
-      right: auto;
+      right: 0;
       top: auto;
       visibility: visible;
+    }
+    .c-page-menu__social {
+      background-color: $color-brand-tertiary;
+
+      .c-social__icon {
+        fill: $color-black;
+      }      
     }
   }
 
@@ -61,81 +69,75 @@
   }
 }
 
-// page-menu__logo
-.c-page-menu__logo {
-  left: $spacer;
-  position: absolute;
-  top: $spacer / 2;
-  z-index: 11;
-
-  @media screen and (min-width: 64em) {
-    left: $spacer;
-    top: $spacer;
+  // page-menu__logo
+  .c-page-menu__logo {
+    left: $spacer / 2;
+    position: absolute;
+    top: 0;
+    z-index: 11;
   }
-}
 
-// page-menu__trigger
-.c-page-menu__trigger {
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  position: absolute;
-  right: $spacer / 2;
-  text-transform: uppercase;
-  top: 0;
-  z-index: 11;
+  // page-menu__trigger
+  .c-page-menu__trigger {
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    right: $spacer / 2;
+    text-transform: uppercase;
+    top: 0;
+    z-index: 11;
 
-  @media screen and (min-width: 64em) {
+    @media screen and (min-width: 64em) {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  // page-menu__nav
+  .c-page-menu__nav {
+    height: 100%;
     opacity: 0;
     visibility: hidden;
+
+    @media screen and (min-width: 64em) {
+      opacity: 1;
+      visibility: visible;
+    }
   }
-}
 
-// page-menu__nav
-.c-page-menu__nav {
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
+  // page-menu__social
+  .c-page-menu__social {
+    bottom: 0;
+    height: 100%;
+    left: $spacer / 2;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 11;
 
-  @media screen and (min-width: 64em) {
-    opacity: 1;
-    visibility: visible;
+    @media screen and (min-width: 64em) {
+      bottom: auto;
+      left: auto;
+      opacity: 1;
+      right: $spacer / 2;
+      top: 0;
+      visibility: visible;
+    }
   }
-}
 
-.c-page-menu__link {
-  display: block;
-  height: 4rem;
-  padding: #{$spacer * 0.75} #{$spacer / 2};
-}
-.c-page-menu__link  {
-  color: $color-white;
-  transition: background-color .5s;
-}
-.c-page-menu__link:hover {
-  background-color: $color-black;
-  color: $color-white;
-}
-
-.c-page-head--large .c-page-menu__link {
-  @media screen and (min-width: 64em) {
-    height: 6rem;
-    padding: #{($spacer * 1.25)} #{$spacer / 2};
+  // page-menu__link
+  .c-page-menu__link {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding-left: $spacer / 2;
+    padding-right: $spacer / 2;
   }
-}
-
-// page-menu__social
-.c-page-menu__social {
-  opacity: 0;
-  position: absolute;
-  right: $spacer;
-  top: $spacer / 2;
-  visibility: hidden;
-  z-index: 11;
-
-  @media screen and (min-width: 64em) {
-    opacity: 1;
-    right: $spacer / 2;
-    top: 0;
-    visibility: visible;
+  .c-page-menu__link  {
+    color: $color-white;
+    transition: background-color .5s;
   }
-}
+  .c-page-menu__link:hover {
+    background-color: $color-black;
+    color: $color-white;
+  }

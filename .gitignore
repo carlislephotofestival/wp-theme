@@ -1,5 +1,5 @@
 # compiled output
-_site
+/_site
 style.css
 /js/*.js
 /js/*.map

@@ -3,16 +3,26 @@
 \*------------------------------------*/
 
 // social
-.c-social {
-  line-height: 2rem;
-}
+.c-social { }
+
+  .c-social__list {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;    
+  }
+
+  .c-social__item {
+    display: block;
+    flex: 0 0 auto;
+    height: 100%;    
+  }
 
   // social__link
-  .c-social__link {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
+  .c-social__link { }
 
   // social__icon
   .c-social__icon {

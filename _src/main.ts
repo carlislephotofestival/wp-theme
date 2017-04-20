@@ -1,3 +1,5 @@
+import * as $ from "jquery";
+
 $(".js-page-menu-trigger").click(function (event) {
   event.preventDefault();
 

@@ -1,6 +1,9 @@
 # compiled output
 _site
 style.css
+/js/*.js
+/js/*.map
+/tmp
 
 # dependencies
 /node_modules

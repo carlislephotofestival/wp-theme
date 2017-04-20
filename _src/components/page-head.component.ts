@@ -10,7 +10,7 @@ const PageHeadComponent = (($) => {
   }
 
   const ClassName = {
-    "PAGE_HEAD_LARGE": "c-page-head"
+    "PAGE_HEAD_LARGE": "c-page-head--large"
   }
 
   const Selector = {

@@ -12,7 +12,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-        jquery: "jquery/src/jquery"
+      jquery: "jquery/src/jquery"
     },
     extensions: [".ts", ".js"]
   },
@@ -61,9 +61,9 @@ module.exports = {
         exclude: [/\.(spec|e2e)\.ts$/]
       },
       {
-          test: /[\/\\]node_modules[\/\\]some-module[\/\\]index\.js$/,
-          loader: "imports-loader?define=>false"
-      }    
+        test: /[\/\\]node_modules[\/\\]some-module[\/\\]index\.js$/,
+        loader: "imports-loader?define=>false"
+      }
     ]
   },
   node: {

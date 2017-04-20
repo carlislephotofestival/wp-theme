@@ -11,11 +11,26 @@
   background-color: $color-grey-dark;
   color: $color-grey;
 }
+
+  // page-foot__list
+
+  // page-foot__item
+  .c-page-foot__item {
+    margin-left: $spacer / 2;
+    margin-right: $spacer / 2;
+  }
+
+  // c-page-foot__link
+
   // page-foot__text
   .c-page-foot__text {
     display: inline-block;
-    margin-right: $spacer / 2;
-    margin-bottom: $spacer;
+    margin-bottom: ($spacer / 2);
+    margin-right: $spacer;
+
+    @media screen and (min-width: 64em) {
+      margin-bottom: 0;
+    }
   }
 
   // page-foot__heart
@@ -27,16 +42,23 @@
     fill: $color-red;
   }
 
-  .c-page-foot__social {
+  // page-foot__nav
+  .c-page-foot__nav {
+    margin-bottom: ($spacer / 2);
+    margin-left: -($spacer / 4);
     margin-right: -($spacer / 4);
-  }
-
-  @media (min-width: 64em) {
-    .c-page-foot__text {
+    
+    @media screen and (min-width: 64em) {
       margin-bottom: 0;
     }
+  }
 
-    .c-page-foot__social {
+  // page-foot__social
+  .c-page-foot__social {
+    margin-left: -($spacer / 2);
+    margin-right: -($spacer / 2);
+
+    @media screen and (min-width: 64em) {
       float: right;
     }
   }

@@ -4,9 +4,13 @@
 
 // hero
 .c-hero {
-  height: calc(85vh - #{$page-head-height});
+  height: 100vh;
   position: relative;
   width: 100%;
+
+  @media screen and (min-width: 64em) {
+    height: calc(85vh - #{$page-head-height});
+  }  
 }
 .c-hero {
   background-color: $color-black;
@@ -48,13 +52,25 @@
   // hero__article
   .c-hero__article {
     text-align: left;
-    margin-right: 45%;
+    
+    @media screen and (min-width: 64em) {
+      margin-right: 45%;
+    }
+  }
+
+  // hero__headline
+  .c-hero__headline {
+    font-size: 1rem;
   }
 
   // hero__text
   .c-hero__text {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 900;
+
+    @media screen and (min-width: 64em) {
+      font-size: 2rem;
+    }
   }
 
   // hero__button

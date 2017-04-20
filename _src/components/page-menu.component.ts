@@ -1,13 +1,11 @@
 import * as $ from "jquery";
 
+import { CONFIG } from "../config";
+
 /**
  * PageMenuComponent
  */
 const PageMenuComponent = (($) => {
-
-  const Default = {
-    "menuMaxWidth": 1024
-  }
 
   const ClassName = {
     "IS_OPEN": "is-open"
@@ -31,13 +29,13 @@ const PageMenuComponent = (($) => {
     });
   });
 
-  // close menu at menuMaxWidth
+  // close menu at maxViewportWidth
   $(window).resize(() => {
     let $documentwidth = $(document).width();
 
     if (
       $(Selector.PAGE_MENU).hasClass(ClassName.IS_OPEN)
-      && $documentwidth > Default.menuMaxWidth
+      && $documentwidth > CONFIG.viewportBreakpoint
     ) {
       $(Selector.PAGE_MENU).removeClass(ClassName.IS_OPEN);
     }

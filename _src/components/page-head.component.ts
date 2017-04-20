@@ -1,13 +1,11 @@
 import * as $ from "jquery";
 
+import { CONFIG } from "../config";
+
 /**
  * PageHeadComponent
  */
 const PageHeadComponent = (($) => {
-
-  const Default = {
-    "windowMaxScroll": 96
-  }
 
   const ClassName = {
     "PAGE_HEAD_LARGE": "c-page-head--large"
@@ -18,8 +16,8 @@ const PageHeadComponent = (($) => {
   }
 
   // at top of window make page-head large
-  $(window).scroll(function () {
-    if ($(window).scrollTop() < Default.windowMaxScroll) {
+  $(window).scroll(() => {
+    if ($(window).scrollTop() < CONFIG.pageHeadSize) {
       $(Selector.PAGE_HEAD).addClass(ClassName.PAGE_HEAD_LARGE);
     } else {
       $(Selector.PAGE_HEAD).removeClass(ClassName.PAGE_HEAD_LARGE);

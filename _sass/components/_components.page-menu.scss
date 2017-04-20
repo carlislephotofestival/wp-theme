@@ -60,7 +60,10 @@
 
       .c-social__icon {
         fill: $color-black;
-      }      
+      }
+      .c-social__icon:hover {
+        fill: $color-white;
+      }
     }
   }
 
@@ -122,6 +125,11 @@
       right: $spacer / 2;
       top: 0;
       visibility: visible;
+    }
+
+    .c-social__icon,
+    .c-social__icon:hover {
+      fill: $color-white;
     }
   }
 

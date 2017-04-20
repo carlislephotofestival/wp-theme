@@ -57,3 +57,14 @@
   width: 100vw;
   z-index: -1;
 }
+
+.c-band--parallax {
+    margin: 0;
+   /* The image used */
+    background-image: url("../images/hero.jpg");
+    height: 45vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

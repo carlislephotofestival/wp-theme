@@ -5,6 +5,15 @@
 // social
 .c-social { }
 
+  // social__text
+  .c-social__text {
+    float: left;
+    font-weight: 900;
+    margin-right: $spacer / 2;
+    text-transform: uppercase;
+  }
+
+  // social__list
   .c-social__list {
     display: flex;
     flex-flow: row wrap;
@@ -15,6 +24,7 @@
     padding: 0;    
   }
 
+  // social__item
   .c-social__item {
     display: block;
     flex: 0 0 auto;
@@ -31,5 +41,5 @@
   }
   .c-social__icon,
   .c-social__icon:hover {
-    fill: $color-white;
+    fill: $color-black;
   }

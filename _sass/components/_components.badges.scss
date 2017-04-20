@@ -1,0 +1,27 @@
+/*------------------------------------*\
+ # BADGE
+\*------------------------------------*/
+
+// badge
+.c-badge {
+  border-radius: 2px;
+  display: inline-block;
+  height: 2rem;
+  letter-spacing: 0.025em;
+  line-height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.c-badge {
+  color: $color-black;
+}
+
+// badge--page
+.c-badge--page {
+  background-color: $color-brand-tertiary;
+}
+
+// badge--article
+.c-badge--article {
+  background-color: $color-brand-secondary;
+}

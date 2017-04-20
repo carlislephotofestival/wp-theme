@@ -55,10 +55,10 @@
       visibility: visible;
     }
   }
-    
+
   &.is-open {
     background-color: $color-black;
-  }  
+  }
 }
 
 // page-menu__logo
@@ -87,11 +87,12 @@
   @media screen and (min-width: 64em) {
     opacity: 0;
     visibility: hidden;
-  }  
+  }
 }
 
 // page-menu__nav
 .c-page-menu__nav {
+  height: 100%;
   opacity: 0;
   visibility: hidden;
 
@@ -105,11 +106,6 @@
   display: block;
   height: 4rem;
   padding: #{$spacer * 0.75} #{$spacer / 2};
-
-  @media screen and (min-width: 64em) {
-    height: 6rem;
-    padding: #{($spacer * 1.25)} #{$spacer / 2};
-  }
 }
 .c-page-menu__link  {
   color: $color-white;
@@ -118,6 +114,13 @@
 .c-page-menu__link:hover {
   background-color: $color-black;
   color: $color-white;
+}
+
+.c-page-head--large .c-page-menu__link {
+  @media screen and (min-width: 64em) {
+    height: 6rem;
+    padding: #{($spacer * 1.25)} #{$spacer / 2};
+  }
 }
 
 // page-menu__social
@@ -132,7 +135,7 @@
   @media screen and (min-width: 64em) {
     opacity: 1;
     right: $spacer / 2;
-    top: 0;    
+    top: 0;
     visibility: visible;
-  }  
+  }
 }

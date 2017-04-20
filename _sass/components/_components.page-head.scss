@@ -8,10 +8,6 @@
   height: 4rem;
   width: 100%;
 
-  @media screen and (min-width: 64em) {
-    height: 6rem;
-  }
-
   &.is-fixed {
     left: 0;
     position: fixed;
@@ -22,6 +18,13 @@
 .c-page-head {
   background-color: $color-brand-primary;
   color: $color-white;
+}
+
+.c-page-head--large {
+  @media screen and (min-width: 64em) {
+    height: 6rem;
+    transition: height .5s ease;
+  }
 }
 
   // page-head__menu

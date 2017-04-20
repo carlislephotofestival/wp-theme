@@ -8,6 +8,10 @@
 }
 
   // partners__list
+  .c-partners__list {
+    align-items: center;
+    justify-content: center;
+  }
 
   // partners__item
 
@@ -19,11 +23,8 @@
     padding-left: $spacer;
     padding-right: $spacer;
     width: auto;
-  }
 
-// media
-@media (min-width: 64em) {
-  .c-partners__logo {
-    margin-bottom: 0; // 1
+    @media screen and (min-width: 64em) {
+      margin-bottom: 0; // 1
+    }
   }
-}  

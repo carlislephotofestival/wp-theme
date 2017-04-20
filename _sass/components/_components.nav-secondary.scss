@@ -12,6 +12,11 @@
   .c-nav-secondary__item {
     display: block; // 2
     margin-bottom: $spacer / 2; // 3
+
+    @media screen and (min-width: 64em) {
+      display: inline-block; // 2
+      margin-bottom: 0; // 3      
+    }
   }
 
   // nav-secondary__link
@@ -23,11 +28,3 @@
   .c-nav-secondary__link {
     color: $color-white;
   }
-
-// media
-@media (min-width: 64em) {
-  .c-nav-secondary__item {
-    display: inline-block; // 2
-    margin-bottom: 0; // 3
-  }
-}  

@@ -17,6 +17,10 @@
   .c-about__body {
     padding-top: $spacer; // 1
     position: relative;
+
+    @media screen and (min-width: 64em) {
+      padding: 0; // 1
+    }
   }
   .c-about__body:before {
     content: '';
@@ -29,10 +33,3 @@
   .c-about__body:before {
     background: $color-brand-tertiary;
   }
-
-// media
-@media (min-width: 64em) {
-  .c-about__body {
-    padding: 0; // 1
-  }
-}

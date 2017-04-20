@@ -54,23 +54,37 @@
     text-align: left;
     
     @media screen and (min-width: 64em) {
-      margin-right: 45%;
+      margin-right: 55%;
     }
   }
 
   // hero__headline
   .c-hero__headline {
-    font-size: 1rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 64em) {
+      font-size: 4.5rem;
+      margin-bottom: 1.5rem;
+    }    
   }
 
   // hero__text
   .c-hero__text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 900;
 
     @media screen and (min-width: 64em) {
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
   }
 
   // hero__button
+  .c-hero__button {
+    display: block;
+
+    @media screen and (min-width: 64em) {
+      display: inline-block;
+    }    
+  }

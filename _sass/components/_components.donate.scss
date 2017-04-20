@@ -8,17 +8,18 @@
   background-color: $color-brand-tertiary;
   padding: $spacer !important; // todo: fix to remove !important
   text-align: center;
+
+  @media screen and (min-width: 64em) {
+    text-align: left;
+  }
 }
 
   // donate__button
-  .c-donate__button { }
-
-// media
-@media (min-width: 64em) {
-  .c-donate {
-    text-align: left;
-  }
   .c-donate__button {
-    float: right;
+    display: block;
+
+    @media screen and (min-width: 64em) {
+      display: inline-block;
+      float: right;
+    }
   }
-}

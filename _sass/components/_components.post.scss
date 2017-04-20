@@ -15,11 +15,14 @@
   // post__media
   .c-post__media {
     flex: 1 1 auto; 
-    flex-basis: 47.5%;
-    max-width: 47.5%;
     overflow: hidden;
     position: relative;
     z-index: 1;
+
+    @media screen and (min-width: 64em) {
+      flex-basis: 47.5%;
+      max-width: 47.5%;
+    }    
   }
   .c-post__media {
     background-color: $color-black;
@@ -34,9 +37,12 @@
   // post__content
   .c-post__content {
     flex: 1 1 auto;
-    flex-basis: 52.5%;
-    max-width: 52.5%;
     padding: $spacer;
+
+    @media screen and (min-width: 64em) {
+      flex-basis: 52.5%;
+      max-width: 52.5%;
+    }
   }
 
   // post__meta
@@ -78,7 +84,7 @@
   .c-post__headline {
     color: $color-black;
     font-size: 1.5rem;
-    line-height: 1.5rem; // todo: find out why this needs setting
+    text-transform: uppercase;
   }
 
   // post__text
@@ -102,6 +108,10 @@
     position: absolute;
     top: 0;
     z-index: 2;
+    
+    @media screen and (min-width: 64em) {
+      margin-right: 20%;
+    }
   }
 
   .c-post__meta {
@@ -110,10 +120,12 @@
 
   .c-post__headline {
     color: $color-white;
-    margin-top: ($spacer /2 );
-    font-size: 48px;
-    line-height: 48px;
-    max-width: 468px;    
+    font-size: 1.75rem;
+    margin-top: ($spacer / 2);
+
+    @media screen and (min-width: 64em) {
+      font-size: 3rem;
+    }    
   }
 }
 

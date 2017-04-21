@@ -5,7 +5,13 @@
 // page-foot
 .c-page-foot {
   @include clearfix();
-  padding: $spacer;
+  padding: $spacing-unit;
+  text-align: center;
+
+  @include mq($from: medium) {
+    padding: $spacing-unit-medium;
+    text-align: left;
+  }  
 }
 .c-page-foot {
   background-color: $color-grey-dark;
@@ -16,8 +22,8 @@
 
   // page-foot__item
   .c-page-foot__item {
-    margin-left: $spacer / 2;
-    margin-right: $spacer / 2;
+    margin-left: $spacing-unit-small;
+    margin-right: $spacing-unit-small;
   }
 
   // c-page-foot__link
@@ -25,11 +31,12 @@
   // page-foot__text
   .c-page-foot__text {
     display: inline-block;
-    margin-bottom: ($spacer / 2);
-    margin-right: $spacer;
+    margin-bottom: $spacing-unit-small;
+    
 
     @include mq($from: medium) {
       margin-bottom: 0;
+      margin-right: $spacing-unit-medium;
     }
   }
 
@@ -44,9 +51,9 @@
 
   // page-foot__nav
   .c-page-foot__nav {
-    margin-bottom: ($spacer / 2);
-    margin-left: -($spacer / 4);
-    margin-right: -($spacer / 4);
+    margin-bottom: $spacing-unit-small;
+    margin-left: -$spacing-unit-tiny;
+    margin-right: -$spacing-unit-tiny;
     
     @include mq($from: medium) {
       margin-bottom: 0;
@@ -55,8 +62,8 @@
 
   // page-foot__social
   .c-page-foot__social {
-    margin-left: -($spacer / 2);
-    margin-right: -($spacer / 2);
+    margin-left: -$spacing-unit-small;
+    margin-right: -$spacing-unit-small;
 
     @include mq($from: medium) {
       float: right;

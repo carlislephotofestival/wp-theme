@@ -11,11 +11,9 @@
   // nav-secondary__item
   .c-nav-secondary__item {
     display: block; // 2
-    margin-bottom: $spacer / 2; // 3
 
     @include mq($from: medium) {
-      display: inline-block; // 2
-      margin-bottom: 0; // 3      
+      display: inline-block; // 2   
     }
   }
 

@@ -6,10 +6,11 @@
 .c-newsletter {
   @include clearfix();
   background-color: $color-brand-secondary;
-  padding: $spacer !important; // todo: fix to remove !important
+  padding: $spacing-unit;
   text-align: center;
 
   @include mq($from: medium) {
+    padding: $spacing-unit-medium;
     text-align: left;
   }
 }

@@ -30,7 +30,7 @@
 .c-band--secondary-tertiary {
   padding: 0;
 
-  @media screen and (min-width: 64em) {
+  @include mq($from: medium) {
     background: linear-gradient(
       90deg,
       $color-brand-secondary 0%,

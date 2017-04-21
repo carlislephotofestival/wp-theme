@@ -32,7 +32,7 @@
     position: relative;
     z-index: 1;
 
-    @media screen and (min-width: 64em) {
+    @include mq($from: medium) {
       flex-basis: 47.5%;
       max-width: 47.5%;
     }    
@@ -52,7 +52,7 @@
     flex: 1 1 auto;
     padding: $spacer;
 
-    @media screen and (min-width: 64em) {
+    @include mq($from: medium) {
       flex-basis: 52.5%;
       max-width: 52.5%;
     }
@@ -107,7 +107,7 @@
       top: 0;
       z-index: 2;
       
-      @media screen and (min-width: 64em) {
+      @include mq($from: medium) {
         margin-right: 20%;
       }
     }
@@ -121,7 +121,7 @@
       font-size: 1.75rem;
       margin-top: ($spacer / 2);
 
-      @media screen and (min-width: 64em) {
+      @include mq($from: medium) {
         font-size: 3rem;
       }
     }

@@ -28,7 +28,7 @@
     margin-bottom: ($spacer / 2);
     margin-right: $spacer;
 
-    @media screen and (min-width: 64em) {
+    @include mq($from: medium) {
       margin-bottom: 0;
     }
   }
@@ -48,7 +48,7 @@
     margin-left: -($spacer / 4);
     margin-right: -($spacer / 4);
     
-    @media screen and (min-width: 64em) {
+    @include mq($from: medium) {
       margin-bottom: 0;
     }
   }
@@ -58,7 +58,7 @@
     margin-left: -($spacer / 2);
     margin-right: -($spacer / 2);
 
-    @media screen and (min-width: 64em) {
+    @include mq($from: medium) {
       float: right;
     }
 

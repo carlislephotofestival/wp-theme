@@ -11,7 +11,7 @@
   position: relative;
   height: 100vh;
 
-  @media screen and (min-width: 64em) {
+  @include mq($from: medium) {
     height: 50vh;
   }  
 }
@@ -51,7 +51,7 @@
   margin-right: 25%;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 64em) {
+  @include mq($from: medium) {
     font-size: 4rem;
   }
 }

@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/carlislephotofestival/carlislephotofestival.co.uk#readme",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "sass-mq": "^3.3.2"
   },
   "devDependencies": {
     "@types/jquery": "^2.0.41",

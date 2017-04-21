@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
 
-    @media screen and (min-width: 64em) {
+    @include mq($from: medium) {
       height: 100%;
     }
   }
@@ -24,7 +24,7 @@
     display: block;
     flex: 0 0 auto;
 
-    @media screen and (min-width: 64em) {
+    @include mq($from: medium) {
       height: 100%;
     }
   }

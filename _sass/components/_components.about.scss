@@ -18,7 +18,7 @@
     padding-top: $spacer; // 1
     position: relative;
 
-    @media screen and (min-width: 64em) {
+    @include mq($from: medium) {
       padding: 0; // 1
     }
   }

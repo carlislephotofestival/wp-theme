@@ -9,7 +9,7 @@
   padding: $spacer !important; // todo: fix to remove !important
   text-align: center;
 
-  @media screen and (min-width: 64em) {
+  @include mq($from: medium) {
     text-align: left;
   }
 }
@@ -20,7 +20,7 @@
     min-height: 3.5rem;
     width: calc(100% - 3.5rem);
 
-    @media screen and (min-width: 64em) {
+    @include mq($from: medium) {
       width: 14rem;
     }
   }

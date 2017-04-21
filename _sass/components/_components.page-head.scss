@@ -21,7 +21,7 @@
 }
 
 .c-page-head--large {
-  @media screen and (min-width: 64em) {
+  @include mq($from: medium) {
     height: 6rem;
     transition: height .5s ease;
   }

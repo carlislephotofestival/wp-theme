@@ -9,7 +9,7 @@
   padding: $spacer !important; // todo: fix to remove !important
   text-align: center;
 
-  @media screen and (min-width: 64em) {
+  @include mq($from: medium) {
     text-align: left;
   }
 }
@@ -18,7 +18,7 @@
   .c-donate__button {
     display: block;
 
-    @media screen and (min-width: 64em) {
+    @include mq($from: medium) {
       display: inline-block;
       float: right;
     }

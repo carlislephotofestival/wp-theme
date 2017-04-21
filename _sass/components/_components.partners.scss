@@ -24,7 +24,7 @@
     padding-right: $spacer;
     width: auto;
 
-    @media screen and (min-width: 64em) {
+    @include mq($from: medium) {
       margin-bottom: 0; // 1
     }
   }

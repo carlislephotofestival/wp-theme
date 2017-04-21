@@ -1,0 +1,114 @@
+/*------------------------------------*\
+ # MASTHEAD
+\*------------------------------------*/
+
+// masthead
+.c-masthead {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  @include mq($from: medium) {
+    height: calc(85vh - #{$page-head-height});
+  }  
+}
+
+  // masthead__media
+  .c-masthead__media {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+
+    img,
+    video {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;    
+    }
+  }
+
+  // masthead__caption
+  .c-masthead__caption {
+    font-size: 0.75rem;
+    letter-spacing: 0.025rem;
+    position: absolute;
+    right: $spacer;
+    bottom: -20px;
+  }
+  .c-masthead__caption {
+    color: $color-black;
+  }
+
+  // masthead__credit
+  .c-masthead__credit {
+    padding-left: $spacing-unit-small;
+  }
+  .c-masthead__credit {
+    color: $color-grey;
+  }  
+
+  // masthead__content
+  .c-masthead__content {
+    left: 0;
+    padding: $spacer;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .c-masthead__content {
+    color: $color-white;
+  }
+
+  // masthead__meta
+  .c-masthead__meta {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 2rem;
+
+    @include mq($from: medium) {
+      font-size: 1rem;
+    }
+  }
+
+  // masthead__headline
+  .c-masthead__headline {
+    font-size: 3rem;
+    margin-bottom: $spacing-unit;
+
+    @include mq($from: medium) {
+      font-size: 6rem;
+    }  
+  }
+
+  // masthead__text
+  .c-masthead__text {
+    font-weight: 700;
+
+    @include mq($from: medium) {
+      font-size: 1.125rem;
+      line-height: 1.625rem;
+    }  
+  }
+
+  // masthead__badge
+  .c-masthead__badge {
+    margin-right: $spacing-unit-small;
+  }
+
+  // masthead__byline
+  .c-masthead__byline {
+    display: inline-block;
+    margin-right: $spacing-unit-small;
+  }
+
+  // masthead__author
+  .c-masthead__author {
+    text-transform: uppercase;
+  }
+
+  // masthead__date
+  .c-masthead__date {
+    line-height: 2rem;
+    text-transform: uppercase;  
+  }

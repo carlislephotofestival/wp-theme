@@ -3,41 +3,48 @@ layout: default
 ---
 
 <article class="c-article">
-  <header class="c-article__header js-cover-media">
-    <div class="c-article__media">
-      <img class="c-article__photo" src="images/placeholder-square.jpg" alt="">
-    </div>
-    <div class="c-article__info">
+  <header class="c-article__header c-masthead js-cover-media">
+    <figure class="c-masthead__media">
+      <img src="images/placeholder-square.jpg" alt="">
+      <figcaption class="c-masthead__caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="c-masthead__credit">Julian Dawson for Carlisle Photo</span></figcaption>
+    </figure>
+    <div class="c-masthead__content">
       <div class="[ o-wrapper o-wrapper--small ]">
-        <h1 class="c-article__headline">Phasellus et augue ut nisl cursus fermentum</h1>
+        <h1 class="c-masthead__headline">Phasellus et augue ut nisl cursus fermentum</h1>
+        <p class="c-masthead__text">Quisque in justo tellus. Suspendisse sit amet aliquam eros vitae efficitur arcu.</p>
+        <div class="c-masthead__meta">
+          <strong class="c-masthead__badge [ c-badge c-badge--article ]">News</strong>
+          <span class="c-masthead__byline">By <span class="c-masthead__author">Julian Dawson</span></span>
+          <time class="c-masthead__date">17 April 2017</time>
+        </div>
       </div>
     </div>
   </header>
-  <main class="[ c-band c-band--light ]">
+  <main class="c-article__body">
     <div class="[ o-wrapper o-wrapper--small ]">
-      <div class="c-article__meta">
-        <strong class="c-article__badge [ c-badge c-badge--article ]">News</strong>
-        <time class="c-article__date">17 April 2017</time>
-        <p class="c-article__share">Share On:</p>
-        <div class="c-article__social c-social">
-          <ul class="o-list-inline">
-            <li class="o-list-inline__item">
-              <a aria-label="Twitter" class="c-social__link" href="/" target="_blank">
-                <svg aria-hidden="true" class="c-social__icon" role="img">
-                  <use xlink:href="#icon-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="o-list-inline__item">
-              <a aria-label="Facebook" class="c-social__link" href="/" target="_blank">
-                <svg aria-hidden="true" class="c-social__icon" role="img">
-                  <use xlink:href="#icon-facebook" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="[ o-layout-flex o-layout-flex--justify-end ]">
+          <div class="c-article__share o-layout-flex__item">
+            <span>Share On:</span>
+            <div class="c-article__social c-social">
+              <ul class="o-list-inline">
+                <li class="o-list-inline__item">
+                  <a aria-label="Twitter" class="c-social__link" href="/" target="_blank">
+                    <svg aria-hidden="true" class="c-social__icon" role="img">
+                      <use xlink:href="#icon-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="o-list-inline__item">
+                  <a aria-label="Facebook" class="c-social__link" href="/" target="_blank">
+                    <svg aria-hidden="true" class="c-social__icon" role="img">
+                      <use xlink:href="#icon-facebook" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>            
+          </div>
         </div>
-      </div>
       <p>
         <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in justo tellus. Suspendisse sit amet aliquam eros,
             vitae efficitur arcu. Donec ligula dui, facilisis eget tincidunt eget, malesuada ac odio. Pellentesque a lacus non
@@ -50,6 +57,11 @@ layout: default
         facilisis suscipit aliquam. Phasellus et augue ut nisl cursus fermentum. Interdum et malesuada fames ac ante ipsum
         primis in faucibus. Nam luctus elit a sem aliquam, ac imperdiet magna eleifend. Suspendisse potenti. Praesent non
         sem viverra, rhoncus quam sit amet, egestas neque.</p>
+
+        <figure>
+          <img src="images/placeholder-square.jpg" alt="">
+          <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Julian Dawson for Carlisle Photo</figcaption>
+        </figure>
 
       <p>Etiam ut mollis nisl, et sodales mi. Etiam nec consequat erat. Donec auctor quam augue, vel gravida tortor faucibus
         sed. Mauris vel fringilla augue. Nam efficitur, elit id efficitur iaculis, massa arcu suscipit ipsum, a euismod elit
@@ -75,6 +87,18 @@ layout: default
         <li>Lorem ipsum dolor sit amet</li>
         <li>Facilisis eget tincidunt eget</li>
         <li>Massa arcu suscipit ipsum</li>
+        <li>Massa arcu suscipit ipsum</li>
+        <li>Massa arcu suscipit ipsum</li>
+        <li>Massa arcu suscipit ipsum</li>
+        <li>Massa arcu suscipit ipsum</li>
+        <li>Massa arcu suscipit ipsum</li>
+        <li>Massa arcu suscipit ipsum</li>
+        <li>Massa arcu suscipit ipsum</li>
+        <li>Massa arcu suscipit ipsum</li>
+        <li>Massa arcu suscipit ipsum</li>
+        <li>Massa arcu suscipit ipsum</li>
+        <li>Massa arcu suscipit ipsum</li>
+        <li>Massa arcu suscipit ipsum</li>
       </ol>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in justo tellus. Suspendisse sit amet aliquam eros,
         vitae efficitur arcu. Donec ligula dui, facilisis eget tincidunt eget, malesuada ac odio. Pellentesque a lacus non
@@ -82,3 +106,44 @@ layout: default
     </div>
   </main>
 </article>
+<div class="c-black">
+  <div class="o-wrapper">
+    <h2>Related</h2>
+    <div class="o-layout-flex">
+      <div class="o-layout-flex__item u-flex-1/2">
+        <a class="c-news__link" href="/">
+          <article class="c-news__article">
+            <div class="c-news__media">
+              <img class="c-news__photo" src="images/placeholder-square.jpg" alt="">
+            </div>
+            <div class="c-news__content">
+              <div class="c-news__meta">
+                <strong class="c-news__badge [ c-badge c-badge--article ]">News</strong>
+                <time class="c-news__date">17 April 2017</time>
+              </div>
+              <h2 class="c-news__headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+              <p class="c-news__text">Praesent tempus nec leo eu viverra. Sed venenatis justo quis placerat sodales</p>
+            </div>
+          </article>
+        </a>      
+      </div>
+      <div class="o-layout-flex__item u-flex-1/2">
+        <a class="c-news__link" href="/">
+          <article class="c-news__article">
+            <div class="c-news__media">
+              <img class="c-news__photo" src="images/placeholder-square.jpg" alt="">
+            </div>
+            <div class="c-news__content">
+              <div class="c-news__meta">
+                <strong class="c-news__badge [ c-badge c-badge--article ]">News</strong>
+                <time class="c-news__date">17 April 2017</time>
+              </div>
+              <h2 class="c-news__headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+              <p class="c-news__text">Praesent tempus nec leo eu viverra. Sed venenatis justo quis placerat sodales</p>
+            </div>
+          </article>
+        </a>      
+      </div>
+    </div>
+  </div>
+</div>

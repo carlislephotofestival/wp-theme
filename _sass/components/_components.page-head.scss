@@ -5,7 +5,8 @@
 // page-head
 .c-page-head {
   display: block;
-  height: 4rem;
+  height: $page-head-height;
+  transition: height .5s ease;
   width: 100%;
 
   &.is-fixed {
@@ -21,8 +22,10 @@
 }
 
 .c-page-head--large {
+  height: 1.75 * $page-head-height;
+
   @include mq($from: medium) {
-    height: 6rem;
+    height: 2 * $page-head-height;
     transition: height .5s ease;
   }
 }

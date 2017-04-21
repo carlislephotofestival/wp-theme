@@ -2,14 +2,17 @@
 layout: default
 ---
 
-  <div class="c-hero js-cover-media">
-    <div class="c-hero__media">
-      <video autoplay="" class="c-hero__video" loop="" muted="" preload="auto">
+  <div class="c-hero c-masthead js-cover-media">
+    <figure class="c-hero__media c-masthead__media">
+      <video autoplay="" loop="" muted="" preload="auto">
         <source src="/videos/hero-placeholder.mp4" type="video/mp4">
         <img src="/images/hero.jpg" title="Your browser does not support the <video> element">
       </video>
-      <img class="c-hero__photo" src="/images/hero.jpg" title="Your browser does not support the <video> element">
-    </div>
+      <!--
+      <img src="/images/hero.jpg" title="Your browser does not support the <video> element">
+      -->
+      <figcaption class="c-masthead__caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit <span class="c-masthead__credit">Julian Dawson for Carlisle Photo</span></figcaption>
+    </figure>
     <div class="c-hero__content">
       <div class="o-wrapper">
         <article class="c-hero__article">

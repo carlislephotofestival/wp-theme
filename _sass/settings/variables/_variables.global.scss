@@ -2,11 +2,6 @@
  # GLOBAL
 \*------------------------------------*/
 
-// breakpoints
-$breakpoints: (
-  'desktop': ( min-width: 64rem )
-) !default;
-
 // page-head
-$page-head-height:          4rem;
+$page-head-height:          3rem;
 $page-head-padding-y:       $spacer * 2;

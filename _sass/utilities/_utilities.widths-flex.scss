@@ -2,7 +2,7 @@
  # WIDTHS-FLEX
 \*------------------------------------*/
 
-@media (min-width: 64em) {
+@include mq($from: medium) {
 
   // halves
   .u-flex-1\/2 {

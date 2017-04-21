@@ -3,101 +3,77 @@
 \*------------------------------------*/
 
 .c-article {
-  font-size: 1.125rem;
-  margin-bottom: $spacer * 2;
+  // margin-bottom: $spacer * 2;
 }
 
-.c-article__header {
-  position: relative;
-  height: 100vh;
+.c-article__body {
+  padding: #{$spacer * 2} $spacer;
 
-  @include mq($from: medium) {
-    height: 50vh;
-  }  
-}
+  ul, ol {
+    margin: 0 0 1.5rem;
+  }
 
-.c-article__media {
-  height: 100%;
-  overflow: hidden;
-  width: 100%; 
-}
-.c-article__media {
-  background-color: $color-black;
-}
+  p, li {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
 
-// news__photo
-.c-article__photo {
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.6;
-  width: 100%;
-}
+  li {
+    display: table-row
+  }
 
-// news__info
-.c-article__info {
-  align-items: center;
-  display: flex;
-  left: 0;
-  padding: 2rem 2rem;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
+  ul {
+    display: table;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
 
+    li:before {
+      content: "•";
+      display: table-cell;
+      padding-right: 1rem;  
+    }
+  }
 
-.c-article__headline {
-  font-size: 2rem;
-  margin-right: 25%;
-  margin-bottom: 30px;
+  ol {
+    display: table;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    
+    li:before {
+      content: counter(table-ol) ".";
+      display: table-cell;
+      padding-right: 1rem;
+      text-align: right;  
+    }
+    li {
+      counter-increment: table-ol;
+    }
+  }
 
-  @include mq($from: medium) {
-    font-size: 4rem;
+  img {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
   }
 }
-.c-article__headline {
-  color: $color-white;
-}
-.c-article__headline:after {
-  content: '';
-  display: block;
-  height: 3px;
-  margin-bottom: $spacer;
-  margin-top: $spacer;
-  width: 6rem;
-}
-.c-article__headline:after {
-  background-color: $color-brand-tertiary;
-}
+.c-article__body { background-color: $color-white; }
 
-// article__meta
-.c-article__meta {
-  @include clearfix();
-}
-
-// article__badge
-.c-article__badge {
-  float: left;
-}
-
-// article__date
-.c-article__date {
-  float: left;
-  font-weight: 900;
-  line-height: 2rem;
-  margin-left: 0.5rem;
-  text-transform: uppercase;
-}
-
-// article__share
 .c-article__share {
-  float: right;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
   font-weight: 900;
-  line-height: 2rem;
-  text-transform: uppercase;  
+  padding-bottom: $spacer / 2;
 }
 
-// article__social
 .c-article__social {
-  float: right;
+}
+
+.c-black {
+  padding: #{$spacer * 2} $spacer;  
+}
+.c-black {
+  background-color: #000;
+  color: #fff;
 }

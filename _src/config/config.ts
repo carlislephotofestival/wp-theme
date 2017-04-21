@@ -1,4 +1,4 @@
 export const CONFIG = {
-  "pageHeadSize": 64,
+  "pageHeadSize": 48,
   "viewportBreakpoint": 1024
 }

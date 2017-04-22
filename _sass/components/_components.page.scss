@@ -4,9 +4,17 @@
 
 .c-page {
 
+  // has-fixed-page-head
   &.has-fixed-page-head {
+    padding-top: 1.75 * $page-head-height;
+
+    @include mq($from: medium) {
+      padding-top: 2 * $page-head-height;
+    }
+  }
+
+  // has-masthead
+  &.has-masthead {
     padding-top: $page-head-height;
   }
 }
-
-.c-page--home { }

@@ -38,12 +38,25 @@
     <symbol id="icon-heart" viewBox="-476 277.9 100 86.8">
       <title>Heart</title>
       <path d="M-390.7 280.6c-12.9-5.8-29.5 0-35.2 12.2-5.8-12.9-23-18.7-35.2-12.2-13.7 6.5-20.1 22.3-9.3 41.7 7.9 13.7 21.6 23.7 44.6 42.4 23.7-18.7 37.4-28.8 44.6-42.4 10.8-18.7 4.3-35.2-9.3-41.7z"></path>
-    </symbol>    
+    </symbol>
   </svg>
 
   {% include header.html %}
 
   {{ content }}
+
+  <div class="[ c-band c-band--secondary-tertiary ]">
+    <div class="o-wrapper">
+      <div class="o-layout-flex">
+
+        {% include newsletter.html %}
+        {% include donate.html %}
+
+      </div>
+    </div>
+  </div>
+
+  {% include partners.html %}
 
   {% include footer.html %}
 

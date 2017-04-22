@@ -31,7 +31,7 @@
     li:before {
       content: "•";
       display: table-cell;
-      padding-right: 1rem;  
+      padding-right: 1rem;
     }
   }
 
@@ -40,12 +40,12 @@
     margin-left: 0;
     padding-left: 0;
     list-style: none;
-    
+
     li:before {
       content: counter(table-ol) ".";
       display: table-cell;
       padding-right: 1rem;
-      text-align: right;  
+      text-align: right;
     }
     li {
       counter-increment: table-ol;
@@ -71,7 +71,7 @@
 }
 
 .c-black {
-  padding: #{$spacer * 2} $spacer;  
+  padding: #{$spacer * 2} $spacer;
 }
 .c-black {
   background-color: #000;

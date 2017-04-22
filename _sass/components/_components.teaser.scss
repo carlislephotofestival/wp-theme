@@ -4,24 +4,29 @@
 
 // teaser
 .c-teaser {
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit-medium;
   overflow: hidden;
   position: relative;
   width: 100%;
-
-  @include mq($from: medium) {
-    margin-bottom: $spacing-unit-medium;
-    min-height: 7.5 * $spacing-unit-medium;
-  }  
 }
 .c-teaser {
   background-color: $color-white;
 }
 
+  .c-teaser__link {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .c-teaser__link:hover .c-teaser__media img {
+    transform: scale(1.1);
+  }
+
   // teaser__media
   .c-teaser__media {
     height: 100%;
     left: 0;
+    overflow: hidden;
     position: absolute;
     top: 0;
     width: 30%;
@@ -31,11 +36,15 @@
       width: 47.96875%;
     }
 
+    img {
+      transition: transform .5s;
+    }
+
     img,
     video {
       height: 100%;
       object-fit: cover;
-      width: 100%;    
+      width: 100%;
     }
   }
   .c-teaser__media {
@@ -46,19 +55,23 @@
 
   // teaser__content
   .c-teaser__content {
+    min-height: 7.5 * $spacing-unit;
     padding: $spacing-unit $spacing-unit $spacing-unit 35%;
 
     @include mq($from: medium) {
+      min-height: 18.5 * $spacing-unit;
       padding: $spacing-unit-medium $spacing-unit-medium $spacing-unit-medium 51.20968%;
     }
   }
+
+  .c-teaser__meta {}
 
   // teaser__badge
   .c-teaser__badge {
     display: none;
 
     @include mq($from: medium) {
-      display: block;
+      display: inline-block;
       left: $spacing-unit-medium;
       position: absolute;
       top: $spacing-unit-medium;
@@ -68,11 +81,12 @@
 
   // teaser_date
   .c-teaser__date {
-    color: $color-grey;
     font-weight: 900;
     text-transform: uppercase;
   }
   .c-teaser__date {
+    color: $color-grey;
+
     @include mq($from: medium) {
       color: $color-black;
     }
@@ -87,12 +101,16 @@
     @include mq($from: medium) {
       font-size: 1.5rem;
       margin-bottom: $spacing-unit;
-    }  
+    }
+  }
+  .c-teaser__headline {
+    color: $color-black;
   }
 
   // teaser__text
   .c-teaser__text {
     display: none;
+    margin: 0;
 
     @include mq($from: medium) {
       display: block;
@@ -101,3 +119,45 @@
   .c-teaser__text {
     color: $color-grey;
   }
+
+// teaser--featured
+.c-teaser--featured {
+
+  .c-teaser__media {
+    position: static;
+    width: 100%;
+  }
+
+  .c-teaser__content {
+    left: 0;
+    padding: $spacing-unit-medium 25% $spacing-unit-medium $spacing-unit-medium;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .c-teaser__badge {
+    display: inline-block;
+    margin-right: $spacing-unit;
+    position: static;
+  }
+
+  .c-teaser__date {
+    color: $color-brand-secondary;
+  }
+
+  .c-teaser__headline {
+    font-size: 1.75rem;
+
+    @include mq($from: medium) {
+      font-size: 3rem;
+    }
+  }
+  .c-teaser__headline {
+    color: $color-white;
+  }
+
+  .c-teaser__text {
+    display: none;
+  }
+}

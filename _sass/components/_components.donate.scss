@@ -6,11 +6,10 @@
 .c-donate {
   @include clearfix();
   background-color: $color-brand-tertiary;
-  padding: $spacing-unit;
+  padding: $spacing-unit-medium;
   text-align: center;
 
   @include mq($from: medium) {
-    padding: $spacing-unit-medium;
     text-align: left;
   }
 }

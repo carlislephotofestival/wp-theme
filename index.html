@@ -32,58 +32,16 @@ layout: default
 
   <section class="c-news c-band" data-section="News">
     <div class="o-wrapper">
-      <div class="[ o-layout-flex o-layout-flex--gutters ]">
+      <div class="[ o-layout-flex ]">
         <div class="o-layout-flex__item u-flex-1/2">
 
-          <a class="c-news__link" href="/">
-            <article class="c-news__article c-news__article--featured">
-              <div class="c-news__media">
-                <img class="c-news__photo" src="images/placeholder-square.jpg" alt="">
-              </div>
-              <div class="c-news__content">
-                <div class="c-news__meta">
-                  <strong class="c-news__badge [ c-badge c-badge--article ]">News</strong>
-                  <time class="c-news__date">17 April 2017</time>
-                </div>
-                <h2 class="c-news__headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-              </div>
-            </article>
-          </a>
+          {% include teaser.html modifier="c-teaser--featured" %}
 
         </div>
         <div class="o-layout-flex__item u-flex-1/2">
 
-          <a class="c-news__link" href="/">
-            <article class="c-news__article">
-              <div class="c-news__media">
-                <img class="c-news__photo" src="images/placeholder-square.jpg" alt="">
-              </div>
-              <div class="c-news__content">
-                <div class="c-news__meta">
-                  <strong class="c-news__badge [ c-badge c-badge--article ]">News</strong>
-                  <time class="c-news__date">17 April 2017</time>
-                </div>
-                <h2 class="c-news__headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                <p class="c-news__text">Praesent tempus nec leo eu viverra. Sed venenatis justo quis placerat sodales</p>
-              </div>
-            </article>
-          </a>
-
-          <a class="c-news__link" href="/">
-            <article class="c-news__article">
-              <div class="c-news__media">
-                <img class="c-news__photo" src="images/placeholder-square.jpg" alt="">
-              </div>
-              <div class="c-news__content">
-                <div class="c-news__meta">
-                  <strong class="c-news__badge [ c-badge c-badge--article ]">News</strong>
-                  <time class="c-news__date">17 April 2017</time>
-                </div>
-                <h2 class="c-news__headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                <p class="c-news__text">Praesent tempus nec leo eu viverra. Sed venenatis justo quis placerat sodales</p>
-              </div>
-            </article>
-          </a>
+          {% include teaser.html %}
+          {% include teaser.html %}
 
         </div>
       </div>

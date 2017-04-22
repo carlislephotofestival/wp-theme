@@ -6,12 +6,8 @@
 .c-band {
   margin-bottom: $spacing-unit-medium;
   margin-top: $spacing-unit-medium;
-  padding: $spacing-unit;
+  padding: $spacing-unit-medium;
   position: relative;
-
-  @include mq($from: medium) {
-    padding: $spacing-unit-medium;
-  }  
 }
 
 // band--red

@@ -11,7 +11,7 @@
 
   @include mq($from: medium) {
     height: calc(85vh - #{$page-head-height});
-  }  
+  }
 }
 
   // masthead__media
@@ -24,7 +24,7 @@
     video {
       height: 100%;
       object-fit: cover;
-      width: 100%;    
+      width: 100%;
     }
   }
 
@@ -46,7 +46,7 @@
   }
   .c-masthead__credit {
     color: $color-grey;
-  }  
+  }
 
   // masthead__content
   .c-masthead__content {
@@ -62,9 +62,9 @@
 
   // masthead__meta
   .c-masthead__meta {
-    font-size: 0.75rem;
-    font-weight: 700;
-    line-height: 2rem;
+    //font-size: 0.75rem;
+    //font-weight: 700;
+    //line-height: 2rem;
 
     @include mq($from: medium) {
       font-size: 1rem;
@@ -78,7 +78,7 @@
 
     @include mq($from: medium) {
       font-size: 6rem;
-    }  
+    }
   }
 
   // masthead__text
@@ -88,7 +88,7 @@
     @include mq($from: medium) {
       font-size: 1.125rem;
       line-height: 1.625rem;
-    }  
+    }
   }
 
   // masthead__badge
@@ -110,5 +110,5 @@
   // masthead__date
   .c-masthead__date {
     line-height: 2rem;
-    text-transform: uppercase;  
+    text-transform: uppercase;
   }

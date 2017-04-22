@@ -13,15 +13,15 @@
     display: block; // 2
 
     @include mq($from: medium) {
-      display: inline-block; // 2   
+      display: inline-block; // 2
     }
   }
 
   // nav-secondary__link
   .c-nav-secondary__link {
+    @include transition(color .5s);
     margin-left: $spacer / 4;
     margin-right: $spacer / 4;
-    transition: color 0.5s;
   }
   .c-nav-secondary__link {
     color: $color-white;

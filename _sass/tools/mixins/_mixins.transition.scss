@@ -1,0 +1,15 @@
+/*------------------------------------*\
+ # TRANSITION
+\*------------------------------------*/
+
+/*
+@include transition(color .3s ease);
+*/
+
+@mixin transition($args) {
+  -o-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -webkit-transition: $args;
+  transition: $args;
+}

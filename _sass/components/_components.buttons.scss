@@ -3,6 +3,7 @@
 \*------------------------------------*/
 
 .c-button {
+  @include transition(all .25s ease);
   background-color: transparent;
   border: none;
   border-radius: 2px;
@@ -15,7 +16,6 @@
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  transition: all 0.25s ease;
 }
 
 .c-button,

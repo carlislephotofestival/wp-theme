@@ -43,7 +43,7 @@
     }
 
     img {
-      transition: transform .5s;
+      @include transition(transform .5s);
     }
 
     img,

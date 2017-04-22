@@ -7,6 +7,7 @@
   width: 100%;
 
   &.is-open {
+    @include transition(opacity .5s);
     bottom: 0;
     left: 0;
     padding-left: $spacing-unit;
@@ -15,7 +16,6 @@
     right: 0;
     text-align: left;
     top: 0;
-    transition: opacity .5s;
     z-index: 10;
 
     .c-page-menu__nav {
@@ -142,8 +142,8 @@
     padding-right: $spacing-unit;
   }
   .c-page-menu__link  {
+    @include transition(background-color .5s);
     color: $color-white;
-    transition: background-color .5s;
   }
   .c-page-menu__link:hover {
     background-color: $color-black;

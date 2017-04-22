@@ -4,6 +4,7 @@
 
 // teaser
 .c-teaser {
+  border-right: 3px solid;
   margin-bottom: $spacing-unit-medium;
   overflow: hidden;
   position: relative;
@@ -11,6 +12,11 @@
 }
 .c-teaser {
   background-color: $color-white;
+  border-color: $color-brand-secondary;
+
+  @include mq($from: medium) {
+    border-color: transparent;
+  }
 }
 
   .c-teaser__link {
@@ -122,6 +128,7 @@
 
 // teaser--featured
 .c-teaser--featured {
+  border: none;
 
   .c-teaser__media {
     position: static;

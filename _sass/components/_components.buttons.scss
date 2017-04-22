@@ -47,6 +47,7 @@
     position: absolute;
     top: 0.125rem;
     width: 100%;
+    z-index: z('button__arrow');
   }
   .c-button__arrow {
     fill: transparent;

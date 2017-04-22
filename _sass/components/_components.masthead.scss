@@ -30,11 +30,12 @@
 
   // masthead__caption
   .c-masthead__caption {
+    bottom: -20px;
     font-size: 0.75rem;
     letter-spacing: 0.025rem;
     position: absolute;
     right: $spacer;
-    bottom: -20px;
+    z-index: z('masthead__caption');
   }
   .c-masthead__caption {
     color: $color-black;
@@ -55,6 +56,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    z-index: z('masthead__content');
   }
   .c-masthead__content {
     color: $color-white;

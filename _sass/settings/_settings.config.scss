@@ -18,3 +18,18 @@ $mq-breakpoints: (
   medium: 1024px,
   large:  1200px,
 ) !default;
+
+// z-indexes
+
+$z-indexes: (
+  "page-menu__logo",
+  "page-menu__trigger",
+  "page-menu__social",
+  "page-head",
+  "badge",
+  "masthead__content",
+  "masthead__caption",
+  "teaser__media",
+  "teaser__content",
+  "button__arrow"
+) !default;

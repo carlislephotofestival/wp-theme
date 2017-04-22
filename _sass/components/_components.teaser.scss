@@ -36,7 +36,7 @@
     position: absolute;
     top: 0;
     width: 30%;
-    z-index: 2;
+    z-index: z('teaser__media');
 
     @include mq($from: medium) {
       width: 47.96875%;
@@ -81,7 +81,7 @@
       left: $spacing-unit-medium;
       position: absolute;
       top: $spacing-unit-medium;
-      z-index: 3;
+      z-index: z('badge');
     }
   }
 
@@ -141,6 +141,7 @@
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: z('teaser__content');
   }
 
   .c-teaser__badge {

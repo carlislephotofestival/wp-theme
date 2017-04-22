@@ -1,3 +1,14 @@
 /*------------------------------------*\
  # FUNCTIONS
 \*------------------------------------*/
+
+// z-indexes
+
+@function z($z-index) {
+  @if index($z-indexes, $z-index) {
+    @return (length($z-indexes) - index($z-indexes, $z-index)) + 1;
+  } @else {
+    @warn 'There is no "#{$z-index}" in this list; choose one of: #{$z-indexes}';
+    @return null;
+  }
+}

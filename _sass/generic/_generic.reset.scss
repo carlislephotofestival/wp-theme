@@ -12,9 +12,8 @@ html {
 
 // TODO: clean up for more specific clears
 body,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-dl, dd, form, fieldset, legend,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+dd, form, fieldset, legend,
 figure,
 table, th, td, caption,
 hr {
@@ -22,10 +21,9 @@ hr {
   padding: 0;
 }
 
+// paragraph
 p {
-  font-size: 1rem;
-  line-height: 1.5em;
-  margin: 0 0 1.5em;
+  margin: 0;
 }
 
 a, a:hover {
@@ -45,6 +43,7 @@ hr {
   overflow: visible;
 }
 
+// responsive image
 img {
   border-style: none;
   max-width: 100%;
@@ -53,6 +52,11 @@ img {
 
 svg:not(:root) {
   overflow: hidden;
+}
+
+// prevent users abusing breaks
+br + br {
+  display: none;
 }
 
 // input

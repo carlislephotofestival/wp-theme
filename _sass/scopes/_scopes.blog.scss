@@ -1,0 +1,41 @@
+/*------------------------------------*\
+ # BLOG
+\*------------------------------------*/
+
+.s-blog {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+
+  p {
+    margin-bottom: $spacing-unit;
+  }
+
+  li {
+    margin-bottom: $spacing-unit;
+  }
+
+  figure {
+    margin-bottom: $spacing-unit-medium;
+
+    @include mq($from: medium) {
+      margin-left: -$spacing-unit-medium;
+      margin-right: -$spacing-unit-medium;
+    }
+
+    > figcaption {
+      font-size: 0.75rem;
+      letter-spacing: 0.025rem;
+    }
+  }
+
+  img {
+    margin-bottom: $spacing-unit-tiny;
+    width: 100%;
+  }
+
+  // warn WYSIWYG users about applying their own styles
+  [style]:after {
+    content: "Please don't apply your own styling.";
+    color: red;
+  }
+}

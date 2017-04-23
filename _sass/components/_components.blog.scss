@@ -1,0 +1,18 @@
+/*------------------------------------*\
+ # BLOG
+\*------------------------------------*/
+
+.c-blog { }
+
+.c-blog__author,
+.c-blog__date {
+  display: inline-block;
+}
+
+.c-blog__share {
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 900;
+  padding-bottom: $spacer / 2;
+}

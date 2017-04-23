@@ -38,6 +38,9 @@
  * panels ............ Lorem ipsum.
  * buttons ........... Lorem ipsum.
  *
+ * SCOPES
+ * blog .............. Lorem ipsum.
+ *
  * THEMES
  * red ............... Lorem ipsum.
  *
@@ -86,12 +89,15 @@
 @import "components/components.masthead";
 @import "components/components.hero";
 @import "components/components.news";
-@import "components/components.article";
+@import "components/components.blog";
 @import "components/components.about";
 @import "components/components.partners";
 @import "components/components.newsletter";
 @import "components/components.donate";
 @import "components/components.page-foot";
+
+// scopes
+@import "scopes/scopes.blog";
 
 // utilities
 @import "utilities/utilities.widths-flex";

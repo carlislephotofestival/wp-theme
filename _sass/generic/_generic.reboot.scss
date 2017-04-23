@@ -46,7 +46,7 @@ body {
 p {
   font-size: 1rem;
   line-height: 1.5em;
-  margin: 0 0 1.5em;  
+  margin: 0 0 1.5em;
 }
 
 a {
@@ -60,6 +60,9 @@ a:hover {
 
 // input
 .c-input {
+  @include mx-input-placeholder {
+    color: $color-black;
+  }
   border: 0;
   border-radius: 2px;
   font-size: 1rem;
@@ -68,21 +71,4 @@ a:hover {
   outline: none;
   padding: #{$spacer / 4} #{$spacer / 2};
   width: 100%;
-}
-.c-input {
-  color: $color-black;
-}
-.c-input::-webkit-input-placeholder {
-  color: $color-black;
-}
-.c-input:-ms-input-placeholder {
-  color: $color-black;
-}
-.c-input::-moz-placeholder {
-  color: $color-black;
-  opacity: 1;
-}
-.c-input:-moz-placeholder {
-  color: $color-black;
-  opacity: 1;
 }

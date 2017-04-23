@@ -2,7 +2,7 @@
  # CLEARFIX
 \*------------------------------------*/
 
-@mixin clearfix() {
+@mixin mx-clearfix() {
   &::after {
     content: "";
     display: table;

@@ -4,7 +4,7 @@
 
 // newsletter
 .c-newsletter {
-  @include clearfix();
+  @include mx-clearfix();
   background-color: $color-brand-secondary;
   padding: $spacing-unit-medium;
   text-align: center;

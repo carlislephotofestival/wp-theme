@@ -3,10 +3,10 @@
 \*------------------------------------*/
 
 /*
-@include transition(color .3s ease);
+@include mx-transition(color .3s ease);
 */
 
-@mixin transition($args) {
+@mixin mx-transition($args) {
   -o-transition: $args;
   -moz-transition: $args;
   -ms-transition: $args;

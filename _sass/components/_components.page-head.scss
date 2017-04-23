@@ -4,7 +4,7 @@
 
 // page-head
 .c-page-head {
-  @include transition(height .5s ease);
+  @include mx-transition(height .5s ease);
   display: block;
   height: $page-head-height;
   width: 100%;
@@ -25,7 +25,7 @@
   height: 1.75 * $page-head-height;
 
   @include mq($from: medium) {
-    @include transition(height .5s ease);
+    @include mx-transition(height .5s ease);
     height: 2 * $page-head-height;
   }
 }

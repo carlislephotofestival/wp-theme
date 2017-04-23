@@ -7,7 +7,7 @@
   width: 100%;
 
   &.is-open {
-    @include transition(opacity .5s);
+    @include mx-transition(opacity .5s);
     bottom: 0;
     left: 0;
     padding-left: $spacing-unit;
@@ -19,8 +19,7 @@
     z-index: 10;
 
     .c-page-menu__nav {
-      visibility: visible;
-      opacity: 1;
+      @include mx-visible;
     }
 
     .c-page-menu__link {
@@ -28,8 +27,7 @@
     }
 
     .c-page-menu__trigger {
-      opacity: 1;
-      visibility: visible;
+      @include mx-visible;
     }
 
     .c-nav-primary {
@@ -47,13 +45,12 @@
     }
 
     .c-page-menu__social {
+      @include mx-visible;
       bottom: 0;
       height: 4rem;
       left: 0;
-      opacity: 1;
       right: 0;
       top: auto;
-      visibility: visible;
     }
     .c-page-menu__social {
       background-color: $color-brand-tertiary;
@@ -91,40 +88,35 @@
     z-index: z('page-menu__trigger');
 
     @include mq($from: medium) {
-      opacity: 0;
-      visibility: hidden;
+      @include mx-invisible;
     }
   }
 
   // page-menu__nav
   .c-page-menu__nav {
+    @include mx-invisible;
     height: 100%;
-    opacity: 0;
-    visibility: hidden;
 
     @include mq($from: medium) {
-      opacity: 1;
-      visibility: visible;
+      @include mx-visible;
     }
   }
 
   // page-menu__social
   .c-page-menu__social {
+    @include mx-invisible;
     bottom: 0;
     height: 100%;
     left: $spacing-unit;
-    opacity: 0;
     position: absolute;
-    visibility: hidden;
     z-index: z('page-menu__social');
 
     @include mq($from: medium) {
+      @include mx-visible;
       bottom: auto;
       left: auto;
-      opacity: 1;
       right: $spacing-unit;
       top: 0;
-      visibility: visible;
     }
 
     .c-social__icon,
@@ -142,7 +134,7 @@
     padding-right: $spacing-unit;
   }
   .c-page-menu__link  {
-    @include transition(background-color .5s);
+    @include mx-transition(background-color .5s);
     color: $color-white;
   }
   .c-page-menu__link:hover {

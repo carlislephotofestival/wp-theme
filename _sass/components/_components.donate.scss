@@ -4,7 +4,7 @@
 
 // donate
 .c-donate {
-  @include clearfix();
+  @include mx-clearfix();
   background-color: $color-brand-tertiary;
   padding: $spacing-unit-medium;
   text-align: center;

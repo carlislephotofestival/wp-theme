@@ -2,10 +2,12 @@
  # VISIBILITY
 \*------------------------------------*/
 
-@mixin invisible {
+@mixin mx-invisible {
+  opacity: 0 !important;
   visibility: hidden !important;
 }
 
-@mixin visible {
+@mixin mx-visible {
+  opacity: 1 !important;
   visibility: visible !important;
 }

@@ -10,9 +10,14 @@ textarea {
 }
 */
 
-@mixin input-placeholder {
-  &:-moz-placeholder { @content; }
-  &::-moz-placeholder { @content; }
+@mixin mx-input-placeholder {
+  &:-moz-placeholder {
+    opacity: 1 !important;
+  }
+  &::-moz-placeholder {
+    @content;
+    opacity: 1 !important;
+  }
   &:-ms-input-placeholder { @content; }
   &::-webkit-input-placeholder { @content; }
   &.placeholder { @content; }

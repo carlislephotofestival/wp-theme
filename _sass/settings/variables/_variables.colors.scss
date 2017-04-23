@@ -5,8 +5,8 @@
 // base colors
 $color-black:                 #000 !default;
 $color-blue:                  #80d8ff !default;
-$color-grey:                  #757575 !default;
-$color-grey-dark:             #1b1b1b !default;
+$color-grey:                  #666666 !default;
+$color-grey-dark:             #222222 !default;
 $color-grey-light:            #f1f1f1 !default;
 $color-purple:                #b388ff !default;
 $color-red:                   #ff0024 !default;
@@ -22,5 +22,5 @@ $color-links:                 $color-brand-primary !default;
 $color-links-hover:           $color-brand-secondary !default;
 
 // body
-$color-body:                  $color-black !default;
+$color-body:                  $color-grey !default;
 $color-body-background:       $color-grey-light !default;

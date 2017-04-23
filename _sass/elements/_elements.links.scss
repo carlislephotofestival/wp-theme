@@ -1,0 +1,16 @@
+/*------------------------------------*\
+ # LINKS
+\*------------------------------------*/
+
+/**
+ * Styles for default hyperlinks.
+ */
+
+a {
+  color: $color-links;
+
+  &:focus,
+  &:hover {
+    color: $color-links-hover;
+  }
+}

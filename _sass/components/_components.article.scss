@@ -2,13 +2,30 @@
  # ARTICLE
 \*------------------------------------*/
 
-.c-article {
-  // margin-bottom: $spacer * 2;
-}
+.c-article { }
 
 .c-article__body {
-  padding: #{$spacer * 2} $spacer;
 
+  figure {
+    padding-bottom: $spacing-unit-medium;
+
+    @include mq($from: medium) {
+      margin-left: -$spacing-unit-medium;
+      margin-right: -$spacing-unit-medium;
+    }
+  }
+
+  figcaption {
+    font-size: 0.75rem;
+    letter-spacing: 0.025rem;
+  }
+
+  img {
+    margin-bottom: $spacing-unit-tiny;
+    width: 100%;
+  }
+
+  /*
   ul, ol {
     margin: 0 0 1.5rem;
   }
@@ -52,12 +69,30 @@
     }
   }
 
-  img {
-    margin-top: $spacer;
-    margin-bottom: $spacer;
+  figure {
+    padding-bottom: $spacing-unit-medium;
+
+    @include mq($from: medium) {
+      margin-left: -$spacing-unit-medium;
+      margin-right: -$spacing-unit-medium;
+    }
   }
+
+  figcaption {
+    font-size: 0.75rem;
+    letter-spacing: 0.025rem;
+  }
+
+  img {
+    margin-bottom: $spacing-unit-tiny;
+  }
+  */
 }
-.c-article__body { background-color: $color-white; }
+
+.c-article__author,
+.c-article__date {
+  display: inline-block;
+}
 
 .c-article__share {
   align-items: center;
@@ -68,12 +103,4 @@
 }
 
 .c-article__social {
-}
-
-.c-black {
-  padding: #{$spacer * 2} $spacer;
-}
-.c-black {
-  background-color: #000;
-  color: #fff;
 }

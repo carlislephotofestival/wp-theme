@@ -3,13 +3,7 @@
 \*------------------------------------*/
 
 .o-list-inline {
-  display: flex;
-  flex-flow: row wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-  .o-list-inline__item {
-    flex: 0 0 auto;
+  > .o-list-inline__item {
+    display: inline-block;
   }
+}

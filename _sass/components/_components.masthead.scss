@@ -38,7 +38,7 @@
     z-index: z('masthead__caption');
   }
   .c-masthead__caption {
-    color: $color-black;
+    color: $color-grey-dark;
   }
 
   // masthead__credit
@@ -64,22 +64,13 @@
 
   // masthead__meta
   .c-masthead__meta {
-    //font-size: 0.75rem;
-    //font-weight: 700;
-    //line-height: 2rem;
-
     @include mq($from: medium) {
-      font-size: 1rem;
     }
   }
 
   // masthead__headline
   .c-masthead__headline {
-    font-size: 3rem;
-    margin-bottom: $spacing-unit;
-
     @include mq($from: medium) {
-      font-size: 6rem;
     }
   }
 
@@ -88,8 +79,6 @@
     font-weight: 700;
 
     @include mq($from: medium) {
-      font-size: 1.125rem;
-      line-height: 1.625rem;
     }
   }
 

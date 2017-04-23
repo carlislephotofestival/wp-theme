@@ -18,6 +18,7 @@
  * reboot ............ Lorem ipsum.
  *
  * ELEMENTS
+ * page .............. Lorem ipsum.
  * headings .......... Lorem ipsum.
  *
  * OBJECTS
@@ -54,10 +55,14 @@
 
 // generic
 @import "generic/generic.normalize";
-@import "generic/generic.reboot";
+@import "generic/generic.reset";
 
 // elements
+@import "elements/elements.page";
 @import "elements/elements.headings";
+@import "elements/elements.images";
+@import "elements/elements.links";
+@import "elements/elements.lists";
 
 // objects
 @import "objects/objects.wrapper";

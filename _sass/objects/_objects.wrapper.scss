@@ -7,6 +7,10 @@
   max-width: 80rem;
   width: 100%;
 }
-.o-wrapper--small {
+.o-wrapper--narrow {
   max-width: 60rem;
+
+  @include mq($from: medium) {
+    padding: $spacing-unit-medium;
+  }
 }

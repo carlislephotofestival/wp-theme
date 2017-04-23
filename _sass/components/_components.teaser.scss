@@ -55,7 +55,7 @@
   }
   .c-teaser__media {
     @include mq($from: medium) {
-      background-color: $color-black;
+      background-color: $color-grey-dark;
     }
   }
 
@@ -94,7 +94,7 @@
     color: $color-grey;
 
     @include mq($from: medium) {
-      color: $color-black;
+      color: $color-grey;
     }
   }
 
@@ -110,7 +110,7 @@
     }
   }
   .c-teaser__headline {
-    color: $color-black;
+    color: $color-grey;
   }
 
   // teaser__text

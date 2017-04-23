@@ -1,15 +1,12 @@
 /*------------------------------------*\
- # REBOOT
+ # RESET
 \*------------------------------------*/
-
 
 html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -25,43 +22,43 @@ hr {
   padding: 0;
 }
 
-img {
-  max-width: 100%;
-  width: 1600px; // todo: remove this
-  vertical-align: middle;
-}
-
-html {
-  font-family: $font-base-family;
-  font-size: $font-base-size;
-  font-weight: $font-base-weight;
-  line-height: $font-base-line-height;
-}
-
-body {
-  background-color: $color-body-background;
-  color: $color-body;
-}
-
 p {
   font-size: 1rem;
   line-height: 1.5em;
   margin: 0 0 1.5em;
 }
 
-a {
-  color: $color-links;
+a, a:hover {
   text-decoration: none;
 }
-a:hover {
-  color: $color-links-hover;
-  text-decoration: none;
+
+dl,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+svg:not(:root) {
+  overflow: hidden;
 }
 
 // input
 .c-input {
   @include mx-input-placeholder {
-    color: $color-black;
+    color: $color-grey-dark;
   }
   border: 0;
   border-radius: 2px;

@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.c-band--tall {
+  padding: $spacing-unit-large $spacing-unit-medium;
+}
+
 // band--red
 .c-band--red {
   background: $color-brand-primary;

@@ -2,8 +2,12 @@
  # HEADINGS
 \*------------------------------------*/
 
-h2, h3 {
-  margin: 0 0 1.5rem;    
+/**
+ * Styles for default headings.
+ */
+
+h1, h2, h3 {
+  margin: 0 0 1.125rem;
 }
 
 h1 {

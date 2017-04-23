@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .c-button {
-  @include mx-transition(all .25s ease);
+  @include mx-transition(all .5s ease);
   background-color: transparent;
   border: none;
   border-radius: 2px;

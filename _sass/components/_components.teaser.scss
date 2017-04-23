@@ -43,7 +43,7 @@
     }
 
     img {
-      @include mx-transition(transform .5s);
+      @include mx-transition(transform .5s ease);
     }
 
     img,

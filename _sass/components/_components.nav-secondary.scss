@@ -19,7 +19,7 @@
 
   // nav-secondary__link
   .c-nav-secondary__link {
-    @include mx-transition(color .5s);
+    @include mx-transition(color .5s ease);
     margin-left: $spacer / 4;
     margin-right: $spacer / 4;
   }

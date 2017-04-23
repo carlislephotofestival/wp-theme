@@ -7,7 +7,7 @@
   width: 100%;
 
   &.is-open {
-    @include mx-transition(opacity .5s);
+    @include mx-transition(opacity .5s ease);
     bottom: 0;
     left: 0;
     padding-left: $spacing-unit;
@@ -134,7 +134,7 @@
     padding-right: $spacing-unit;
   }
   .c-page-menu__link  {
-    @include mx-transition(background-color .5s);
+    @include mx-transition(background-color .5s ease);
     color: $color-white;
   }
   .c-page-menu__link:hover {

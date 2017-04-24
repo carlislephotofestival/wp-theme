@@ -3,7 +3,11 @@
 \*------------------------------------*/
 
 /*
-@include mx-transition(color .3s ease);
+ * Cross-browser support for transitions.
+ *
+ * Usage:
+ *
+ * @include mx-transition(color .3s ease);
 */
 
 @mixin mx-transition($args) {

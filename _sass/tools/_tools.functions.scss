@@ -2,7 +2,13 @@
  # FUNCTIONS
 \*------------------------------------*/
 
-// z-indexes
+/*
+ * An automatically incrementing z-index function.
+ *
+ * Usage:
+ * 
+ * Add elements to array in `settings/settings.config`.
+ */
 
 @function z($z-index) {
   @if index($z-indexes, $z-index) {

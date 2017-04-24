@@ -3,12 +3,16 @@
 \*------------------------------------*/
 
 /*
-textarea {
-    @include input-placeholder {
-        color: $grey;
-    }
-}
-*/
+ * Cross-browser support for coloring input placeholders.
+ *
+ * Usage:
+ *
+ * input {
+ *   @include input-placeholder {
+ *     color: $color-black;
+ *   }
+ * }
+ */
 
 @mixin mx-input-placeholder {
   &:-moz-placeholder {

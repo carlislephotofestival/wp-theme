@@ -6,15 +6,13 @@
  # CONTENTS
  *
  * clearfix .......... Lorem ipsum.
- * float ............. Lorem ipsum.
  * visibility ........ Lorem ipsum.
  * transition ........ Lorem ipsum.
  * placeholder ....... Lorem ipsum.
- * mq ................ Let other people handle mq.
+ * mq ................ Use sass-mq and let other people handle mqs.
  */
 
 @import "mixins/mixins.clearfix";
-@import "mixins/mixins.float";
 @import "mixins/mixins.visibility";
 @import "mixins/mixins.transition";
 @import "mixins/mixins.placeholder";

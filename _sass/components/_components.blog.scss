@@ -2,17 +2,27 @@
  # BLOG
 \*------------------------------------*/
 
-.c-blog { }
-
-.c-blog__author,
-.c-blog__date {
-  display: inline-block;
+.c-blog {
+  @include mx-clearfix();
 }
 
+.c-blog__meta {
+  line-height: $spacing-unit-medium;
+  margin-bottom: $spacing-unit-medium;
+}
+
+.c-blog__author,
+.c-blog__date,
 .c-blog__share {
-  align-items: center;
-  display: flex;
-  font-size: 1rem;
   font-weight: 900;
-  padding-bottom: $spacer / 2;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.c-blog__author,
+.c-blog__date,
+.c-blog__share {
+  color: $color-grey-dark;
+}
+.c-blog__social {
+  float: right;
 }

@@ -1,0 +1,14 @@
+/*------------------------------------*\
+ # BLOG-PAGE
+\*------------------------------------*/
+
+// blog-page
+.c-blog-post {
+  @include mx-clearfix();
+}
+
+  .c-blog-page__content {
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }

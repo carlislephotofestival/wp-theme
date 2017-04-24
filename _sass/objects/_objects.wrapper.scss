@@ -11,6 +11,7 @@
   max-width: 60rem;
 
   @include mq($from: medium) {
-    padding: $spacing-unit-medium;
+    padding-left: $spacing-unit-medium;
+    padding-right: $spacing-unit-medium;
   }
 }

@@ -1,0 +1,12 @@
+/*------------------------------------*\
+ # BLOG-PAGE
+\*------------------------------------*/
+
+.s-blog-page {
+
+  // warn WYSIWYG users about applying their own styles
+  [style]:after {
+    content: "Please don't apply your own styling.";
+    color: red;
+  }
+}

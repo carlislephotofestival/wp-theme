@@ -14,8 +14,8 @@
  * mixins ............ Lorem ipsum.
  *
  * GENERIC
- * normalize ......... Lorem ipsum.
- * reset ............. Lorem ipsum.
+ * normalize ......... Render all elements more consistently.
+ * zero .............. Zero out styles for clean elements.
  *
  * ELEMENTS
  * document .......... Lorem ipsum.
@@ -44,7 +44,8 @@
  * buttons ........... Lorem ipsum.
  *
  * SCOPES
- * blog .............. Lorem ipsum.
+ * page .............. Lorem ipsum.
+ * post .............. Lorem ipsum.
  *
  * THEMES
  * red ............... Lorem ipsum.
@@ -63,7 +64,7 @@
 
 // generic
 @import "generic/generic.normalize";
-@import "generic/generic.reset";
+@import "generic/generic.zero";
 
 // elements
 @import "elements/elements.document";
@@ -83,28 +84,32 @@
 
 // components
 @import "components/components.band";
-@import "components/components.buttons";
-@import "components/components.badges";
+@import "components/components.button";
+@import "components/components.badge";
+@import "components/components.dash";
 @import "components/components.teaser";
 @import "components/components.page";
 @import "components/components.page-head";
 @import "components/components.page-menu";
+@import "components/components.page-foot";
 @import "components/components.logo";
 @import "components/components.social";
 @import "components/components.nav-primary";
 @import "components/components.nav-secondary";
 @import "components/components.masthead";
 @import "components/components.hero";
-@import "components/components.news";
-@import "components/components.blog";
+@import "components/components.blog-page";
+@import "components/components.blog-post";
 @import "components/components.about";
 @import "components/components.partners";
 @import "components/components.newsletter";
 @import "components/components.donate";
-@import "components/components.page-foot";
+@import "components/components.person";
+@import "components/components.year";
 
 // scopes
-@import "scopes/scopes.blog";
+@import "scopes/scopes.blog-page";
+@import "scopes/scopes.blog-post";
 
 // utilities
 @import "utilities/utilities.widths-flex";

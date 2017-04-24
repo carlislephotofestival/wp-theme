@@ -1,0 +1,37 @@
+/*------------------------------------*\
+ # BLOG-POST
+\*------------------------------------*/
+
+// blog-post
+.c-blog-post {
+  @include mx-clearfix();
+}
+
+  // blog__meta
+  .c-blog-post__meta {
+    line-height: $spacing-unit-medium;
+    margin-bottom: $spacing-unit-medium;
+  }
+
+  // blog__*
+  .c-blog-post__author,
+  .c-blog-post__date,
+  .c-blog-post__share {
+    font-weight: 900;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  .c-blog-post__author,
+  .c-blog-post__date,
+  .c-blog-post__share {
+    color: $color-grey-dark;
+  }
+  .c-blog-post__social {
+    float: right;
+  }
+
+  .c-blog-post__content {
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }

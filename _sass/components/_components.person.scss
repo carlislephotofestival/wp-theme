@@ -1,0 +1,30 @@
+/*------------------------------------*\
+ # PERSON
+\*------------------------------------*/
+
+// person
+.c-person {
+  text-align: center;
+}
+
+  // person__media
+  .c-person__media {
+    margin-bottom: $spacing-unit;
+    overflow: hidden;
+
+    img {
+      @include mx-transition(transform .5s ease);
+    }
+  }
+  .c-person__media:hover img {
+    transform: scale(1.1);
+  }
+
+  // person__name
+  .c-person__name {
+    margin-bottom: $spacing-unit-tiny;
+  }
+  
+  // person__name
+
+  // person__role

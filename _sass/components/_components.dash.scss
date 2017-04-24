@@ -1,0 +1,21 @@
+/*------------------------------------*\
+ # DASH
+\*------------------------------------*/
+
+// dash
+.c-dash {
+  border-top: 4px solid transparent;
+  margin-bottom: $spacing-unit-medium;
+  margin-top: $spacing-unit-medium;
+  width: $spacing-unit-large;
+}
+
+// dash-brand--secondary
+.c-dash--brand-secondary {
+  border-color: $color-brand-secondary;
+}
+
+// dash-brand--tertiary
+.c-dash--brand-tertiary {
+  border-color: $color-brand-tertiary;
+}

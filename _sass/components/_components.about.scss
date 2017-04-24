@@ -5,29 +5,27 @@
 // about
 .c-about { }
 
-  // about__content
-  .c-about__content {
-    margin-bottom: $spacer;
-    margin-top: $spacer;
-  }
-
-  // about__body (dash)
-  .c-about__body {
-    padding-top: $spacer; // 1
-    position: relative;
-
+  // about__partners
+  .c-about__partners {
     @include mq($from: medium) {
-      padding: 0; // 1
+      margin-left: -12 * $spacing-unit;
+      margin-right: -12 * $spacing-unit;
     }
   }
-  .c-about__body:before {
-    content: '';
-    height: 3px;
-    left: $spacer;
-    position: absolute;
-    top: 0;
-    width: 8rem;
+
+/**
+ * Team
+ */
+.c-team {
+
+}
+
+.c-about__person {
+  flex-basis: 50% !important;
+  max-width: 50%!important;
+
+  @include mq($from: medium) {
+    flex-basis: 33.33333333% !important;
+    max-width: 33.33333333% !important;    
   }
-  .c-about__body:before {
-    background: $color-brand-tertiary;
-  }
+}

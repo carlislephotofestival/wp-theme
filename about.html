@@ -11,9 +11,98 @@ layout: has-masthead
   </figure>
 </div>
 
-<section class="c-band c-band--light">
-  <div class="o-wrapper">
-    <h2>About</h2>
-    <p>Lorem ipsum.</p>
-  </div>
-</section>
+<main class="s-blog-page">
+  <section aria-labelledby="about-headline" class="c-about c-band" data-section="About">
+    <div class="o-wrapper o-wrapper--narrow">
+      <div class="o-layout-flex">
+        <div class="o-layout-flex__item u-flex-1/3">
+        <h2 id="about-headline">The Festival</h2>
+        <hr class="c-dash c-dash--brand-tertiary">
+        </div>
+        <div class="o-layout-flex__item u-flex-1/3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis ligula felis, non iaculis odio egestas id.
+            Donec varius ex ac leo gravida laoreet. Maecenas ac nibh nec erat ornare semper id ac sem. Integer nec vehicula
+            quam, in maximus nisi. Ut aliquam eros non tortor mollis, at porta mauris gravida. Suspendisse potenti.</p>
+          <p>Duis tortor erat, rutrum non luctus ac, molestie a risus. Mauris luctus tellus lectus, vel blandit ex tincidunt
+            id.
+          </p>
+        </div>
+        <div class="o-layout-flex__item u-flex-1/3">
+          <p>Nulla dapibus sagittis commodo. Suspendisse vehicula ligula leo, sit amet tincidunt metus sollicitudin quis. In
+            hac habitasse platea dictumst. Ut luctus sapien risus, a volutpat quam porta vitae. Nullam placerat elementum
+            lectus id pulvinar. Morbi interdum viverra velit, id congue mauris pretium et. Sed maximus ex neque, eu rutrum
+            diam convallis ultrices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="about-headline" class="c-band c-band--light" data-section="About">
+    <div class="o-wrapper o-wrapper--narrow">
+      <h2>Previous Years</h2>
+      <hr class="c-dash c-dash--brand-secondary">           
+      <div class="o-layout-flex">
+        <div class="o-layout-flex__item u-flex-1/3">
+          {% include about-year.html %}
+        </div>
+        <div class="o-layout-flex__item u-flex-1/3">
+          {% include about-year.html %}
+        </div>
+        <div class="o-layout-flex__item u-flex-1/3">
+          {% include about-year.html %}
+        </div>        
+      </div>
+    </div>
+  </section>  
+
+  <section aria-labelledby="about-headline" class="c-about c-band" data-section="About">
+    <div class="o-wrapper o-wrapper--narrow">
+      <div class="o-layout-flex">
+        <div class="o-layout-flex__item u-flex-1/3">
+          <h2>The Team</h2>
+          <hr class="c-dash c-dash--brand-tertiary">        
+        </div>
+        <div class="o-layout-flex__item u-flex-2/3">
+          <div class="o-layout-flex">
+            <div class="c-about__person o-layout-flex__item">
+              {% include about-person.html %}
+            </div>
+            <div class="c-about__person o-layout-flex__item">
+              {% include about-person.html %}
+            </div>
+            <div class="c-about__person o-layout-flex__item">
+              {% include about-person.html %}
+            </div>
+            <div class="c-about__person o-layout-flex__item">
+              {% include about-person.html %}
+            </div>                         
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="about-headline" class="c-band c-band--light" data-section="About">
+    <div class="o-wrapper o-wrapper--narrow">
+      <h2>Financiers &amp; Partners</h2>
+      <hr class="c-dash c-dash--brand-secondary">
+      <div class="c-about__partners">
+      <ul class="c-partners__list o-list-inline">
+        <li class="o-list-inline__item">
+          <img class="c-partners__logo" src="images/sponsors-2.png" alt="Arts Council England">
+        </li>
+        <li class="o-list-inline__item">
+          <img class="c-partners__logo" src="images/sponsors-1.png" alt="Carlisle City Council">
+        </li>
+        <li class="o-list-inline__item">
+          <img class="c-partners__logo" src="images/sponsors-3.png" alt="Cumbria County Council">
+        </li>
+        <li class="o-list-inline__item">
+          <img class="c-partners__logo" src="images/sponsors-4.png" alt="University of Cumbria">
+        </li>
+      </ul>      
+      </div>
+    </div>
+  </section>  
+
+</main>

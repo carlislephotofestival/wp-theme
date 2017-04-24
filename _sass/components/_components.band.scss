@@ -8,16 +8,12 @@
   position: relative;
 }
 
+// band--tall
 .c-band--tall {
   padding: $spacing-unit-large $spacing-unit-medium;
 }
 
-// band--red
-.c-band--red {
-  background: $color-brand-primary;
-  color: $color-white;
-}
-
+// band--light
 .c-band--light {
   background: $color-white;
 }
@@ -45,17 +41,4 @@
   .o-layout-flex {
     margin: 0;
   }
-}
-
-// band--absolute-1/3
-.c-band--left-1\/3 { }
-.c-band--left-1\/3:after {
-  background-color: $color-white;
-  content: '';
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100vw;
-  z-index: -1;
 }

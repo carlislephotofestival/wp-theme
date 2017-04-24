@@ -1,0 +1,58 @@
+/*------------------------------------*\
+ # PERSON
+\*------------------------------------*/
+
+// year
+.c-year {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.c-year {
+  background-color: $color-grey-dark;
+}
+
+  // year__link
+  .c-year__link {
+      display: block;
+      height: 100%;
+      width: 100%;
+  }
+  .c-year__link:hover .c-year__media img {
+    transform: scale(1.1);
+  }
+
+  // year__media
+  .c-year__media {
+    width: 100%;
+
+    img {
+      @include mx-transition(transform .5s ease);
+      opacity: .5;
+    }
+
+    img,
+    video {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  // year__content
+  .c-year__content {
+    left: 0;
+    padding: $spacing-unit;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: z('teaser__content');
+  }
+
+  // year__headline
+  .c-year__headline {
+    font-size: 2rem;
+  }
+  .c-year__headline {
+    color: $color-white;
+  }

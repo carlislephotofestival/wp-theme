@@ -1,72 +1,13 @@
 ---
-layout: has-masthead
+layout: default
 ---
 
-<article class="c-blog">
-  <header class="[ c-masthead c-masthead--cover ] js-masthead-cover">
-    <figure class="c-masthead__media">
-      <img src="images/placeholder-square.jpg" alt="">
-      <figcaption class="c-masthead__caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="c-masthead__credit">Julian Dawson for Carlisle Photo</span></figcaption>
-    </figure>
-    <div class="c-masthead__content">
-      <div class="o-wrapper">
-        <h1 class="c-masthead__headline">Phasellus et augue ut nisl cursus fermentum</h1>
-        <p class="c-masthead__text">Quisque in justo tellus. Suspendisse sit amet aliquam eros vitae efficitur arcu.</p>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="c-band">
-      <div class="o-wrapper o-wrapper--narrow">
-        <div class="c-blog__meta">
-          <span class="c-blog__badge c-masthead__badge [ c-badge c-badge--article ]">News</span>
-          <time class="c-blog__date">17 April 2017</time>
-          <div class="c-blog__social c-social">
-            <ul class="o-list-inline">
-              <li class="c-social__item o-list-inline__item">
-                <p class="c-blog__share">Share on:</p>
-              </li>
-              <li class="c-social__item o-list-inline__item">
-                <a aria-label="Twitter" class="c-social__link" href="/" target="_blank">
-                  <svg aria-hidden="true" class="c-social__icon" role="img">
-                    <use xlink:href="#icon-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="c-social__item o-list-inline__item">
-                <a aria-label="Facebook" class="c-social__link" href="/" target="_blank">
-                  <svg aria-hidden="true" class="c-social__icon" role="img">
-                    <use xlink:href="#icon-facebook" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="s-blog">
-
-          {% include blog-post.html %}
-
-        </div>
-      </div>
-    </div>
-  </main>
-</article>
-
-<section class="c-band c-band--dark">
-  <div class="o-wrapper">
-    <h2>Related</h2>
-    <div class="o-layout-flex">
-      <div class="o-layout-flex__item u-flex-1/2">
-
-        {% include teaser.html %}
-
-      </div>
-      <div class="o-layout-flex__item u-flex-1/2">
-
-        {% include teaser.html %}
-
+<main class="c-blog-page s-blog-page">
+  <div class="c-band">
+    <div class="o-wrapper o-wrapper--narrow">
+      <div class="c-blog-page__content">
+        {% include blog-page.html %}
       </div>
     </div>
   </div>
-</section>
+</main>

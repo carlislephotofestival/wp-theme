@@ -2,6 +2,7 @@
  # BUTTONS
 \*------------------------------------*/
 
+// button
 .c-button {
   @include mx-transition(all .5s ease);
   background-color: transparent;
@@ -17,7 +18,6 @@
   text-align: center;
   text-transform: uppercase;
 }
-
 .c-button,
 .c-button:visited {
   background-color: $color-brand-primary;
@@ -28,11 +28,13 @@
   color: $color-white;
 }
 
+  // button__text
   .c-button__text {
     display: inline-block;
     margin-right: $spacer;
   }
 
+  // button__icon
   .c-button__icon {
     display: inline-block;
     height: 1rem;
@@ -41,6 +43,7 @@
     width: 2rem;
   }
 
+  // button__arrow
   .c-button__arrow {
     height: 100%;
     left: 0;
@@ -53,3 +56,8 @@
     fill: transparent;
     stroke: $color-white;
   }
+
+// button--wide
+.c-button--wide {
+  display: block;
+}

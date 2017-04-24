@@ -1,5 +1,5 @@
 /*------------------------------------*\
- # RESET
+ # ZERO
 \*------------------------------------*/
 
 html {
@@ -38,6 +38,7 @@ ul {
 }
 
 hr {
+  border: 0;
   box-sizing: content-box;
   height: 0;
   overflow: visible;

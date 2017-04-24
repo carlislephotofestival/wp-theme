@@ -14,7 +14,7 @@
   <section class="c-news c-band" data-section="News">
     <div class="o-wrapper">
       <div class="c-news__header">
-        <hr class="c-dash c-news__dash">
+        <hr class="c-dash c-dash">
         <p class="c-news__meta">News</p>
         <h2 class="c-news__title">The latest and greatest from around the festival</h2>
       </div>
@@ -43,7 +43,7 @@
 
       <?php endif; ?>
       <div class="c-news__footer">
-        <a class="c-button c-news__more" href="/">More News</a>
+        <a class="c-button c-button--wide" href="/">More News</a>
       </div>
     </div>
   </section>
@@ -53,7 +53,7 @@
   <section class="c-band" data-section="Sponsors">
     <div class="o-wrapper">
       <div class="c-news__header">
-        <hr class="c-dash c-news__dash">
+        <hr class="c-dash c-dash">
         <p class="c-news__meta">About</p>
         <h2 class="c-news__title">Thanks to our amazing sponsors</h2>
       </div>

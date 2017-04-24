@@ -15,11 +15,16 @@
  *
  * GENERIC
  * normalize ......... Lorem ipsum.
- * reboot ............ Lorem ipsum.
+ * reset ............. Lorem ipsum.
  *
  * ELEMENTS
- * page .............. Lorem ipsum.
- * headings .......... Lorem ipsum.
+ * document .......... Lorem ipsum.
+ * body .............. Lorem ipsum.
+ * typography ........ Lorem ipsum.
+ * links ............. Lorem ipsum.
+ * lists ............. Lorem ipsum.
+ * images ............ Lorem ipsum.
+ * figures ........... Lorem ipsum.
  *
  * OBJECTS
  * wrapper ........... Lorem ipsum.
@@ -61,11 +66,13 @@
 @import "generic/generic.reset";
 
 // elements
-@import "elements/elements.page";
-@import "elements/elements.headings";
-@import "elements/elements.images";
+@import "elements/elements.document";
+@import "elements/elements.body";
+@import "elements/elements.typography";
 @import "elements/elements.links";
 @import "elements/elements.lists";
+@import "elements/elements.images";
+@import "elements/elements.figures";
 
 // objects
 @import "objects/objects.wrapper";

@@ -1,14 +1,14 @@
 {
-  "name": "carlislephotofestival.co.uk",
+  "name": "carlislephoto.org.uk",
   "version": "1.0.0",
-  "description": "Wordpress theme",
+  "description": "Wordpress theme for Carlisle Photo",
   "main": "index.js",
   "scripts": {
     "start": "npm run serve",
     "serve": "jekyll serve --host=0.0.0.0",
-    "serve:proto": "jekyll serve -s ./_prototype --host=0.0.0.0",
     "css": "node-sass _sass/main.scss style.css --output-style compressed",
     "css:dev": "node-sass _sass/main.scss style.css --watch",
+    "js": "webpack --progress",
     "js:dev": "webpack --progress --watch"
   },
   "repository": {

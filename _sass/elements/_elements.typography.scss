@@ -1,5 +1,5 @@
 /*------------------------------------*\
- # HEADINGS
+ # TYPOGRAPHY
 \*------------------------------------*/
 
 /**
@@ -23,4 +23,13 @@ h2 {
 h3 {
   font-size: $font-h3-size;
   font-weight: $font-h3-weight;
+}
+
+/**
+ * Paragraph styles.
+ */
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1.125rem;
 }

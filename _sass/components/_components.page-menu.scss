@@ -10,11 +10,11 @@
     @include mx-transition(opacity .5s ease);
     bottom: 0;
     left: 0;
-    padding-left: $spacing-unit;
-    padding-right: $spacing-unit;
+    overflow: hidden;
+    padding-left: $spacing-unit-medium;
+    padding-right: $spacing-unit-medium;
     position: fixed;
     right: 0;
-    text-align: left;
     top: 0;
     z-index: 10;
 
@@ -23,7 +23,17 @@
     }
 
     .c-page-menu__link {
-      height: 4rem;
+      margin-bottom: $spacing-unit-medium;
+    }
+    .c-page-menu__link:focus,
+    .c-page-menu__link:hover, {
+      background-color: transparent;
+    }
+
+    .c-page-menu__logo,
+    .c-page-menu__trigger {
+      height: 1.75 * $page-head-height;
+      margin-bottom: 0;
     }
 
     .c-page-menu__trigger {
@@ -31,16 +41,11 @@
     }
 
     .c-nav-primary {
-      margin-top: $spacer * 2;
+      margin-top: 2* $spacing-unit-large;
 
       .c-nav-primary__list {
-        flex-direction: column;
-      }
-
-      .c-nav-primary__link {
-        font-size: 1.5rem;
-        font-weight: 400;
-        text-transform: none;
+        align-items: center;
+        flex-flow: column wrap;
       }
     }
 
@@ -52,20 +57,22 @@
       right: 0;
       top: auto;
     }
-    .c-page-menu__social {
-      background-color: $color-brand-tertiary;
-
-      .c-social__icon {
-        fill: $color-grey-dark;
-      }
-      .c-social__icon:hover {
-        fill: $color-white;
-      }
-    }
   }
 
   &.is-open {
-    background-color: $color-grey-dark;
+    background-image: linear-gradient(
+      348deg,
+      #9e5578 14%,
+      #98567a 17%,
+      #98567a 0,
+      #695a88 42%,
+      #615b8b 46%,
+      #615b8b 0,
+      #605b8b 47%,
+      #5a5c8d 50%,
+      #4e5081 69%,
+      #3b3d6d
+    );  
   }
 }
 
@@ -137,6 +144,7 @@
     @include mx-transition(background-color .5s ease);
     color: $color-white;
   }
+  .c-page-menu__link:focus,
   .c-page-menu__link:hover {
     background-color: $color-grey-dark;
     color: $color-white;

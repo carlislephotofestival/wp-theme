@@ -4,9 +4,14 @@
 
 // year
 .c-year {
+  margin-bottom: $spacing-unit-medium;
   overflow: hidden;
   position: relative;
   width: 100%;
+  
+  @include mq($from: medium) {
+    margin-bottom: 0;
+  }  
 }
 .c-year {
   background-color: $color-grey-dark;
@@ -14,9 +19,9 @@
 
   // year__link
   .c-year__link {
-      display: block;
-      height: 100%;
-      width: 100%;
+    display: block;
+    height: 100%;
+    width: 100%;
   }
   .c-year__link:hover .c-year__media img {
     transform: scale(1.1);

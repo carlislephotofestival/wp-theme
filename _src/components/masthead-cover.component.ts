@@ -3,12 +3,12 @@ import * as $ from "jquery";
 import { CONFIG } from "../config";
 
 /**
- * CoverMediaComponent
+ * MastheadCoverComponent
  */
-const CoverMediaComponent = (($) => {
+const MastheadCoverComponent = (($) => {
 
   const Selector = {
-    "MEDIA_PARENT": ".js-cover-media"
+    "MEDIA_PARENT": ".js-masthead-cover"
   }
 
   if($(window).width() < CONFIG.viewportBreakpoint) {
@@ -27,4 +27,4 @@ const CoverMediaComponent = (($) => {
 
 })(jQuery);
 
-export default CoverMediaComponent;
+export default MastheadCoverComponent;

@@ -4,13 +4,13 @@
 
 // masthead
 .c-masthead {
-  height: 100vh;
+  height: 40vh;
   overflow: hidden;
   position: relative;
   width: 100%;
 
   @include mq($from: medium) {
-    height: calc(85vh - #{$page-head-height});
+    height: calc(55vh - #{$page-head-height});
   }
 }
 
@@ -103,3 +103,14 @@
     line-height: 2rem;
     text-transform: uppercase;
   }
+
+.c-masthead--cover {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  @include mq($from: medium) {
+    height: calc(85vh - #{$page-head-height});
+  }
+}

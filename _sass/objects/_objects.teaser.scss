@@ -3,14 +3,14 @@
 \*------------------------------------*/
 
 // teaser
-.c-teaser {
+.o-teaser {
   border-right: 3px solid;
   margin-bottom: $spacing-unit-medium;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
-.c-teaser {
+.o-teaser {
   background-color: $color-white;
   border-color: $color-brand-secondary;
 
@@ -20,17 +20,17 @@
 }
 
   // teaser__link
-  .c-teaser__link {
+  .o-teaser__link {
     display: block;
     height: 100%;
     width: 100%;
   }
-  .c-teaser__link:hover .c-teaser__media img {
+  .o-teaser__link:hover .o-teaser__media img {
     transform: scale(1.1);
   }
 
   // teaser__media
-  .c-teaser__media {
+  .o-teaser__media {
     height: 100%;
     left: 0;
     overflow: hidden;
@@ -54,14 +54,14 @@
       width: 100%;
     }
   }
-  .c-teaser__media {
+  .o-teaser__media {
     @include mq($from: medium) {
       background-color: $color-grey-dark;
     }
   }
 
   // teaser__content
-  .c-teaser__content {
+  .o-teaser__content {
     min-height: 7.5 * $spacing-unit;
     padding: $spacing-unit $spacing-unit $spacing-unit 35%;
 
@@ -72,7 +72,7 @@
   }
 
   // teaser__badge
-  .c-teaser__badge {
+  .o-teaser__badge {
     display: none;
 
     @include mq($from: medium) {
@@ -85,11 +85,11 @@
   }
 
   // teaser_date
-  .c-teaser__date {
+  .o-teaser__date {
     font-weight: 900;
     text-transform: uppercase;
   }
-  .c-teaser__date {
+  .o-teaser__date {
     color: $color-grey;
 
     @include mq($from: medium) {
@@ -98,7 +98,7 @@
   }
 
   // teaser__headline
-  .c-teaser__headline {
+  .o-teaser__headline {
     font-size: 1.125rem;
     margin-bottom: 0;
     margin-top: $spacing-unit;
@@ -108,12 +108,12 @@
       margin-bottom: $spacing-unit;
     }
   }
-  .c-teaser__headline {
+  .o-teaser__headline {
     color: $color-grey;
   }
 
   // teaser__text
-  .c-teaser__text {
+  .o-teaser__text {
     display: none;
     margin: 0;
 
@@ -121,20 +121,20 @@
       display: block;
     }
   }
-  .c-teaser__text {
+  .o-teaser__text {
     color: $color-grey;
   }
 
 // teaser--featured
-.c-teaser--featured {
+.o-teaser--featured {
   border: none;
 
-  .c-teaser__media {
+  .o-teaser__media {
     position: static;
     width: 100%;
   }
 
-  .c-teaser__content {
+  .o-teaser__content {
     left: 0;
     padding: $spacing-unit-medium;
     position: absolute;
@@ -143,28 +143,28 @@
     z-index: z('teaser__content');
   }
 
-  .c-teaser__badge {
+  .o-teaser__badge {
     display: inline-block;
     margin-right: $spacing-unit;
     position: static;
   }
 
-  .c-teaser__date {
+  .o-teaser__date {
     color: $color-brand-secondary;
   }
 
-  .c-teaser__headline {
+  .o-teaser__headline {
     font-size: 1.75rem;
 
     @include mq($from: medium) {
       font-size: 3rem;
     }
   }
-  .c-teaser__headline {
+  .o-teaser__headline {
     color: $color-white;
   }
 
-  .c-teaser__text {
+  .o-teaser__text {
     display: none;
   }
 }

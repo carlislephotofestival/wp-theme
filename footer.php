@@ -1,32 +1,48 @@
-  <footer class="c-page-foot c-band">
+  <footer class="c-page-foot">
     <div class="o-wrapper">
       <?php wp_footer(); ?>
-      <div class="[ o-layout-flex o-layout-flex--gutters ]">
-        <div class="o-layout-flex__item u-flex-1/4">
-          <h4 class="c-page-foot__title">Contact</h4>
-          <a class="c-page-foot__link" href="mailto:info@carlislephoto.org.uk">info@carlislephoto.org.uk</a>
-          <a class="c-page-foot__link" href="/" target="_blank">Be a Sponsor</a>
-        </div>
-        <div class="o-layout-flex__item u-flex-1/4">
-          <h4 class="c-page-foot__title">Past Events</h4>
-          <a class="c-page-foot__link" href="/">2015</a>
-          <a class="c-page-foot__link" href="/">2013</a>
-          <a class="c-page-foot__link" href="/">2012</a>
-        </div>
-        <div class="o-layout-flex__item u-flex-1/4">
-          <h4 class="c-page-foot__title">Legal Terms</h4>
-          <a class="c-page-foot__link" href="/">Privacy Policy</a>
-          <a class="c-page-foot__link" href="/">Code of Conduct</a>
-        </div>
-        <div class="o-layout-flex__item u-flex-1/4">
-          <h4 class="c-page-foot__title">Follow Us</h4>
-          <a class="c-page-foot__link" href="/" target="_blank">Facebook</a>
-          <a class="c-page-foot__link" href="/" target="_blank">Twitter</a>
-          <a class="c-page-foot__link" href="/" target="_blank">Instagram</a>
+      <span class="c-page-foot__text">&copy; 2017 Carlisle Photo. Made with <svg aria-label="Heart" class="c-page-foot__heart" role="img"><use xlink:href="#icon-heart" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg> in Bath.</span>
+      <div class="c-page-foot__nav c-nav-secondary">
+        <ul class="o-list-inline">
+          <li class="c-nav-secondary__item o-list-inline__item">
+            <a class="c-nav-secondary__link" href="/">Cookies</a>
+          </li>
+          <li class="c-nav-secondary__item o-list-inline__item">
+            <a class="c-nav-secondary__link" href="/">Terms &amp; Conditions</a>
+          </li>
+          <li class="c-nav-secondary__item o-list-inline__item">
+            <a class="c-nav-secondary__link" href="/">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="c-page-foot__social c-social">
+        <ul class="o-list-inline">
+          <li class="c-social__item o-list-inline__item">
+            <a aria-label="Twitter" class="c-social__link" href="/" target="_blank">
+              <svg aria-hidden="true" class="c-social__icon" role="img">
+                <use xlink:href="#icon-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="c-social__item o-list-inline__item">
+            <a aria-label="Facebook" class="c-social__link" href="/" target="_blank">
+              <svg aria-hidden="true" class="c-social__icon" role="img">
+                <use xlink:href="#icon-facebook" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="c-social__item o-list-inline__item">
+            <a aria-label="Instagram" class="c-social__link" href="/" target="_blank">
+              <svg aria-hidden="true" class="c-social__icon" role="img">
+                <use xlink:href="#icon-instagram" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
-
+  <script src="<?php echo get_template_directory_uri() . '/js/vendor.bundle.js' ?>"></script>
+  <script src="<?php echo get_template_directory_uri() . '/js/main.bundle.js' ?>"></script>
 </body>
-
 </html>

@@ -13,18 +13,15 @@
   padding-left: $spacing-unit;
   padding-right: $spacing-unit;
 }
-.c-badge {
-  color: $color-grey-dark;
-}
 
-// badge--page
-.c-badge--page {
+// badge--blog-page
+.c-badge--blog-page {
   background-color: $color-brand-tertiary;
   color: $color-grey-dark;
 }
 
-// badge--article
-.c-badge--article {
+// badge--blog-post
+.c-badge--blog-post {
   background-color: $color-brand-secondary;
   color: $color-grey-dark;
 }

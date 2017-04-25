@@ -17,4 +17,8 @@
   &.has-masthead {
     padding-top: $page-head-height;
   }
+
+  &.has-page-menu-open {
+    overflow: hidden;
+  }
 }

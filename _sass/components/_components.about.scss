@@ -13,19 +13,13 @@
     }
   }
 
-/**
- * Team
- */
-.c-team {
+  // about__person
+  .c-about__person {
+    flex-basis: 50% !important;
+    max-width: 50%!important;
 
-}
-
-.c-about__person {
-  flex-basis: 50% !important;
-  max-width: 50%!important;
-
-  @include mq($from: medium) {
-    flex-basis: 33.33333333% !important;
-    max-width: 33.33333333% !important;    
+    @include mq($from: medium) {
+      flex-basis: 33.33333333% !important;
+      max-width: 33.33333333% !important;
+    }
   }
-}

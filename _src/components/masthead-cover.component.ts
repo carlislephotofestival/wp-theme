@@ -11,10 +11,10 @@ const MastheadCoverComponent = (($) => {
     "MEDIA_PARENT": ".js-masthead-cover"
   }
 
-  if($(window).width() < CONFIG.viewportBreakpoint) {
+  if ($(window).width() < CONFIG.viewportBreakpoint) {
     $(Selector.MEDIA_PARENT).css("height", window.innerHeight - CONFIG.pageHeadSize);
   }
-  
+
   $(window).resize(() => {
     let $documentwidth = $(document).width();
 

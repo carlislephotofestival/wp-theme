@@ -3,8 +3,22 @@
 \*------------------------------------*/
 
 // partners
-.c-partners {
-  text-align: center;
+.c-partners {}
+
+.c-partners__list {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: -$spacing-unit;
+  margin-right: -$spacing-unit;
+
+  @include mq($from: medium) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
   // partners__list
@@ -13,18 +27,29 @@
     justify-content: center;
   }
 
-  // partners__item
+  // c-partners__item
+  .c-partners__item {
+    flex-basis: 50% !important;
+    max-width: 50% !important;
+    text-align: center;
+
+    @include mq($from: medium) {
+      flex-basis: 25% !important;
+      max-width: 25% !important;
+    }
+  }
 
   // partners__logo
   .c-partners__logo {
-    height: 4.5rem;
+    max-height: 4.5rem;
     opacity: 0.5;
-    margin-bottom: $spacer; // 1
-    padding-left: $spacer;
-    padding-right: $spacer;
+    margin-bottom: $spacing-unit; // 1
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
     width: auto;
 
     @include mq($from: medium) {
+      margin-bottom: $spacing-unit-medium; // 1
       margin-bottom: 0; // 1
     }
   }

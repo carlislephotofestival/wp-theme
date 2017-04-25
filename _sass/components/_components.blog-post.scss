@@ -13,6 +13,10 @@
     margin-bottom: $spacing-unit-medium;
   }
 
+  .c-blog-post__share {
+    margin-bottom: 0;
+  }
+
   // blog__*
   .c-blog-post__author,
   .c-blog-post__date,
@@ -26,8 +30,14 @@
   .c-blog-post__share {
     color: $color-grey-dark;
   }
-  .c-blog-post__social {
-    float: right;
+
+  .c-blog-post__badge,
+  .c-blog-post__share {
+    display: none;
+
+    @include mq($from: medium) {
+      display: inline-block;
+    }
   }
 
   // blog-post__content

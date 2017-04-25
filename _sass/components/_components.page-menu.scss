@@ -53,9 +53,11 @@
       @include mx-visible;
       bottom: 0;
       height: 4rem;
+      justify-content: center;
       left: 0;
       right: 0;
       top: auto;
+
     }
   }
 
@@ -72,7 +74,7 @@
       #5a5c8d 50%,
       #4e5081 69%,
       #3b3d6d
-    );  
+    );
   }
 }
 
@@ -107,6 +109,11 @@
     @include mq($from: medium) {
       @include mx-visible;
     }
+  }
+
+  .c-page-menu__item {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   // page-menu__social

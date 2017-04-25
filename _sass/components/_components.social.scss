@@ -15,11 +15,12 @@
 
   // social__list
   .c-social__list {
+    align-items: center;
     display: flex;
     flex-flow: row wrap;
     height: 100%;
     list-style: none;
-    justify-content: center;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
   }

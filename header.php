@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-  <title><?php if(is_home()) bloginfo('name'); else wp_title(''); ?></title>
+  <title><?php if( is_home() ) bloginfo('name'); else wp_title(''); ?></title>
   <meta name="description" content="Carlisle Photo">
   <meta name="author" content="Julian Dawson">
   <meta name="robots" content="noindex">
@@ -31,7 +31,7 @@
     wp_head();
   ?>
 </head>
-<body class="c-page c-page--home has-fixed-page-head">
+<body class="c-page c-page--home has-fixed-page-head <?php if( has_post_thumbnail() ) echo 'has-masthead'; ?>">
   <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
     <symbol id="icon-twitter" viewBox="0 0 16 16">
       <title>Twitter</title>

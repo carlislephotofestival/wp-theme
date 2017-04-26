@@ -1,12 +1,16 @@
 <?php
 /**
  * Template Name: Page Home
+ *
+ * @link https://github.com/carlislephoto/carlislephoto-org-uk-theme
+ *
+ * @package WordPress
+ * @subpackage CarlislePhoto
  */
-?>
 
-<?php get_header(); ?>
+get_header();
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+while (have_posts()) : the_post(); ?>
 
 <div class="c-hero [ c-masthead c-masthead--cover ] js-masthead-cover">
   <figure class="c-masthead__media">
@@ -36,9 +40,6 @@
 
 <section class="c-news c-band" data-section="News">
   <div class="o-wrapper">
-
-   
-
     <div class="o-layout-flex">
       <div class="o-layout-flex__item u-flex-1/2">
 
@@ -107,10 +108,5 @@
   </div>
 </section>
 
-<?php endwhile; else: ?>
-
-  <p>Sorry, no pages matched your criteria.</p>
-
-<?php endif; ?>
-
-<?php get_footer(); ?>
+<?php endwhile;
+get_footer(); ?>

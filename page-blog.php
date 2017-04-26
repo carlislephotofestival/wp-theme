@@ -1,19 +1,26 @@
 <?php
 /**
  * Template Name: Page Blog
+ *
+ * @link https://github.com/carlislephoto/carlislephoto-org-uk-theme
+ *
+ * @package WordPress
+ * @subpackage CarlislePhoto
  */
 
-  get_header();
-?>
+get_header();
+
+while (have_posts()) : the_post(); ?>
 
 <main class="c-band c-band--tall">
   <div class="o-wrapper">
+    <?php
+    /**
+     * Get all posts.
+     */
 
-    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
-    <?php $carlislephoto_posts = get_posts();
-      foreach( $carlislephoto_posts as $post ) : setup_postdata($post);
-    ?>
+    $carlislephoto_posts = get_posts();
+    foreach( $carlislephoto_posts as $post ) : setup_postdata($post); ?>
 
     <article class="o-teaser">
       <a class="o-teaser__link" href="<?php the_permalink() ?>">
@@ -32,13 +39,8 @@
     </article>
 
     <?php endforeach; wp_reset_postdata(); ?>
-
-    <?php endwhile; else: ?>
-
-    <p>Sorry, no pages matched your criteria.</p>
-
-    <?php endif; ?>
   </div>
 </main>
 
-<?php get_footer(); ?>
+<?php endwhile;
+get_footer(); ?>

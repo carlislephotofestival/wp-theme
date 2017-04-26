@@ -1,3 +1,13 @@
+<?php
+/**
+ * The content part for displaying subscribe and donate components.
+ *
+ * @link https://github.com/carlislephoto/carlislephoto-org-uk-theme
+ *
+ * @package WordPress
+ * @subpackage CarlislePhoto
+ */
+?>
 <div class="c-goodbye c-band c-band--secondary-tertiary">
   <div class="o-wrapper">
     <div class="o-layout-flex">

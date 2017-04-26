@@ -1,6 +1,6 @@
 <?php
 /**
- * The default page template for displaying all pages.
+ * The default template for displaying all pages.
  *
  * @link https://github.com/carlislephoto/carlislephoto-org-uk-theme
  *

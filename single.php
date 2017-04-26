@@ -1,12 +1,16 @@
 <?php
 /**
- * @desc Single.
+ * The default template for displaying all posts.
+ *
+ * @link https://github.com/carlislephoto/carlislephoto-org-uk-theme
+ *
+ * @package WordPress
+ * @subpackage CarlislePhoto
  */
 
-  get_header();
-?>
+get_header();
 
-<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+if (have_posts()): while (have_posts()) : the_post(); ?>
 
 <article class="c-blog-post">
   <header class="[ c-masthead c-masthead--cover ] js-masthead-cover">

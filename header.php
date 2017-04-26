@@ -1,3 +1,13 @@
+<?php
+/**
+ * The header template.
+ *
+ * @link https://github.com/carlislephoto/carlislephoto-org-uk-theme
+ *
+ * @package WordPress
+ * @subpackage CarlislePhoto
+ */
+?>
 <!DOCTYPE html>
 <html>
 <head>

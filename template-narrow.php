@@ -20,7 +20,7 @@ while (have_posts()) : the_post();
   </div>
   <?php endif; ?>
 
-  <main class="c-blog-page s-blog-page">
+  <main class="c-blog-page s-blog-post">
     <div class="c-band">
       <div class="o-wrapper o-wrapper--narrow">
         <div class="c-blog-page__content">

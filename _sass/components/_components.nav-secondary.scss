@@ -5,24 +5,28 @@
 // nav-secondary
 .c-nav-secondary {
   display: inline-block;
-  margin-bottom: $spacer / 2; // 1
 
   // nav-secondary__item
   > li {
     display: block; // 2
+    margin-bottom: $spacing-unit-medium;
 
     @include mq($from: medium) {
       display: inline-block; // 2
+      margin-bottom: 0;
     }
 
     // nav-secondary__link
     > a {
       @include mx-transition(color .5s ease);
-      margin-left: $spacer / 4;
-      margin-right: $spacer / 4;
+      margin-left: $spacing-unit-small;
+      margin-right: $spacing-unit-small;
     }
     > a {
       color: $color-white;
+    }
+    > a:hover {
+      color: $color-brand-secondary;
     }
   }
 }

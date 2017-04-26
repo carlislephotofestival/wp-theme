@@ -58,7 +58,8 @@
       float: right;
     }
 
-    .c-social__icon {
+    .c-social__icon,
+    .c-social__icon:hover {
       fill: $color-white;
     }
   }

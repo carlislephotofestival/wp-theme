@@ -16,12 +16,10 @@
     height: 100%;
     width: 100%;
   }
-  .c-year__link:hover .c-year__media img {
-    transform: scale(1.1);
-  }
 
   // year__media
   .c-year__media {
+    overflow: hidden;
     width: 100%;
 
     img {
@@ -39,6 +37,9 @@
   .c-year__media {
     background-color: $color-grey-dark;
   }
+  .c-year__media:hover img {
+    transform: scale(1.1);
+  }  
 
   // year__content
   .c-year__content {

@@ -10,7 +10,7 @@
 
 get_header();
 
-if (have_posts()): while (have_posts()) : the_post(); ?>
+while (have_posts()) : the_post(); ?>
 
 <article class="c-blog-post">
   <header class="[ c-masthead c-masthead--cover ] js-masthead-cover">
@@ -96,13 +96,5 @@ if (have_posts()): while (have_posts()) : the_post(); ?>
   </div>
 </section>
 
-
-  <?php endwhile; else: ?>
-
-		<p>Sorry, no posts matched your criteria.</p>
-
-<?php endif;
-
-  get_footer();
-
-?>
+<?php endwhile;
+get_footer(); ?>

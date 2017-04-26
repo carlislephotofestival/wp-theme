@@ -31,6 +31,19 @@ function carlislephoto_setup() {
    * @link https://codex.wordpress.org/Custom_Headers
    */
   add_theme_support( 'custom-header' );
+
+  /**
+   * Register multiple custom navigation menus.
+   * @link https://codex.wordpress.org/Function_Reference/register_nav_menus
+   */
+  register_nav_menus(
+    array(
+      'primary' => __( 'Primary Nav' ),
+      'secondary' => __( 'Secondary Nav' ),
+      'social' => __(' Social Follow Links')
+    )
+  );
+
 }
 endif;
 

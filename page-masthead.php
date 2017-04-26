@@ -33,4 +33,6 @@
 
 <?php endif; ?>
 
+<?php get_template_part( 'template-parts/content', 'band-goodbye' ); ?>
+
 <?php get_footer(); ?>

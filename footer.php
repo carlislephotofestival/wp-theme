@@ -3,17 +3,13 @@
       <?php wp_footer(); ?>
       <span class="c-page-foot__text">&copy; 2017 Carlisle Photo. Made with <svg aria-label="Heart" class="c-page-foot__heart" role="img"><use xlink:href="#icon-heart" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg> in Bath.</span>
       <div class="c-page-foot__nav c-nav-secondary">
-        <ul class="o-list-inline">
-          <li class="c-nav-secondary__item o-list-inline__item">
-            <a class="c-nav-secondary__link" href="/">Cookies</a>
-          </li>
-          <li class="c-nav-secondary__item o-list-inline__item">
-            <a class="c-nav-secondary__link" href="/">Terms &amp; Conditions</a>
-          </li>
-          <li class="c-nav-secondary__item o-list-inline__item">
-            <a class="c-nav-secondary__link" href="/">Privacy Policy</a>
-          </li>
-        </ul>
+        <?php wp_nav_menu(
+          array(
+            'theme_location' => 'secondary',
+            'container' => false,
+            'menu_class' => 'c-nav-secondary'
+          ) 
+        ); ?>        
       </div>
       <div class="c-page-foot__social c-social">
         <ul class="o-list-inline">

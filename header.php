@@ -54,17 +54,13 @@
       </a>
       <a class="c-page-menu__trigger c-page-menu__link js-page-menu-trigger" href="#trigger:nav">Menu</a>
       <nav class="c-page-menu__nav c-nav-primary">
-        <ul class="c-nav-primary__list o-list-bare">
-          <li class="c-nav-primary__item o-list-bare__item">
-            <a class="c-nav-primary__link c-page-menu__link" href="/">Home</a>
-          </li>
-          <li class="c-nav-primary__item o-list-bare__item">
-            <a class="c-nav-primary__link c-page-menu__link" href="/about">About</a>
-          </li>
-          <li class="c-nav-primary__item o-list-bare__item">
-            <a class="c-nav-primary__link c-page-menu__link" href="/contact">Contact</a>
-          </li>
-        </ul>
+        <?php wp_nav_menu(
+          array(
+            'theme_location' => 'primary',
+            'container' => false,
+            'menu_class' => 'c-nav-primary__list'
+          ) 
+        ); ?>
       </nav>
       <ul class="c-page-menu__social c-social__list">
         <li class="c-page-menu__item c-social__item">

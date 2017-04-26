@@ -17,21 +17,21 @@
     @include mq($from: medium) {
       height: 100%;
     }
-  }
 
-  // nav-primary__item
-  .c-nav-primary__item {
+    // c-nav-primary__item
+    > li {
     display: block;
     flex: 0 0 auto;
 
     @include mq($from: medium) {
       height: 100%;
     }
-  }
 
-  // nav-primary__link
-  .c-nav-primary__link {
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
+      // nav-primary__link
+      > a {
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+      }
+    }
   }

@@ -1,3 +1,5 @@
+  <?php get_template_part( 'template-parts/content', 'band-goodbye' ); ?>
+  
   <footer class="c-page-foot">
     <div class="o-wrapper">
       <?php wp_footer(); ?>

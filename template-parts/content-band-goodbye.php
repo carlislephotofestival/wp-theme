@@ -34,3 +34,21 @@
     </div>
   </div>
 </div>
+<section class="c-partners [ c-band c-band--tall ]" data-section="Partners">
+  <div class="o-wrapper o-wrapper--narrow">
+    <ul class="c-partners__list">
+      <li class="c-partners__item">
+        <img class="c-partners__logo" src="<?php echo get_template_directory_uri() . '/images/sponsors-2.png' ?>" alt="Arts Council England">
+      </li>
+      <li class="c-partners__item">
+        <img class="c-partners__logo" src="<?php echo get_template_directory_uri() . '/images/sponsors-1.png' ?>" alt="Arts Council England">
+      </li>
+      <li class="c-partners__item">
+        <img class="c-partners__logo" src="<?php echo get_template_directory_uri() . '/images/sponsors-3.png' ?>" alt="Arts Council England">
+      </li>
+      <li class="c-partners__item">
+        <img class="c-partners__logo" src="<?php echo get_template_directory_uri() . '/images/sponsors-4.png' ?>" alt="Arts Council England">
+      </li>
+    </ul>
+  </div>
+</section>

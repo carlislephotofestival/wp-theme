@@ -8,13 +8,6 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  
-  @include mq($from: medium) {
-    margin-bottom: 0;
-  }  
-}
-.c-year {
-  background-color: $color-grey-dark;
 }
 
   // year__link
@@ -43,11 +36,14 @@
       width: 100%;
     }
   }
+  .c-year__media {
+    background-color: $color-grey-dark;
+  }
 
   // year__content
   .c-year__content {
     left: 0;
-    padding: $spacing-unit;
+    padding: $spacing-unit-medium;
     position: absolute;
     top: 0;
     width: 100%;

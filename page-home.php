@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page-Home
+ * Template Name: Page Home
  */
 ?>
 
@@ -36,58 +36,61 @@
 
 <section class="c-news c-band" data-section="News">
   <div class="o-wrapper">
+
+   
+
     <div class="o-layout-flex">
       <div class="o-layout-flex__item u-flex-1/2">
+
+        <?php $carlislephoto_posts = get_posts( array( 'posts_per_page' => 1 ) );
+          foreach( $carlislephoto_posts as $post ) : setup_postdata($post);
+        ?>
+
         <article class="o-teaser o-teaser--featured">
-          <a class="o-teaser__link" href="/post.html">
+          <a class="o-teaser__link" href="<?php the_permalink() ?>">
             <div class="o-teaser__media">
-              <img src="<?php echo get_template_directory_uri() . '/images/placeholder-square.jpg' ?>" alt="">
+              <?php the_post_thumbnail( 'carlislephoto-flex-thumbnail' ); ?>
             </div>
             <div class="o-teaser__content">
               <div class="o-teaser__meta">
                 <div class="o-teaser__badge [ c-badge c-badge--blog-post ]">Blog</div>
-                <time class="o-teaser__date">31 March 2017</time>
+                <time class="o-teaser__date"><?php the_time('j F Y'); ?></time>
               </div>
-              <h2 class="o-teaser__headline">Quisque vel rhoncus ex vitae tincidunt ex dolor sit amet</h2>
-              <p class="o-teaser__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel rhoncus ex, vitae tincidunt ex.</p>
+              <h2 class="o-teaser__headline"><?php the_title(); ?></h2>
+              <p class="o-teaser__text"><?php the_excerpt(); ?></p>
             </div>
           </a>
         </article>
+
+        <?php endforeach; wp_reset_postdata(); ?>
       </div>
       <div class="o-layout-flex__item u-flex-1/2">
+
+        <?php $carlislephoto_posts = get_posts( array( 'posts_per_page' => 2, 'offset' => 1 ) );
+          foreach( $carlislephoto_posts as $post ) : setup_postdata($post);
+        ?>
+
         <article class="o-teaser">
-          <a class="o-teaser__link" href="/post.html">
+          <a class="o-teaser__link" href="<?php the_permalink() ?>">
             <div class="o-teaser__media">
-              <img src="<?php echo get_template_directory_uri() . '/images/placeholder-square.jpg' ?>" alt="">
+              <?php the_post_thumbnail( 'carlislephoto-flex-thumbnail' ); ?>
             </div>
             <div class="o-teaser__content">
               <div class="o-teaser__meta">
                 <div class="o-teaser__badge [ c-badge c-badge--blog-post ]">Blog</div>
-                <time class="o-teaser__date">31 March 2017</time>
+                <time class="o-teaser__date"><?php the_time('j F Y'); ?></time>
               </div>
-              <h2 class="o-teaser__headline">Quisque vel rhoncus ex vitae tincidunt ex dolor sit amet</h2>
-              <p class="o-teaser__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel rhoncus ex, vitae tincidunt ex.</p>
+              <h2 class="o-teaser__headline"><?php the_title(); ?></h2>
+              <p class="o-teaser__text"><?php the_excerpt(); ?></p>
             </div>
           </a>
         </article>
-        <article class="o-teaser">
-          <a class="o-teaser__link" href="/post.html">
-            <div class="o-teaser__media">
-              <img src="<?php echo get_template_directory_uri() . '/images/placeholder-square.jpg' ?>" alt="">
-            </div>
-            <div class="o-teaser__content">
-              <div class="o-teaser__meta">
-                <div class="o-teaser__badge [ c-badge c-badge--blog-post ]">Blog</div>
-                <time class="o-teaser__date">31 March 2017</time>
-              </div>
-              <h2 class="o-teaser__headline">Quisque vel rhoncus ex vitae tincidunt ex dolor sit amet</h2>
-              <p class="o-teaser__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel rhoncus ex, vitae tincidunt ex.</p>
-            </div>
-          </a>
-        </article>
+
+        <?php endforeach; wp_reset_postdata(); ?>
+
       </div>
     </div>
-    <a class="c-button c-button--wide" href="/">
+    <a class="c-button c-button--wide" href="/blog/">
       <span class="c-button__text">More News</span>
       <span class="c-button__icon">
           <svg class="c-button__arrow">
@@ -109,7 +112,5 @@
   <p>Sorry, no pages matched your criteria.</p>
 
 <?php endif; ?>
-
- <?php get_template_part( 'template-parts/content', 'band-goodbye' ); ?>
 
 <?php get_footer(); ?>

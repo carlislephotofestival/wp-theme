@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page-About
+ * Template Name: Template Masthead Bare
  */
 ?>
 
@@ -28,7 +28,5 @@
   <p>Sorry, no pages matched your criteria.</p>
 
 <?php endif; ?>
-
-<?php get_template_part( 'template-parts/content', 'band-goodbye' ); ?>
 
 <?php get_footer(); ?>

@@ -5,6 +5,11 @@
 // about
 .c-about { }
 
+  .c-about__years,
+  .c-about__team {
+    margin-bottom: -$spacing-unit-medium;
+  }
+
   // about__partners
   .c-about__partners {
     @include mq($from: medium) {
@@ -12,6 +17,7 @@
       margin-right: -12 * $spacing-unit;
     }
   }
+
 
   // about__person
   .c-about__person {

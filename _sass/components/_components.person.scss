@@ -5,6 +5,7 @@
 // person
 .c-person {
   text-align: center;
+  margin-bottom: $spacing-unit-medium;
 }
 
   // person__media
@@ -23,4 +24,8 @@
   // person__name
   .c-person__name {
     margin-bottom: $spacing-unit-tiny;
+  }
+
+  .c-person__role {
+    margin-bottom: 0;
   }

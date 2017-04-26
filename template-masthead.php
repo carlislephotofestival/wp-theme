@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page-Contact
+ * Template Name: Template Masthead
  */
 ?>
 
@@ -17,10 +17,14 @@
   </figure>
 </div>
 
-<main class="s-blog-page">
-  <section class="c-band c-band--tall">
+<main class="c-blog-page s-blog-page">
+  <section class="c-band">
     <div class="o-wrapper">
-      <?php the_content(__('(more...)')); ?>
+      <div class="c-blog-page__content">
+        
+        <?php the_content(__('(more...)')); ?>
+
+      </div>
     </div>
   </section>
 </main>
@@ -30,7 +34,5 @@
   <p>Sorry, no pages matched your criteria.</p>
 
 <?php endif; ?>
-
-<?php get_template_part( 'template-parts/content', 'band-goodbye' ); ?>
 
 <?php get_footer(); ?>

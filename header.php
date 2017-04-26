@@ -56,19 +56,13 @@
       <nav class="c-page-menu__nav c-nav-primary">
         <ul class="c-nav-primary__list o-list-bare">
           <li class="c-nav-primary__item o-list-bare__item">
-            <a class="c-nav-primary__link c-page-menu__link" href="/page.html">Page</a>
+            <a class="c-nav-primary__link c-page-menu__link" href="/">Home</a>
           </li>
           <li class="c-nav-primary__item o-list-bare__item">
-            <a class="c-nav-primary__link c-page-menu__link" href="/blog.html">Blog</a>
+            <a class="c-nav-primary__link c-page-menu__link" href="/about">About</a>
           </li>
           <li class="c-nav-primary__item o-list-bare__item">
-            <a class="c-nav-primary__link c-page-menu__link" href="/post.html">Post</a>
-          </li>
-          <li class="c-nav-primary__item o-list-bare__item">
-            <a class="c-nav-primary__link c-page-menu__link" href="/about.html">About</a>
-          </li>
-          <li class="c-nav-primary__item o-list-bare__item">
-            <a class="c-nav-primary__link c-page-menu__link" href="/contact.html">Contact</a>
+            <a class="c-nav-primary__link c-page-menu__link" href="/contact">Contact</a>
           </li>
         </ul>
       </nav>

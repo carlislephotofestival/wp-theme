@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page-Masthead
+ * Template Name: Page-About
  */
 ?>
 
@@ -11,20 +11,16 @@
 <div class="c-masthead">
   <figure class="c-masthead__media">
     <img src="<?php echo get_template_directory_uri() . '/images/placeholder-square.jpg' ?>" alt="">
+    <!--
+    <figcaption class="c-masthead__caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit <span class="c-masthead__credit">Julian Dawson for Carlisle Photo</span></figcaption>
+    -->
   </figure>
 </div>
 
-<main class="c-blog-page s-blog-page">
-  <div class="c-band">
-    <div class="o-wrapper o-wrapper--narrow">
-      <div class="c-blog-page__content">
+<main class="s-blog-page">
 
-        <h1><?php the_title(); ?></h1>
-        <?php the_content(__('(more...)')); ?>
+  <?php the_content(__('(more...)')); ?>
 
-      </div>
-    </div>
-  </div>
 </main>
 
 <?php endwhile; else: ?>

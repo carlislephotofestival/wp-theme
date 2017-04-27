@@ -20,7 +20,7 @@
   // page-foot__text
   .c-page-foot__text {
     display: inline-block;
-    margin-bottom: $spacing-unit-small;
+    margin-bottom: $spacing-unit-medium;
 
 
     @include mq($from: medium) {

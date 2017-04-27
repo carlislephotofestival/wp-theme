@@ -44,6 +44,7 @@
     }
 
     img {
+      opacity: .8;
       @include mx-transition(transform .5s ease);
     }
 
@@ -55,9 +56,7 @@
     }
   }
   .o-teaser__media {
-    @include mq($from: medium) {
-      background-color: $color-grey-dark;
-    }
+    background-color: $color-grey-dark;
   }
 
   // teaser__content

@@ -10,7 +10,7 @@
 
 get_header();
 
-while (have_posts()) : the_post(); ?>
+while ( have_posts() ) : the_post(); ?>
 
 <div class="c-hero [ c-masthead c-masthead--cover ] js-masthead-cover">
   <figure class="c-masthead__media">
@@ -24,8 +24,8 @@ while (have_posts()) : the_post(); ?>
   </figure>
   <div class="c-masthead__content">
     <div class="o-wrapper">
-      <h1 class="c-masthead__headline"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></h1>
-      <p class="c-masthead__text"><?php echo get_post(get_post_thumbnail_id())->post_content; ?></p>
+      <h1 class="c-masthead__headline"><?php echo get_post( get_post_thumbnail_id() )->post_excerpt; ?></h1>
+      <p class="c-masthead__text"><?php echo get_post( get_post_thumbnail_id() )->post_content; ?></p>
       <a class="c-button" href="/">
         <span class="c-button__text">Register</span>
         <span class="c-button__icon">
@@ -58,7 +58,7 @@ while (have_posts()) : the_post(); ?>
                 <time class="o-teaser__date"><?php the_time('j F Y'); ?></time>
               </div>
               <h2 class="o-teaser__headline"><?php the_title(); ?></h2>
-              <p class="o-teaser__text"><?php the_excerpt(); ?></p>
+              <?php the_excerpt(); ?>
             </div>
           </a>
         </article>
@@ -82,7 +82,7 @@ while (have_posts()) : the_post(); ?>
                 <time class="o-teaser__date"><?php the_time('j F Y'); ?></time>
               </div>
               <h2 class="o-teaser__headline"><?php the_title(); ?></h2>
-              <p class="o-teaser__text"><?php the_excerpt(); ?></p>
+              <?php the_excerpt(); ?>
             </div>
           </a>
         </article>

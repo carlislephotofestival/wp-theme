@@ -10,7 +10,7 @@
 
 get_header();
 
-while (have_posts()) : the_post(); ?>
+while ( have_posts() ) : the_post(); ?>
 
 <article class="c-blog-post">
   <header class="[ c-masthead c-masthead--cover ] js-masthead-cover">

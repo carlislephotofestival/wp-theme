@@ -10,7 +10,7 @@
 
 get_header();
 
-while (have_posts()) : the_post();
+while ( have_posts() ) : the_post();
   
   if( has_post_thumbnail() ) : ?>
   <div class="c-masthead">

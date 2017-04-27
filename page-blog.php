@@ -10,7 +10,7 @@
 
 get_header();
 
-while (have_posts()) : the_post(); ?>
+while ( have_posts() ) : the_post(); ?>
 
 <main class="c-band c-band--tall">
   <div class="o-wrapper">

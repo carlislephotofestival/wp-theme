@@ -33,7 +33,7 @@ while ( have_posts() ) : the_post(); ?>
             <time class="o-teaser__date"><?php the_time('j F Y'); ?></time>
           </div>
           <h2 class="o-teaser__headline"><?php the_title(); ?></h2>
-          <p class="o-teaser__text"><?php the_excerpt(); ?></p>
+          <?php the_excerpt(); ?>
         </div>
       </a>
     </article>

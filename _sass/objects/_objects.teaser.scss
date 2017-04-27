@@ -68,6 +68,12 @@
       min-height: 18.5 * $spacing-unit;
       padding: $spacing-unit-medium $spacing-unit-medium $spacing-unit-medium 51.20968%;
     }
+
+    p,
+    p:focus,
+    p:hover {
+      color: $color-grey;
+    }
   }
 
   // teaser__badge

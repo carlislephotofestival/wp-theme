@@ -73,10 +73,7 @@
 
   // teaser__badge
   .o-teaser__badge {
-    display: none;
-
     @include mq($from: medium) {
-      display: inline-block;
       left: $spacing-unit-medium;
       position: absolute;
       top: $spacing-unit-medium;

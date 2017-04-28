@@ -2,6 +2,8 @@
 /**
  * The header template.
  *
+ * @author Julian Dawson <julian@juliandawson.co.uk>
+ * @license MIT License
  * @link https://github.com/carlislephoto/carlislephoto-org-uk-theme
  *
  * @package WordPress
@@ -69,7 +71,7 @@
             'theme_location' => 'primary',
             'container' => false,
             'menu_class' => 'c-nav-primary__list'
-          ) 
+          )
         ); ?>
       </nav>
       <ul class="c-page-menu__social c-social__list">

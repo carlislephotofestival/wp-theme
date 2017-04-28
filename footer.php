@@ -2,6 +2,8 @@
 /**
  * The footer template.
  *
+ * @author Julian Dawson <julian@juliandawson.co.uk>
+ * @license MIT License
  * @link https://github.com/carlislephoto/carlislephoto-org-uk-theme
  *
  * @package WordPress
@@ -9,13 +11,13 @@
  */
 ?>
   <?php get_template_part( 'template-parts/content', 'band-goodbye' ); ?>
-  
+
   <footer class="c-page-foot">
     <div class="o-wrapper">
       <?php wp_footer(); ?>
       <span class="c-page-foot__text">&copy; 2017 Carlisle Photo. Made with <svg aria-label="Heart" class="c-page-foot__heart" role="img"><use xlink:href="#icon-heart" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg> in Bath.</span>
       <div class="c-page-foot__nav c-nav-secondary">
-        <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'container' => false, 'menu_class' => 'c-nav-secondary' ) ); ?>        
+        <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'container' => false, 'menu_class' => 'c-nav-secondary' ) ); ?>
       </div>
       <div class="c-page-foot__social c-social">
         <ul class="o-list-inline">

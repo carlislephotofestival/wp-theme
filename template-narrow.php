@@ -2,6 +2,8 @@
 /**
  * Template Name: Template Narrow
  *
+ * @author Julian Dawson <julian@juliandawson.co.uk>
+ * @license MIT License
  * @link https://github.com/carlislephoto/carlislephoto-org-uk-theme
  *
  * @package WordPress
@@ -11,7 +13,7 @@
 get_header();
 
 while ( have_posts() ) : the_post();
-  
+
   if( has_post_thumbnail() ) : ?>
   <div class="c-masthead">
     <figure class="c-masthead__media">

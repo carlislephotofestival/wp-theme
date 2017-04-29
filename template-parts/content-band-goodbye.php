@@ -31,9 +31,7 @@
       </section>
       <section aria-labelledby="donate-headline" class="c-donate o-layout-flex__item u-flex-1/2">
         <h3 id="donate-headline">Support Carlisle Photo</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut lacus dignissim, iaculis diam aliquet, bibendum
-          massa.
-        </p>
+        <p>We are a not for profit organisation, run by volunteers. Your donations help us support artists and bring photography to the community.</p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="KKCGL9JWFKBL2">

@@ -9,6 +9,7 @@ style.css
 /node_modules
 
 # misc
+/downloads
 /.sass-cache
 npm-debug.log
 

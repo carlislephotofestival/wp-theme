@@ -34,14 +34,11 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut lacus dignissim, iaculis diam aliquet, bibendum
           massa.
         </p>
-        <a class="c-donate__button c-button" href="/">
-          <span class="c-button__text">Donate</span>
-          <span class="c-button__icon">
-            <svg class="c-button__arrow">
-              <use xlink:href="#icon-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-            </svg>
-          </span>
-        </a>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="KKCGL9JWFKBL2">
+          <input class="c-donate__button c-button" type="submit" value="Donate" alt="PayPal – The safer, easier way to pay online!">
+        </form>
       </section>
     </div>
   </div>

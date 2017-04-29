@@ -28,8 +28,8 @@ while ( have_posts() ) : the_post(); ?>
     <div class="o-wrapper">
       <h1 class="c-masthead__headline"><?php echo get_post( get_post_thumbnail_id() )->post_excerpt; ?></h1>
       <p class="c-masthead__text"><?php echo get_post( get_post_thumbnail_id() )->post_content; ?></p>
-      <a class="c-button" href="/">
-        <span class="c-button__text">Register</span>
+      <a class="c-button" href="http://carlislephoto.org.uk/open-call-visualising-the-home">
+        <span class="c-button__text">More Info</span>
         <span class="c-button__icon">
             <svg class="c-button__arrow">
               <use xlink:href="#icon-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
@@ -40,6 +40,7 @@ while ( have_posts() ) : the_post(); ?>
   </div>
 </div>
 
+<!--
 <section class="c-news c-band" data-section="News">
   <div class="o-wrapper">
     <div class="o-layout-flex">
@@ -101,8 +102,10 @@ while ( have_posts() ) : the_post(); ?>
           </svg>
         </span>
     </a>
+
   </div>
 </section>
+-->
 
 <section aria-labelledby="about-headline" class="c-about c-band" data-section="About">
   <div class="o-wrapper">

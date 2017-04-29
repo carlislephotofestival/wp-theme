@@ -60,9 +60,7 @@
   <header class="c-page-head c-page-head--large is-fixed">
     <div class="c-page-menu c-page-head__nav">
       <a class="c-page-menu__logo c-page-menu__link" href="/">
-        <svg aria-hidden="true" class="c-logo" role="img">
-          <use xlink:href="#icon-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-        </svg>
+        <img class="c-logo" src="<?php echo get_template_directory_uri() . '/images/logo.png' ?>" alt="Carlisle Photo">
       </a>
       <a class="c-page-menu__trigger c-page-menu__link js-page-menu-trigger" href="#trigger:nav">Menu</a>
       <nav class="c-page-menu__nav c-nav-primary">
@@ -76,23 +74,16 @@
       </nav>
       <ul class="c-page-menu__social c-social__list">
         <li class="c-page-menu__item c-social__item">
-          <a aria-label="Twitter" class="c-page-menu__link c-social__link" href="/" target="_blank">
+          <a aria-label="Twitter" class="c-page-menu__link c-social__link" href="https://twitter.com/CarlislePF" target="_blank">
             <svg aria-hidden="true" class="c-social__icon" role="img">
               <use xlink:href="#icon-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
             </svg>
           </a>
         </li>
         <li class="c-page-menu__item c-social__item">
-          <a aria-label="Facebook" class="c-page-menu__link c-social__link" href="/" target="_blank">
+          <a aria-label="Facebook" class="c-page-menu__link c-social__link" href="https://www.facebook.com/CarlislePhotoFestival" target="_blank">
             <svg aria-hidden="true" class="c-social__icon" role="img">
               <use xlink:href="#icon-facebook" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="c-page-menu__item c-social__item">
-          <a aria-label="Instagram" class="c-page-menu__link c-social__link c-social__link--last" href="/" target="_blank">
-            <svg aria-hidden="true" class="c-social__icon" role="img">
-              <use xlink:href="#icon-instagram" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
             </svg>
           </a>
         </li>

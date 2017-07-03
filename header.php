@@ -16,10 +16,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-  <title><?php if( is_home() ) bloginfo('name'); else wp_title(''); ?></title>
+  <title>Carlisle Photo</title>
   <meta name="description" content="Carlisle Photo">
   <meta name="author" content="Julian Dawson">
-  <meta name="robots" content="noindex">
+  <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#ff0024">
   <link href="<?php bloginfo('pingback_url'); ?>" rel="pingback">
 	<link href="<?php bloginfo('rss2_url'); ?>" rel="alternate" type="application/rss+xml" title="RSS 2.0">
@@ -27,7 +27,7 @@
 	<link href="<?php bloginfo('atom_url'); ?>" rel="alternate" type="application/atom+xml" title="Atom 1.0">
   <link href="/favicon.ico" rel="shortcut icon">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-  <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
+  <link href="<?php bloginfo('stylesheet_url'); ?>?v=1" rel="stylesheet">
 	<?php
     wp_get_archives('type=monthly&format=link');
     wp_head();

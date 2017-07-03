@@ -33,10 +33,4 @@
     margin-bottom: $spacing-unit-tiny;
     width: 100%;
   }
-
-  // warn WYSIWYG users about applying their own styles
-  [style]:after {
-    content: "Please don't apply your own styling.";
-    color: red;
-  }
 }

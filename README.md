@@ -1,4 +1,4 @@
-# Wordpress theme for Carlisle Photo Festival
+# WordPress theme for Carlisle Photo Festival
 
 A WordPress theme for [https://www.carlislephotofestival.co.uk](https://www.carlislephotofestival.co.uk).
 

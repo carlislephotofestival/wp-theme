@@ -1,10 +1,10 @@
-# Wordpress theme for Carlisle Photo
+# Wordpress theme for Carlisle Photo Festival
 
-A WordPress theme for [http://carlislephoto.org.uk](http://carlislephoto.org.uk).
+A WordPress theme for [https://www.carlislephotofestival.co.uk](https://www.carlislephotofestival.co.uk).
 
 ## Copyright
 
-Copyright (c) 2017 [Carlisle Photo](http://carlislephoto.org.uk)
+Copyright (c) 2022 [Carlisle Photo Festival](https://www.carlislephotofestival.co.uk)
 
 ## License (MIT License)
 Permission is hereby granted, free of charge, to any person obtaining
